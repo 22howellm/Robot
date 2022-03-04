@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+{% block content %}
+    </script>
+    <div class="page-header" id="banner">
+        <div class="row">
+            <h1>Robot Dashboard</h1>
+        </div>
+    </div>
+    <div class="row" id="load">
+        <button type="button" class="btn btn-success" onclick="load_robot();">Load Robot</button>
+    </div>   
+    <div id="dashboard">
+        <div class="row">
+            <button id="shutdown" type="button" class="btn btn-danger" onclick="shutdown_robot();">Shutdown Robot</button>
+            <button id="reconfig" type="button" class="btn btn-warning" onclick="new_ajax_helper('/reconfig_IMU');">Reconfigure IMU</button>
+            <button id="compass" type="button" class="btn btn-secondary" onclick="new_ajax_helper('/compass');">Set Compass</button>
+            <button id="sensors" type="button" class="btn btn-info" onclick="new_ajax_helper('/sensors');">Sensors</button>
+            <button id="stop" type="button" class="btn btn-primary" onclick="new_ajax_helper('/stop');">stop</button>
+        </div>
+        <div class ='row'>
+            <button id="lob" type="button" class="btn btn-secondary" onclick="new_ajax_helper('/lob');">lob</button>
+            <button id="shoot" type="button" class="btn btn-secondary" onclick="new_ajax_helper('/shoot');">shoot</button>
+            <button id="moveforward" type="button" class="btn btn-info" onclick="new_ajax_helper('/moveforward');">forward</button>
+            <button id="movebackwards" type="button" class="btn btn-info" onclick="new_ajax_helper('/movebackwards');">backwards</button>
+            <button id="turnleft" type="button" class="btn btn-info" onclick="new_ajax_helper('/turnleft');">turnleft</button>
+            <button id="turnright" type="button" class="btn btn-info" onclick="new_ajax_helper('/turnright');">turnright</button>
+            <button id="moveforwardslow" type="button" class="btn btn-info" onclick="new_ajax_helper('/moveforwardslow');">forwardslow</button>
+            <button id="movebackwardsslow" type="button" class="btn btn-info" onclick="new_ajax_helper('/movebackwardsslow');">backwardsslow</button>
+            <button id="turnright90" type="button" class="btn btn-info" onclick="new_ajax_helper('/turnright90');">turnright90</button>
+            <button id="turnleft90" type="button" class="btn btn-info" onclick="new_ajax_helper('/turnleft90');">turnleft90</button>
+        </div>
+        <div class="row">
+            <div id="videobox" class="col">
+                <div id="videofeed"></div>
+            </div>
+            <div id="map"><div id="box" class="jxgbox col"></div></div>
+            <div id="message"></div>
+        </div>
+    </div>
+{% endblock %}
+{% block scripts %}
+    <script> robot_enabled = {{robot_enabled}}; </script>
+    <script src="/static/js/dashboard.js"></script> 
+    <script src="/static/js/mapping.js"></script>
+{% endblock %}
