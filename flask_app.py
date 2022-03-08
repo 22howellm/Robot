@@ -15,7 +15,7 @@ GLOBALS.DATABASE = databaseinterface.DatabaseInterface('databases/RobotDatabase.
 def log(message):
     app.logger.info(message)
     return
-
+#this is a change
 #create a login page
 @app.route('/', methods=['GET','POST'])
 def login():
