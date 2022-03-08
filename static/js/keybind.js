@@ -25,10 +25,21 @@ document.addEventListener('keydown', function(e){
             console.log('Move backwards')
             new_ajax_helper('/movebackwardsslowly');
         }
-        
+        else if (key === 'o'){
+            console.log('shoot')
+            new_ajax_helper('/shoot');
+        }
+        else if (key === 'l'){
+            console.log('shoot')
+            new_ajax_helper('/shoot');
+        }
     }
 })
 
 document.addEventListener('keyup', function(e){
+    key = e.key.toLowerCase()
+    if (e !== o && e !== l){
+        console.log('stop')
     new_ajax_helper('/stop');
+    }
 })
