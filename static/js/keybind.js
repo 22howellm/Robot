@@ -1,22 +1,34 @@
 document.addEventListener('keydown', function(e){
     if(!e.repeat){
-        if (e.key === 'w'){
-            console.log('Move forward')
-        }
-        if (e.key === 'a'){
-            console.log('Turn Left')
-        }
-        if (e.key === 'd'){
-            console.log('Turn right')
-        }
-        if (e.key === 's'){
-            console.log('Move backwards')
-        }
-        if (e.key === 'w' && e.shiftKey){
+        key = e.key.toLowerCase()
+        if (key === 'w' && e.shiftKey){
             console.log('Move forward fast')
+            new_ajax_helper('/moveforward');
         }
-        if (e.key === 's' && e.shiftKey){
+        else if (key === 's' && e.shiftKey){
             console.log('Move backward fast')
+            new_ajax_helper('/movebackwards');
         }
+        else if (key === 'w'){
+            console.log('Move forward')
+            new_ajax_helper('/moveforwardslowly');
+        }
+        else if (key === 'a'){
+            console.log('Turn Left')
+            new_ajax_helper('/turnleft');
+        }
+        else if (key === 'd'){
+            console.log('Turn right')
+            new_ajax_helper('/turnright');
+        }
+        else if (key === 's'){
+            console.log('Move backwards')
+            new_ajax_helper('/movebackwardsslowly');
+        }
+        
     }
+})
+
+document.addEventListener('keyup', function(e){
+    new_ajax_helper('/stop');
 })
