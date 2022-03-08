@@ -38,7 +38,7 @@ document.addEventListener('keydown', function(e){
 
 document.addEventListener('keyup', function(e){
     key = e.key.toLowerCase()
-    if (e !== 'o' && e !== 'l'){
+    if (key !== 'o' && key !== 'l'){
         console.log('stop')
     new_ajax_helper('/stop');
     }
