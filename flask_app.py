@@ -151,6 +151,20 @@ def turnleft():
         GLOBALS.ROBOT.rotate_power(25)
     return jsonify(data)
 
+@app.route('/turnleftslow', methods=['GET','POST'])
+def turnleftslow():
+    data = {}
+    if GLOBALS.ROBOT:
+        GLOBALS.ROBOT.rotate_power(10)
+    return jsonify(data)
+
+@app.route('/turnrightslow', methods=['GET','POST'])
+def turnrightslow():
+    data = {}
+    if GLOBALS.ROBOT:
+        GLOBALS.ROBOT.rotate_power(-10)
+    return jsonify(data)
+
 @app.route('/turnleft90', methods=['GET','POST'])
 def turnleft90():
     data1 = {}
