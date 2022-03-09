@@ -2,7 +2,8 @@ from flask import Flask, render_template, session, request, redirect, flash, url
 from interfaces import databaseinterface, camerainterface, soundinterface
 import robot #robot is class that extends the brickpi class
 import global_vars as GLOBALS #load global variables
-import logging, time
+import logging, time 
+from datetime import *
 
 #Creates the Flask Server Object
 app = Flask(__name__); app.debug = True
@@ -38,7 +39,6 @@ def login():
         else:
             message = "Login Unsuccessful"
     return render_template('login.html', data = message)    
-
 # Load the ROBOT
 @app.route('/robotload', methods=['GET','POST'])
 def robotload():
@@ -63,7 +63,6 @@ def robotload():
         GLOBALS.SOUND.say("I am ready")
     sensordict = GLOBALS.ROBOT.get_all_sensors()
     return jsonify(sensordict)
-
 # ---------------------------------------------------------------------------------------
 # Dashboard
 @app.route('/dashboard', methods=['GET','POST'])
@@ -215,13 +214,16 @@ def sensorview():
 @app.route('/mission', methods=['GET','POST'])
 def mission():
     data = None
-    #if request method is post
-        #get form data
-        #insert form data into mission
-        #selecet the mission id and save it ito my session
-    #if form data
-    #get form data
-    #save data to database
+    if request.method =="POST":
+        userid = session['userid']
+        notes = request.form.get('notes')
+        location = request.form.get('location')
+        starttime = datetime.now()
+        log("FLASK_APP: mission: " + str(location) + " " + str(notes) + " " + str(starttime))
+        GLOBALS.DATABASE.ModifyQuery("INSERT INTO missions (location, notes, userid) VALUES (?,?,?)",(location,notes,userid))
+        #put start in
+        #Get the current mission id and save it into session ['missionid']
+        # Get mission history and send to the page
     return render_template("mission.html")
 
 
