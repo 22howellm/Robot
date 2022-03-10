@@ -60,7 +60,7 @@ def robotload():
     if not GLOBALS.SOUND:
         log("FLASK APP: LOADING THE SOUND")
         GLOBALS.SOUND = soundinterface.SoundInterface()
-        GLOBALS.SOUND.say("I am ready")
+        #GLOBALS.SOUND.say("I am ready")
     sensordict = GLOBALS.ROBOT.get_all_sensors()
     return jsonify(sensordict)
 # ---------------------------------------------------------------------------------------
