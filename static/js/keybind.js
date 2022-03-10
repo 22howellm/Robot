@@ -4,6 +4,7 @@ document.addEventListener('keydown', function(e){
     if(!e.repeat){
         key = e.key.toLowerCase()
         if (e.shiftKey){
+            console.log('speed')
             if (sport === false){
             let sport = true
             }
@@ -11,7 +12,7 @@ document.addEventListener('keydown', function(e){
                 let sport = false
             }
         }
-        if (key === 'w' && sport === true){
+        else if (key === 'w' && sport === true){
             console.log('Move forward fast')
             new_ajax_helper('/moveforward');
         }
