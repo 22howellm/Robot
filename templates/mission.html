@@ -5,8 +5,10 @@
             <h1>mission</h1>
             <form action="/mission" method="POST">
                 <label>Medic on Duty:</label><br>
-                <input type="text" id="medic" name="Medic" value="{{session[username]}}"><br>
-                <label>Medical notes:</label><br>
+                <input type="text" id="medic" name="Medic" value="{{session['username']}}"><br>
+                <label>location:</label><br>
+                <input type="text" id="notes" name="location" value=""><br><br>
+                <label>Notes:</label><br>
                 <input type="text" id="notes" name="notes" value=""><br><br>
                 <input type="submit" value="Submit">
               </form>               
