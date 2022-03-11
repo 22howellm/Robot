@@ -9,6 +9,16 @@ import global_vars as GLOBALS #load global variables
 import logging, time 
 from datetime import *
 
+def session_init_time():
+    session['time_init'] == time.time()
+    return
+
+def session_clear(duration):
+    session_cleared = False
+    if float(time.time()) - float(session['time_init']) > duration:
+        session.clear()
+        session_cleared = True
+    return session_cleared
 #Creates the Flask Server Object
 app = Flask(__name__); app.debug = True
 SECRET_KEY = 'my random key can be anything' #this is used for encrypting sessions
@@ -24,6 +34,8 @@ def log(message):
 #create a login page
 @app.route('/', methods=['GET','POST'])
 def login():
+    if not 'loggingattempt' in session:
+        session['loggingattempt'] = 1
     if 'userid' in session:
         return redirect('/dashboard')
     message = ""
@@ -33,7 +45,7 @@ def login():
         log(userdetails)
         if userdetails:
             user = userdetails[0] #get first row in results
-            if user['password'] == request.form.get("password"):
+            if (user['password'] == request.form.get("password") and loggingattempt < 100):
                 session['password'] = user['password']
                 session['userid'] = user['userid']
                 session['permission'] = user['permission']
@@ -41,6 +53,7 @@ def login():
                 return redirect('/dashboard')
             else:
                 message = "Login Unsuccessful"
+                session['loggingattempt'] += 1
         else:
             message = "Login Unsuccessful"
     return render_template('login.html', data = message)    
@@ -78,7 +91,7 @@ def passwordsecure():
         return redirect('/')
     userdetails = GLOBALS.DATABASE.ViewQuery("SELECT * FROM users WHERE userid = ?", (session['userid'],))
     if not 'password' in session:
-        session.clear
+        session.clear()
         return redirect('/')
     password = session['password']
     password2 = userdetails[0]['password']
