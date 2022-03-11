@@ -1,4 +1,3 @@
-let active = true
 let sport = false
 
 document.addEventListener('keydown', function(e){
