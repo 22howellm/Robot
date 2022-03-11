@@ -1,6 +1,10 @@
 from flask import Flask, render_template, session, request, redirect, flash, url_for, jsonify, Response, logging
-from interfaces import databaseinterface#, camerainterface, soundinterface
-#import robot #robot is class that extends the brickpi class
+from interfaces import databaseinterface
+try:
+    from interfaces import camerainterface, soundinterface
+    import robot #robot is class that extends the brickpi class
+except:
+    pass
 import global_vars as GLOBALS #load global variables
 import logging, time 
 from datetime import *
@@ -53,11 +57,14 @@ def robotload():
             GLOBALS.CAMERA = None
         if GLOBALS.CAMERA:
             GLOBALS.CAMERA.start()
-    if not GLOBALS.ROBOT: 
-        log("FLASK APP: LOADING THE ROBOT")
-        GLOBALS.ROBOT = robot.Robot(20, app.logger)
-        GLOBALS.ROBOT.configure_sensors() #defaults have been provided but you can 
-        GLOBALS.ROBOT.reconfig_IMU()
+    if not GLOBALS.ROBOT:
+        try: 
+            log("FLASK APP: LOADING THE ROBOT")
+            GLOBALS.ROBOT = robot.Robot(20, app.logger)
+            GLOBALS.ROBOT.configure_sensors() #defaults have been provided but you can 
+            GLOBALS.ROBOT.reconfig_IMU()
+        except:
+            print('Error found with loading robot (approx line 60)')
     if not GLOBALS.SOUND:
         log("FLASK APP: LOADING THE SOUND")
         GLOBALS.SOUND = soundinterface.SoundInterface()
@@ -65,21 +72,25 @@ def robotload():
     sensordict = GLOBALS.ROBOT.get_all_sensors()
     return jsonify(sensordict)
 # ---------------------------------------------------------------------------------------
-# Dashboard
-@app.route('/dashboard', methods=['GET','POST'])
-def robotdashboard():
-    userid = session['userid']
-    userdetails = GLOBALS.DATABASE.ViewQuery("SELECT * FROM users WHERE userid = ?", (userid,))
+#My functions
+def passwordsecure():
     if not 'userid' in session:
         return redirect('/')
+    userdetails = GLOBALS.DATABASE.ViewQuery("SELECT * FROM users WHERE userid = ?", (session['userid'],))
+    if not 'password' in session:
+        session.clear
+        return redirect('/')
     password = session['password']
-    log("look for me: " + password)
-    log(userdetails)
     password2 = userdetails[0]['password']
-    log("look for me2: " + password2)
     if password2 != password:
         session.clear()
         return redirect('/')
+
+
+# Dashboard
+@app.route('/dashboard', methods=['GET','POST'])
+def robotdashboard():
+    passwordsecure()
     enabled = int(GLOBALS.ROBOT != None)
     return render_template('dashboard.html', robot_enabled = enabled )
 
@@ -218,6 +229,7 @@ def stop():
 #sensor view
 @app.route('/sensorview', methods=['GET','POST'])
 def sensorview():
+    passwordsecure()
     data = None
     return render_template("sensorview.html")
 
@@ -225,6 +237,7 @@ def sensorview():
 @app.route('/mission', methods=['GET','POST'])
 def mission():
     data = None
+    passwordsecure()
     if request.method =="POST":
         userid = session['userid']
         notes = request.form.get('notes')
