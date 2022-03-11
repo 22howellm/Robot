@@ -1,6 +1,6 @@
 from flask import Flask, render_template, session, request, redirect, flash, url_for, jsonify, Response, logging
-from interfaces import databaseinterface, camerainterface, soundinterface
-import robot #robot is class that extends the brickpi class
+from interfaces import databaseinterface#, camerainterface, soundinterface
+#import robot #robot is class that extends the brickpi class
 import global_vars as GLOBALS #load global variables
 import logging, time 
 from datetime import *
@@ -30,6 +30,7 @@ def login():
         if userdetails:
             user = userdetails[0] #get first row in results
             if user['password'] == request.form.get("password"):
+                session['password'] = user['password']
                 session['userid'] = user['userid']
                 session['permission'] = user['permission']
                 session['name'] = user['name']
@@ -67,7 +68,17 @@ def robotload():
 # Dashboard
 @app.route('/dashboard', methods=['GET','POST'])
 def robotdashboard():
+    userid = session['userid']
+    userdetails = GLOBALS.DATABASE.ViewQuery("SELECT * FROM users WHERE userid = ?", (userid,))
     if not 'userid' in session:
+        return redirect('/')
+    password = session['password']
+    log("look for me: " + password)
+    log(userdetails)
+    password2 = userdetails[0]['password']
+    log("look for me2: " + password2)
+    if password2 != password:
+        session.clear()
         return redirect('/')
     enabled = int(GLOBALS.ROBOT != None)
     return render_template('dashboard.html', robot_enabled = enabled )
