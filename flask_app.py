@@ -45,7 +45,7 @@ def login():
         log(userdetails)
         if userdetails:
             user = userdetails[0] #get first row in results
-            if (user['password'] == request.form.get("password") and loggingattempt < 100):
+            if (user['password'] == request.form.get("password") and session['loggingattempt'] < 100):
                 session['password'] = user['password']
                 session['userid'] = user['userid']
                 session['permission'] = user['permission']
