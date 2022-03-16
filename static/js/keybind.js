@@ -7,9 +7,11 @@ document.addEventListener('keydown', function(e){
             console.log('speed')
             if (sport === false){
             let sport = true
+            console.log('true')
             }
             else {
                 let sport = false
+                console.log('false')
             }
         }
         else if (key === 'w' && sport === true){

@@ -35,7 +35,7 @@ def log(message):
 @app.route('/', methods=['GET','POST'])
 def login():
     if not 'loggingattempt' in session:
-        session['loggingattempt'] = 1
+        session['loggingattempt'] = 0
     if 'userid' in session:
         return redirect('/dashboard')
     message = ""
@@ -45,7 +45,7 @@ def login():
         log(userdetails)
         if userdetails:
             user = userdetails[0] #get first row in results
-            if (user['password'] == request.form.get("password") and loggingattempt < 100):
+            if (user['password'] == request.form.get("password") and session['loggingattempt'] < 100):
                 session['password'] = user['password']
                 session['userid'] = user['userid']
                 session['permission'] = user['permission']
