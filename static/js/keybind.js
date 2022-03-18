@@ -1,4 +1,3 @@
-
 var sport = true;
 
 document.addEventListener('keydown', function(e){
@@ -51,15 +50,16 @@ document.addEventListener('keydown', function(e){
                 console.log('Move backwards')
                 new_ajax_helper('/movebackwardsslow');
             }
-            else if (key === 'o'){
-                console.log('shoot')
-                new_ajax_helper('/shoot');
-            }
-            else if (key === 'l'){
-                console.log('shoot')
-                new_ajax_helper('/shoot');
-            }
-    }
+        }
+        if (key === 'o'){
+            console.log('shoot')
+            new_ajax_helper('/shoot');
+        }
+        else if (key === 'l'){
+            console.log('shoot')
+            new_ajax_helper('/shoot');
+        }
+    
     }
 })
 
