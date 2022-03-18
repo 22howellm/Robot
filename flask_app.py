@@ -227,7 +227,6 @@ def turnright90():
 
 @app.route('/turnright', methods=['GET','POST'])
 def turnright():
-    #change
     data = {}
     if GLOBALS.ROBOT:
         GLOBALS.ROBOT.rotate_power(-25)
