@@ -3,15 +3,11 @@ var sport = true;
 document.addEventListener('keydown', function(e){
     if(!e.repeat){
         key = e.key.toLowerCase()
-        console.log('working4')
         if (key === 'p'){
-            console.log('speed')
             if (sport == false){
-                console.log('true');
                 sport = true;
             }
             else if (sport == true) {
-                console.log('false');
                 sport = false;
             }
         }
