@@ -1,17 +1,19 @@
-let sport = false
+if (!(sport)){
+    let sport = true
+    console.log('working')
+}
 
 document.addEventListener('keydown', function(e){
     if(!e.repeat){
         key = e.key.toLowerCase()
         if (e.shiftKey){
             console.log('speed')
-            if (sport === false){
-            let sport = true
-            console.log('true')
+            if (sport == false){
+                console.log('true')
+                let sport = true
             }
-            else {
+            else if (sport == true) {
                 let sport = false
-                console.log('false')
             }
         }
         else if (key === 'w' && sport === true){
