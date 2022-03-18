@@ -379,7 +379,7 @@ class BrickPiInterface():
 
     #--------------MOTOR COMMANDS-----------------#
     #simply turns motors on, dangerous because it does not turn them off
-    def move_power(self, power, deviation=0):
+    def move_power(self, power, deviation):
         self.interrupt_previous_command()
         bp = self.BP
         self.CurrentCommand = "move_power"
