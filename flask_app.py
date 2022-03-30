@@ -99,7 +99,6 @@ def passwordsecure():
         session.clear()
         return redirect('/')
 
-
 # Dashboard
 @app.route('/dashboard', methods=['GET','POST'])
 def robotdashboard():
@@ -198,32 +197,6 @@ def turnrightslow():
     if GLOBALS.ROBOT:
         GLOBALS.ROBOT.rotate_power(-10)
     return jsonify(data)
-
-@app.route('/turnleft90', methods=['GET','POST'])
-def turnleft90():
-    data1 = {}
-    if GLOBALS.ROBOT:
-        data1 = GLOBALS.ROBOT.get_all_sensors()
-        heading = data1['compass']
-        newheading = heading + 90
-        if newheading < 0:
-            newheading = -newheading
-        print(str(heading) + ':' + str(newheading))
-        GLOBALS.ROBOT.rotate_power_heading_IMU(20,newheading)
-    return jsonify(data1)
-
-@app.route('/turnright90', methods=['GET','POST'])
-def turnright90():
-    data1 = {}
-    if GLOBALS.ROBOT:
-        data1 = GLOBALS.ROBOT.get_all_sensors()
-        heading = data1['compass']
-        newheading = heading - 90
-        if newheading < 0:
-            newheading = -newheading
-        print(str(heading) + ':' + str(newheading))
-        GLOBALS.ROBOT.rotate_power_heading_IMU(20,newheading)
-    return jsonify(data1)
 
 @app.route('/turnright', methods=['GET','POST'])
 def turnright():
