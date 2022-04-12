@@ -156,31 +156,42 @@ def moveforward():
     data = {}
     if GLOBALS.ROBOT:
         #GLOBALS.SOUND.say("I am speed")
-        GLOBALS.ROBOT.move_power(50,-6)
+        GLOBALS.ROBOT.move_power(50,1.1)
     return jsonify(data)
-@app.route('/moveforwardslow', methods=['GET','POST'])
-def moveforwardslow():
-    data = {}
-    if GLOBALS.ROBOT:
-        GLOBALS.ROBOT.move_power(20,-1.7)
-    return jsonify(data)
+
 @app.route('/movebackwards', methods=['GET','POST'])
 def movebackwards():
     data = {}
     if GLOBALS.ROBOT:
-        GLOBALS.ROBOT.move_power(-50,-1.7)
+        GLOBALS.ROBOT.move_power(-50,1.1)
     return jsonify(data)
+
+@app.route('/moveforwardslow', methods=['GET','POST'])
+def moveforwardslow():
+    data = {}
+    if GLOBALS.ROBOT:
+        GLOBALS.ROBOT.move_power(20,1.9)
+    return jsonify(data)
+
 @app.route('/movebackwardsslow', methods=['GET','POST'])
 def movebackwardsslow():
     data = {}
     if GLOBALS.ROBOT:
-        GLOBALS.ROBOT.move_power(-20,-1.7)
+        GLOBALS.ROBOT.move_power(-20,-1.9)
     return jsonify(data)
+
 @app.route('/turnleft', methods=['GET','POST'])
 def turnleft():
     data = {}
     if GLOBALS.ROBOT:
         GLOBALS.ROBOT.rotate_power(-25)
+    return jsonify(data)
+
+@app.route('/turnright', methods=['GET','POST'])
+def turnright():
+    data = {}
+    if GLOBALS.ROBOT:
+        GLOBALS.ROBOT.rotate_power(25)
     return jsonify(data)
 
 @app.route('/turnleftslow', methods=['GET','POST'])
@@ -195,13 +206,6 @@ def turnrightslow():
     data = {}
     if GLOBALS.ROBOT:
         GLOBALS.ROBOT.rotate_power(10)
-    return jsonify(data)
-
-@app.route('/turnright', methods=['GET','POST'])
-def turnright():
-    data = {}
-    if GLOBALS.ROBOT:
-        GLOBALS.ROBOT.rotate_power(25)
     return jsonify(data)
 
 @app.route('/stop', methods=['GET','POST'])

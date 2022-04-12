@@ -1,4 +1,4 @@
-var sport = true;
+var sport = false;
 
 document.addEventListener('keydown', function(e){
     if(!e.repeat){
