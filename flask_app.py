@@ -156,9 +156,8 @@ def moveforward():
     data = {}
     if GLOBALS.ROBOT:
         #GLOBALS.SOUND.say("I am speed")
-        GLOBALS.ROBOT.move_power(50,-1.6)
+        GLOBALS.ROBOT.move_power(50,-6)
     return jsonify(data)
-
 @app.route('/moveforwardslow', methods=['GET','POST'])
 def moveforwardslow():
     data = {}
