@@ -224,7 +224,7 @@ def sensorview():
         data = GLOBALS.ROBOT.get_all_sensors()
     else:
         redirect('/dashboard')
-    return render_template("sensorview.html")
+    return render_template("sensorview.html", data = data)
 
 #mission view page allows the medic manager to create a mission and save data around that mission
 @app.route('/mission', methods=['GET','POST'])
