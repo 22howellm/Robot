@@ -96,3 +96,51 @@ INFO:werkzeug:10.10.73.79 - - [31/Mar/2022 09:53:27] "[36mGET /static/css/theme
 INFO:werkzeug:10.10.73.79 - - [31/Mar/2022 09:53:27] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
 INFO:werkzeug:10.10.73.79 - - [31/Mar/2022 09:53:27] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
 INFO:werkzeug:10.10.73.79 - - [31/Mar/2022 09:53:27] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 990-007-110
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.122:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:192.168.1.122 - - [01/Apr/2022 16:55:16] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.122 - - [01/Apr/2022 16:55:17] "GET /static/js/custom.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.122 - - [01/Apr/2022 16:55:17] "GET /static/css/custom.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.122 - - [01/Apr/2022 16:55:17] "GET /static/css/theme.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.122 - - [01/Apr/2022 16:55:17] "GET /static/js/new_ajax_helper.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.122 - - [01/Apr/2022 16:55:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:flask_app:[{'userid': 1, 'name': 'admin', 'email': 'admin@admin', 'password': 'BulletsUntilItsFixed', 'permission': 'admin'}]
+INFO:werkzeug:192.168.1.122 - - [01/Apr/2022 16:55:33] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.1.122 - - [01/Apr/2022 16:55:33] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.122 - - [01/Apr/2022 16:55:33] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.122 - - [01/Apr/2022 16:55:33] "GET /static/js/mapping.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.122 - - [01/Apr/2022 16:55:33] "GET /static/js/dashboard.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.122 - - [01/Apr/2022 16:55:33] "GET /static/js/keybind.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.122 - - [01/Apr/2022 16:55:33] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.122 - - [01/Apr/2022 16:55:33] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.122 - - [01/Apr/2022 16:55:33] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.122 - - [01/Apr/2022 16:55:37] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.122 - - [01/Apr/2022 16:55:37] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.122 - - [01/Apr/2022 16:55:37] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.122 - - [01/Apr/2022 16:55:37] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.122 - - [01/Apr/2022 16:55:37] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.122 - - [01/Apr/2022 16:55:37] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.122 - - [01/Apr/2022 16:55:37] "[36mGET /static/js/mapping.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.122 - - [01/Apr/2022 16:55:37] "[36mGET /static/js/keybind.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.122 - - [01/Apr/2022 16:55:39] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.122 - - [01/Apr/2022 16:55:39] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.122 - - [01/Apr/2022 16:55:39] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.122 - - [01/Apr/2022 16:55:39] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.122 - - [01/Apr/2022 16:55:39] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 990-007-110
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.122:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\OneDrive\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 990-007-110
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.122:5000/ (Press CTRL+C to quit)
