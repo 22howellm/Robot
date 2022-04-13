@@ -167,7 +167,7 @@ def shoot():
 def turn90():
     data = {}
     if GLOBALS.ROBOT:
-        GLOBALS.ROBOT.rotate_power_degrees_IMU(20,90,1)
+        GLOBALS.ROBOT.rotate_power_degrees_IMU(20,90,4)
     return jsonify(data)
 
 @app.route('/moveforward', methods=['GET','POST'])
