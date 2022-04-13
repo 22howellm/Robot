@@ -131,6 +131,18 @@ def sensors():
     return jsonify(data)
 
 # YOUR FLASK CODE------------------------------------------------------------------------
+@app.route('/automatic_mode')
+def automatic_mode():
+    data = {}
+    if request.method == 'Post':
+        if GLOBALS.ROBOT:
+            #
+            return jsonify(data)
+        else:
+            print("Robot not here")
+    else:
+        redirect('/dashboard')
+    return jsonify(data)
 @app.route('/lob', methods=['GET','POST'])
 def lob():
     data = {}
@@ -149,6 +161,13 @@ def shoot():
         GLOBALS.ROBOT.spin_medium_motor(-555)
         GLOBALS.SOUND.say("reloading")
         GLOBALS.ROBOT.spin_medium_motor(-555)
+    return jsonify(data)
+
+@app.route('/turn90', methods=['GET','POST'])
+def turn90():
+    data = {}
+    if GLOBALS.ROBOT:
+        GLOBALS.ROBOT.rotate_power_degrees_IMU(20,90,1.8)
     return jsonify(data)
 
 @app.route('/moveforward', methods=['GET','POST'])

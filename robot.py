@@ -26,11 +26,6 @@ class Robot(BrickPiInterface):
     
     #Create a routine that will effective search the maze and keep track of where the robot has been.
 
-
-
-
-
-
 # Only execute if this is the main file, good for testing code
 if __name__ == '__main__':
     logging.basicConfig(filename='logs/robot.log', level=logging.INFO)
