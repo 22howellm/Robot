@@ -40,7 +40,7 @@ document.addEventListener('keydown', function(e){
             }
             else if (key === 'w'){
                 console.log('Move forward')
-                new_ajax_helper('/moveforwardslow');
+                new_ajax_helper('/moveforwardslow', mapforward);
             }
             else if (key === 's'){
                 console.log('Move backwards')

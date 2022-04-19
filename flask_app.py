@@ -131,6 +131,8 @@ def sensors():
     return jsonify(data)
 
 # YOUR FLASK CODE------------------------------------------------------------------------
+th_heading = 0
+
 @app.route('/automatic_mode')
 def automatic_mode():
     data = {}
@@ -143,6 +145,10 @@ def automatic_mode():
     else:
         redirect('/dashboard')
     return jsonify(data)
+
+
+
+
 @app.route('/lob', methods=['GET','POST'])
 def lob():
     data = {}
@@ -168,13 +174,15 @@ def turn90():
     data = {}
     if GLOBALS.ROBOT:
         GLOBALS.ROBOT.rotate_power_degrees_IMU(10,90,-0.6)
+        th_heading += 90
+        if th_heading >= 360:
+            th_heading = 0
     return jsonify(data)
 
 @app.route('/moveforward', methods=['GET','POST'])
 def moveforward():
     data = {}
     if GLOBALS.ROBOT:
-        #GLOBALS.SOUND.say("I am speed")
         GLOBALS.ROBOT.move_power(50,1.1)
     return jsonify(data)
 
@@ -189,7 +197,8 @@ def movebackwards():
 def moveforwardslow():
     data = {}
     if GLOBALS.ROBOT:
-        GLOBALS.ROBOT.move_power(20,1.9)
+        data['elapsedtime'] = GLOBALS.ROBOT.move_power(20,1.9)
+        data['heading'] = GLOBALS.ROBOT.get_compass_IMU()
     return jsonify(data)
 
 @app.route('/movebackwardsslow', methods=['GET','POST'])

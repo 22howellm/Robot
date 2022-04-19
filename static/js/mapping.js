@@ -30,7 +30,8 @@ function drawmap() {
 //function is called fter the forward button has been pressed`
 function mapforward()
 {
-   console.log(results);
+   turtle.lookTo(results.heading);
+   turtle.forward(results.elapsedtime*20);
 }
 
 load_map();
