@@ -27,6 +27,10 @@ function drawmap() {
        setTimeout(drawmap, 20); 
    }
 }
+//function is called fter the forward button has been pressed`
+function mapforward()
+{
+   console.log(results);
+}
 
 load_map();
-drawmap();

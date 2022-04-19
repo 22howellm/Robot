@@ -196,7 +196,8 @@ def moveforwardslow():
 def movebackwardsslow():
     data = {}
     if GLOBALS.ROBOT:
-        GLOBALS.ROBOT.move_power(-20,-1.9)
+        data['elapsedtime'] = GLOBALS.ROBOT.move_power(-20,-1.9)
+        data['heading'] = GLOBALS.ROBOT.get_compass_IMU()
     return jsonify(data)
 
 @app.route('/turnleft', methods=['GET','POST'])
