@@ -131,31 +131,12 @@ def sensors():
     return jsonify(data)
 
 # YOUR FLASK CODE------------------------------------------------------------------------
-th_heading = 0
-
-@app.route('/automatic_mode')
-def automatic_mode():
-    data = {}
-    if request.method == 'Post':
-        if GLOBALS.ROBOT:
-            #
-            return jsonify(data)
-        else:
-            print("Robot not here")
-    else:
-        redirect('/dashboard')
-    return jsonify(data)
-
-
-
 
 @app.route('/lob', methods=['GET','POST'])
 def lob():
     data = {}
     if GLOBALS.ROBOT:
-        GLOBALS.SOUND.say("blood for the blood god")
         GLOBALS.ROBOT.spin_medium_motor(555)
-        GLOBALS.SOUND.say("reloading")
         GLOBALS.ROBOT.spin_medium_motor(555)
     return jsonify(data)
 
@@ -163,9 +144,7 @@ def lob():
 def shoot():
     data = {}
     if GLOBALS.ROBOT:
-        GLOBALS.SOUND.say("Firing")
         GLOBALS.ROBOT.spin_medium_motor(-555)
-        GLOBALS.SOUND.say("reloading")
         GLOBALS.ROBOT.spin_medium_motor(-555)
     return jsonify(data)
 
@@ -271,6 +250,77 @@ def mission():
         #Get the current mission id and save it into session ['missionid']
         # Get mission history and send to the page
     return render_template("mission.html")
+
+#Automatic search code ------------------------------------------------------------------------------------------------------------------------
+#theoretical heading
+th_heading = 0
+
+
+#automatic mode when turned on will automatically search the area
+@app.route('/automatic_mode')
+def automatic_mode():
+    opposite = {0:180,180:0,90:270,270:90}
+    currenttile = 0
+    data = {}
+    known_area = {}
+    immediate_area = {0:null,90:null,180:null,270:null}
+    if GLOBALS.ROBOT:
+        while true:
+            
+            openings = 0
+            if th_heading != 0:
+                while th_heading != 0:
+                    turn90()
+                    th_heading += 90
+            for i in immediate_area:
+                distance = GLOBALS.ROBOT.get_ultra_sensor()
+                if distance > 42:
+                    #if it detects a something between and 42 cm in front of it its assumes it is a wall
+                    if not immediate_area[i]:
+                        immediate_area[i] = unexplored
+                    else:
+                        pass
+                    openings += 1
+                else:
+                    immediate_area[i] = walled
+                    #search for image, search if there is a wall so it only helps a victim if it is near.
+                turn90()
+                th_heading += 90
+            known_area += currenttile
+            for i in immediate_area:
+                if immediate_area[i] == "walled":
+                    pass
+                elif immediate_area[i] == unexplored:
+                    original_distance = GLOBALS.ROBOT.get_ultra_sensor
+                    current_distance = GLOBALS.ROBOT.get_ultra_sensor
+                    while original_distance - current_distance < 42:
+                        moveforwardslow()
+                    #fix later
+                    break
+                else:
+                    currenttile = immediate_area[i]
+                    immediate_area = known_area[currenttile]
+                    #move forward
+                    break
+                turn90()
+                th_heading += 90
+            
+    return jsonify(data)   
+
+
+
+
+#code previously suggested, no longer valid buy kept in case
+    """if request.method == 'Post':
+        if GLOBALS.ROBOT:
+            #
+            return jsonify(data)
+        else:
+            print("Robot not here")
+    else:
+        redirect('/dashboard')
+    return jsonify(data)
+"""
 
 
 
