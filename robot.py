@@ -23,9 +23,8 @@ class Robot(BrickPiInterface):
             bp.set_motor_power(self.rightmotor, power)
             bp.set_motor_power(self.leftmotor, power + deviation)
         return
-    
     def turn90_robot(self):
-        self.rotate_power_degrees_IMU(10,90,-0.6)
+        self.rotate_power_degrees_IMU(10,90,1.9) #-0.6
         return
 
     #Create a function to search for victim
@@ -41,7 +40,6 @@ class Robot(BrickPiInterface):
         data = {}
         known_area = {}
         immediate_area = {0:None,90:None,180:None,270:None}
-        self.turn90_robot()
         while self.CurrentRoutine == "automated search":
             print("GOT HERE")
             openings = 0
@@ -54,7 +52,7 @@ class Robot(BrickPiInterface):
             for i in immediate_area:
                 print('working2')
                 distance = self.get_ultra_sensor()
-                if distance > 42:
+                if distance > 27:
                     #if it detects a something between and 42 cm in front of it its assumes it is a wall
                     if immediate_area[i] == None:
                         immediate_area[i] = 'unexplored'
@@ -74,26 +72,26 @@ class Robot(BrickPiInterface):
                 known_area[currenttile] = ('completely_explored')
             else:
                 known_area[currenttile] = ('partly_explored')
+            navigate = False
             for i in immediate_area:
-                if immediate_area[i] == "walled":
-                    pass
-                elif immediate_area[i] == 'unexplored':
-                    self.move_forward_check()
-                    currenttile += 1
-                else:
-                    currenttile = immediate_area[i]
-                    immediate_area = known_area[currenttile]
-                    self.move_forward_check()
-                    break
-                self.turn90_robot()
-                th_heading += 90
-                if th_heading >= 360:
-                    th_heading = 0
-            break
+                if navigate == False:
+                    if immediate_area[i] == "walled":
+                        pass
+                    elif immediate_area[i] == 'unexplored':
+                        self.move_forward_check()
+                        currenttile += 1
+                        navigate = True
+                    else:
+                        currenttile = immediate_area[i]
+                        immediate_area = known_area[currenttile]
+                        self.move_forward_check()
+                        navigate = True
+                    if navigate == False:
+                        self.turn90_robot()
+                        th_heading += 90
+                        if th_heading >= 360:
+                            th_heading = 0
         return
-
-
-
 # Only execute if this is the main file, good for testing code
 if __name__ == '__main__':
     logging.basicConfig(filename='logs/robot.log', level=logging.INFO)
