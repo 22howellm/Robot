@@ -393,6 +393,20 @@ class BrickPiInterface():
         self.stop_all()
         return elapsedtime
 
+    def move_power_auto(self, power, deviation):
+        self.interrupt_previous_command()
+        bp = self.BP
+        self.CurrentCommand = "move_power"
+        starttime = time.time()
+        timelimit = starttime + self.timelimit
+        bp.set_motor_power(self.rightmotor, power)
+        bp.set_motor_power(self.leftmotor, power + deviation)
+        while ((time.time() < timelimit) and (self.CurrentCommand == "move_power")):
+            continue
+        elapsedtime = time.time() - starttime
+        self.stop_all()
+        return elapsedtime
+
     #moves for the specified time (seconds) and power - use negative power to reverse
     def move_power_time(self, power, t, deviation=0):
         self.interrupt_previous_command()
