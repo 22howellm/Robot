@@ -256,6 +256,7 @@ def mission():
 #automatic mode when turned on will automatically search the area
 @app.route('/automatic_mode')
 def automatic_mode():
+    data = []
     if request.method == 'Post':
         if GLOBALS.ROBOT:
             robot.automatic_search()
