@@ -19,7 +19,9 @@ class Robot(BrickPiInterface):
         start_time = time.time()
         init_dist = self.get_ultra_sensor()
         bp = self.BP
-        while (init_dist - self.get_ultra_sensor() < move_dist):
+        while (init_dist - self.get_ultra_sensor()
+         <= move_dist):
+            print('total: ' + str(init_dist - self.get_ultra_sensor()) + '   initial: ' + str(init_dist) + 'current: ' + str(self.get_ultra_sensor()))
             bp.set_motor_power(self.rightmotor, power)
             bp.set_motor_power(self.leftmotor, power + deviation)
         return
