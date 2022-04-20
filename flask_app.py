@@ -221,6 +221,7 @@ def stop():
     data = {}
     if GLOBALS.ROBOT:
         GLOBALS.ROBOT.stop_all()
+        GLOBALS.ROBOT.CurrentRoutine = "stop"
     return jsonify(data)
 
 #sensor view
@@ -257,9 +258,9 @@ def mission():
 @app.route('/automatic_mode')
 def automatic_mode():
     data = []
-    if request.method == 'Post':
+    if request.method == 'POST':
         if GLOBALS.ROBOT:
-            robot.automatic_search()
+            GLOBALS.ROBOT.automatic_search()
             return jsonify(data)
         else:
             print("Robot not here")

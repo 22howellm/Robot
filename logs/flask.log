@@ -24,3 +24,185 @@ INFO:werkzeug: * Detected change in '/home/pi/Desktop/Robot/flask_app.py', reloa
 INFO:werkzeug: * Restarting with stat
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 759-383-341
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 759-383-341
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 12:59:34] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 12:59:34] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:FLASK APP: LOADING THE ROBOT
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 12:59:38] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:FLASK APP: READING CAMERA
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 12:59:39] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 12:59:41] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:FLASK APP: READING CAMERA
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 12:59:41] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:FLASK APP: LOADING THE SOUND
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 12:59:42] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 12:59:43] "[31m[1mPOST /automatic_mode HTTP/1.1[0m" 405 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/Robot/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 759-383-341
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/Robot/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 759-383-341
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:00:41] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:FLASK APP: LOADING THE ROBOT
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:00:43] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:FLASK APP: READING CAMERA
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:00:44] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:00:44] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:FLASK APP: READING CAMERA
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:00:45] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:00:45] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:FLASK APP: READING CAMERA
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:00:46] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:00:46] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:FLASK APP: LOADING THE SOUND
+INFO:flask_app:FLASK APP: READING CAMERA
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:00:47] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:00:47] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:00:48] "[31m[1mPOST /automatic_mode HTTP/1.1[0m" 405 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:00:54] "[31m[1mPOST /automatic_mode HTTP/1.1[0m" 405 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:00:54] "[31m[1mPOST /automatic_mode HTTP/1.1[0m" 405 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/Robot/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 759-383-341
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:01:50] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:01:50] "[37mPOST /moveforwardslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:01:50] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:01:51] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:01:52] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:FLASK APP: LOADING THE ROBOT
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:01:53] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:FLASK APP: READING CAMERA
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:01:54] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:01:55] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:FLASK APP: READING CAMERA
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:01:55] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:01:55] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:FLASK APP: READING CAMERA
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:01:56] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:FLASK APP: LOADING THE SOUND
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:01:57] "[31m[1mPOST /automatic_mode HTTP/1.1[0m" 405 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:01:58] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/Robot/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 759-383-341
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:02:54] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:FLASK APP: LOADING THE ROBOT
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:02:57] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:FLASK APP: READING CAMERA
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:02:57] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:02:58] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:FLASK APP: READING CAMERA
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:02:58] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:03:00] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:FLASK APP: READING CAMERA
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:03:00] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:FLASK APP: LOADING THE SOUND
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:03:01] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:03:01] "[31m[1mPOST /automatic_mode HTTP/1.1[0m" 405 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/Robot/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 759-383-341
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:03:11] "[31m[1mPOST /automatic_mode HTTP/1.1[0m" 405 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:03:11] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:FLASK APP: LOADING THE ROBOT
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:03:13] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:FLASK APP: READING CAMERA
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:03:13] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:03:14] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:FLASK APP: READING CAMERA
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:03:14] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:03:15] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:FLASK APP: READING CAMERA
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:03:15] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:FLASK APP: LOADING THE SOUND
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:03:17] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:flask_app:IMU Acceleration: [Errno 5] Input/output error
+INFO:flask_app:IMU: [Errno 5] Input/output error
+INFO:flask_app:IMU: [Errno 5] Input/output error
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:03:17] "[37mPOST /moveforwardslow HTTP/1.1[0m" 200 -
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:03:17] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:03:18] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:03:18] "[37mPOST /movebackwardsslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:03:19] "[31m[1mPOST /automatic_mode HTTP/1.1[0m" 405 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:03:49] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:03:49] "[37mPOST /moveforwardslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:03:53] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:03:53] "[37mPOST /movebackwardsslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:04:06] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:04:06] "[37mPOST /moveforwardslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:04:08] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:04:08] "[37mPOST /turnleftslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:04:08] "[37mPOST /moveforwardslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:04:08] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:04:13] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:04:13] "[37mPOST /turnleftslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:04:14] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:04:14] "[37mPOST /moveforwardslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:04:15] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:04:15] "[37mPOST /moveforwardslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:04:20] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:04:20] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:04:21] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:04:21] "[37mPOST /turnleftslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:04:21] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:04:21] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 311-453-724
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:09:00] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:09:01] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:FLASK APP: LOADING THE ROBOT
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:09:03] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:FLASK APP: READING CAMERA
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:09:03] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:09:04] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:FLASK APP: READING CAMERA
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:09:04] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:09:04] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:FLASK APP: READING CAMERA
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:09:05] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:09:06] "[31m[1mPOST /automatic_mode HTTP/1.1[0m" 405 -
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:FLASK APP: LOADING THE SOUND
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:09:07] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:09:10] "[31m[1mPOST /automatic_mode HTTP/1.1[0m" 405 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:09:10] "[31m[1mPOST /automatic_mode HTTP/1.1[0m" 405 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:09:17] "[31m[1mPOST /automatic_mode HTTP/1.1[0m" 405 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:09:54] "[31m[1mPOST /automatic_mode HTTP/1.1[0m" 405 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:09:56] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:09:56] "[37mPOST /moveforwardslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:09:56] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:09:56] "[37mPOST /movebackwardsslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [20/Apr/2022 13:09:58] "[31m[1mPOST /automatic_mode HTTP/1.1[0m" 405 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/Robot/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 311-453-724

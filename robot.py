@@ -24,12 +24,8 @@ class Robot(BrickPiInterface):
             bp.set_motor_power(self.leftmotor, power + deviation)
         return
     
-    def turn90_robot():
-        if GLOBALS.ROBOT:
-            GLOBALS.ROBOT.rotate_power_degrees_IMU(10,90,-0.6)
-            th_heading += 90
-            if th_heading >= 360:
-                th_heading = 0
+    def turn90_robot(self):
+        self.rotate_power_degrees_IMU(10,90,-0.6)
         return
 
     #Create a function to search for victim
@@ -37,50 +33,63 @@ class Robot(BrickPiInterface):
     
     
     #Create a routine that will effective search the maze and keep track of where the robot has been.
-    def automatic_search():
+    def automatic_search(self):
+        self.CurrentRoutine = "automated search"
         th_heading = 0
         opposite = {0:180,180:0,90:270,270:90}
         currenttile = 0
         data = {}
         known_area = {}
-        immediate_area = {0:'null',90:'null',180:'null',270:'null'}
-        if GLOBALS.ROBOT:
-            while True:
-                openings = 0
-                if th_heading != 0:
-                    while th_heading != 0:
-                        Robot.turn90_robot()
-                        th_heading += 90
-                for i in immediate_area:
-                    distance = GLOBALS.ROBOT.get_ultra_sensor()
-                    if distance > 42:
-                        #if it detects a something between and 42 cm in front of it its assumes it is a wall
-                        if immediate_area[i] == 'null':
-                            immediate_area[i] = 'unexplored'
-                        elif immediate_area[i] == 'completely_explored':
-                            openings -= 1 
-                        else:
-                            pass
-                        openings += 1
-                    else:
-                        immediate_area[i] = 'walled'
-                        #search for image, search if there is a wall so it only helps a victim if it is near.
-                    Robot.turn90_robot()
+        immediate_area = {0:None,90:None,180:None,270:None}
+        self.turn90_robot()
+        while self.CurrentRoutine == "automated search":
+            print("GOT HERE")
+            openings = 0
+            if th_heading != 0:
+                while th_heading != 0:
+                    self.turn90_robot()
                     th_heading += 90
-                known_area += currenttile
-                for i in immediate_area:
-                    if immediate_area[i] == "walled":
+                    if th_heading >= 360:
+                        th_heading = 0
+            for i in immediate_area:
+                print('working2')
+                distance = self.get_ultra_sensor()
+                if distance > 42:
+                    #if it detects a something between and 42 cm in front of it its assumes it is a wall
+                    if immediate_area[i] == None:
+                        immediate_area[i] = 'unexplored'
+                    elif immediate_area[i] == 'completely_explored':
+                        openings -= 1 
+                    else:
                         pass
-                    elif immediate_area[i] == 'unexplored':
-                        Robot.move_forward_check()
-                        currenttile += 1
-                    else:
-                        currenttile = immediate_area[i]
-                        immediate_area = known_area[currenttile]
-                        Robot.move_forward_check()
-                        break
-                    Robot.turn90_robot()
-                    th_heading += 90
+                    openings += 1
+                else:
+                    immediate_area[i] = 'walled'
+                    #search for image, search if there is a wall so it only helps a victim if it is near.
+                self.turn90_robot()
+                th_heading += 90
+                if th_heading >= 360:
+                    th_heading = 0
+            if openings > 1:
+                known_area[currenttile] = ('completely_explored')
+            else:
+                known_area[currenttile] = ('partly_explored')
+            for i in immediate_area:
+                if immediate_area[i] == "walled":
+                    pass
+                elif immediate_area[i] == 'unexplored':
+                    self.move_forward_check()
+                    currenttile += 1
+                else:
+                    currenttile = immediate_area[i]
+                    immediate_area = known_area[currenttile]
+                    self.move_forward_check()
+                    break
+                self.turn90_robot()
+                th_heading += 90
+                if th_heading >= 360:
+                    th_heading = 0
+            break
         return
 
 
@@ -88,14 +97,13 @@ class Robot(BrickPiInterface):
 # Only execute if this is the main file, good for testing code
 if __name__ == '__main__':
     logging.basicConfig(filename='logs/robot.log', level=logging.INFO)
-    ROBOT = Robot(timelimit=10)  #10 second timelimit before
+    ROBOT = Robot(timelimit=5)  #10 second timelimit before
     bp = ROBOT.BP
     ROBOT.configure_sensors() #This takes 4 seconds
-    ROBOT.rotate_power_degrees_IMU(20,-90)
     start = time.time()
     limit = start + 10
+    input("Press Enter to test")
     while (time.time() < limit):
-        compass = ROBOT.get_compass_IMU()
-        print(compass)
+        ROBOT.automatic_search()
     sensordict = ROBOT.get_all_sensors()
     ROBOT.safe_exit()
