@@ -28,8 +28,6 @@ class Robot(BrickPiInterface):
         return
 
     #Create a function to search for victim
-
-    #test
     
     #Create a routine that will effective search the maze and keep track of where the robot has been.
     def automatic_search(self):
