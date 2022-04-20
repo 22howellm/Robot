@@ -19,9 +19,9 @@ class Robot(BrickPiInterface):
         start_time = time.time()
         init_dist = self.get_ultra_sensor()
         bp = self.BP
-        while (init_dist - self.get_ultra_sensor()
-         <= move_dist):
-            print('total: ' + str(init_dist - self.get_ultra_sensor()) + '   initial: ' + str(init_dist) + 'current: ' + str(self.get_ultra_sensor()))
+        print('total: ' + str(init_dist - self.get_ultra_sensor()) + '   initial: ' + str(init_dist) + 'current: ' + str(self.get_ultra_sensor()))
+        while (self.get_ultra_sensor() - init_dist <= move_dist):
+            print('total: ' + str((self.get_ultra_sensor() - init_dist)) + '   initial: ' + str(init_dist) + 'current: ' + str(self.get_ultra_sensor()))
             bp.set_motor_power(self.rightmotor, power)
             bp.set_motor_power(self.leftmotor, power + deviation)
         return
@@ -98,10 +98,11 @@ if __name__ == '__main__':
     ROBOT = Robot(timelimit=5)  #10 second timelimit before
     bp = ROBOT.BP
     ROBOT.configure_sensors() #This takes 4 seconds
+    bp.CurrentRoutine = 'stop'
     start = time.time()
     limit = start + 10
-    input("Press Enter to test")
-    while (time.time() < limit):
+    #input("Press Enter to test")
+    while True:
         ROBOT.automatic_search()
     sensordict = ROBOT.get_all_sensors()
     ROBOT.safe_exit()

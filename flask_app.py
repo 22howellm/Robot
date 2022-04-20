@@ -260,7 +260,8 @@ def automatic_mode():
     data = []
     if request.method == 'POST':
         if GLOBALS.ROBOT:
-            GLOBALS.ROBOT.automatic_search()
+            while True:
+                GLOBALS.ROBOT.automatic_search()
             return jsonify(data)
         else:
             print("Robot not here")
