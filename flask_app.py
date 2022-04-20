@@ -252,15 +252,13 @@ def mission():
     return render_template("mission.html")
 
 #Automatic search code ------------------------------------------------------------------------------------------------------------------------
-#theoretical heading
-
-
 
 #automatic mode when turned on will automatically search the area
 @app.route('/automatic_mode')
 def automatic_mode():
     if request.method == 'Post':
         if GLOBALS.ROBOT:
+            robot.automatic_search()
             return jsonify(data)
         else:
             print("Robot not here")
