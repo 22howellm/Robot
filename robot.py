@@ -98,29 +98,33 @@ class Robot(BrickPiInterface):
                 th_heading += 90
                 if th_heading >= 360:
                     th_heading = 0
-            if openings > 1:
+            if openings == 1:
                 known_area[currenttile] = ('completely_explored')
             else:
                 known_area[currenttile] = ('partly_explored')
             area_location[currenttile] = (str(currenttile_x) + "," + str(currenttile_y))
+            print(str(area_location + " " + immediate_area + ' ' + openings))
             for direction in immediate_area:
                 if navigate == False:
                     if immediate_area[direction] == "walled":
                         pass
                     elif immediate_area[direction] == 'unexplored':
+                        previoustile = currenttile
                         self.move_forward_check(42)
-                        currenttile += 1
+                        number_of_tiles = len(known_area)
+                        currenttile = number_of_tiles + 1
                         if th_heading == 0 or th_heading == 180:
-                            currenttile +=
-                        elif
-
-                        elif
-
-                        elif
+                            currenttile_x += direction_support_x[th_heading]
+                        elif th_heading == 90 or th_heading == 270:
+                            currenttile_y += direction_support_y[th_heading]
+                        immediate_area = {0:None,90:None,180:None,270:None}
+                        immediate_area[opposite[th_heading]] = previoustile
                         navigate = True
                     else:
+                        previoustile = currenttile
                         currenttile = immediate_area[i]
                         immediate_area = known_area[currenttile]
+                        immediate_area[opposite[th_heading]] = previoustile
                         self.move_forward_check(42)
                         navigate = True
                     if navigate == False:
