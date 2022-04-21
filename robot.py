@@ -46,11 +46,14 @@ class Robot(BrickPiInterface):
         self.CurrentRoutine = "automated search"
         th_heading = 0
         opposite = {0:180,180:0,90:270,270:90}
+        direction_support_x = {0:1,180:-1}
+        direction_support_y = {270:-1,90:1}
         currenttile = 0
         currenttile_x = 0
         currenttile_y = 0
         data = {}
         known_area = {}
+        area_location = {}
         immediate_area = {0:None,90:None,180:None,270:None}
         while self.CurrentRoutine == "automated search":
             print("GOT HERE")
@@ -61,20 +64,34 @@ class Robot(BrickPiInterface):
                     th_heading += 90
                     if th_heading >= 360:
                         th_heading = 0
-            for i in immediate_area:
+            for direction in immediate_area:
                 print('working2')
                 distance = self.get_ultra_sensor()
                 if distance > 27:
                     #if it detects a something between and 42 cm in front of it its assumes it is a wall
-                    if immediate_area[i] == None:
-                        immediate_area[i] = 'unexplored'
-                    elif immediate_area[i] == 'completely_explored':
+                    if immediate_area[direction] == None:
+                        known_tile = None
+                        if direction == 0 or direction == 180:
+                            temp_tile = (str(currenttile_x + direction_support_x[direction]) + "," + str(currenttile_y))
+                            for i in known_area:
+                                if known_area[i] == temp_tile:
+                                    known_tile = temp_tile
+                        elif direction == 90 or direction == 270:
+                            temp_tile = (str(currenttile_x) + "," + str(currenttile_y + direction_support_y[direction]))
+                            for i in known_area[i]:
+                                if known_area[i] == temp_tile:
+                                    known_tile = temp_tile
+                        else: 
+                            immediate_area[direction] = 'unexplored'
+                        if known_tile:
+                            immediate_area[direction] = known_tile                        
+                    elif immediate_area[direction] == 'completely_explored':
                         openings -= 1 
                     else:
                         pass
                     openings += 1
                 else:
-                    immediate_area[i] = 'walled'
+                    immediate_area[direction] = 'walled'
                     #search for image, search if there is a wall so it only helps a victim if it is near.
                 self.turn90_robot()
                 th_heading += 90
@@ -84,22 +101,22 @@ class Robot(BrickPiInterface):
                 known_area[currenttile] = ('completely_explored')
             else:
                 known_area[currenttile] = ('partly_explored')
-            navigate = False
-            for i in immediate_area:
+            area_location[known_area] = 
+            for direction in immediate_area:
                 if navigate == False:
-                    if immediate_area[i] == "walled":
+                    if immediate_area[direction] == "walled":
                         pass
-                    elif immediate_area[i] == 'unexplored':
+                    elif immediate_area[direction] == 'unexplored':
                         self.move_forward_check(42)
                         currenttile += 1
-                        """if th_heading = 0:
-                        
+                        """if th_heading == 0 or th_heading == 180:
+                            currenttile +=
                         elif
 
                         elif
 
-                        elif"""
-                        navigate = True
+                        elif
+                        navigate = True"""
                     else:
                         currenttile = immediate_area[i]
                         immediate_area = known_area[currenttile]
