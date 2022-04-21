@@ -53,6 +53,7 @@ class Robot(BrickPiInterface):
         currenttile_y = 0
         data = {}
         known_area = {}
+        known_area_information = {}
         area_location = {}
         immediate_area = {0:None,90:None,180:None,270:None}
         while self.CurrentRoutine == "automated search":
@@ -87,6 +88,9 @@ class Robot(BrickPiInterface):
                             immediate_area[direction] = known_tile                        
                     elif immediate_area[direction] == 'completely_explored':
                         openings -= 1 
+                        # fix this area
+
+                        broken
                     else:
                         pass
                     openings += 1
@@ -101,7 +105,7 @@ class Robot(BrickPiInterface):
                 known_area[currenttile] = ('completely_explored')
             else:
                 known_area[currenttile] = ('partly_explored')
-            area_location[known_area] = 
+            area_location[currenttile] = (str(currenttile_x) + "," + str(currenttile_y))
             for direction in immediate_area:
                 if navigate == False:
                     if immediate_area[direction] == "walled":
