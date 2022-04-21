@@ -2,6 +2,8 @@
 #It includes all the code inside brickpiinterface. The CurrentCommand and CurrentRoutine are important because they can keep track of robot functions and commands. Remember Flask is using Threading (e.g. more than once process which can confuse the robot)
 from interfaces.brickpiinterface import *
 import global_vars as GLOBALS
+from numpy import append
+import numpy as np
 import logging
 
 class Robot(BrickPiInterface):
@@ -14,20 +16,28 @@ class Robot(BrickPiInterface):
         
         
     #Create a function to move time and power which will stop if colour is detected or wall has been found
-    def move_forward_check(self, power = 20, move_dist = 42, deviation = 1.9):
-        reverse = False
-        start_time = time.time()
-        init_dist = self.get_ultra_sensor()
-        bp = self.BP
-        print('total: ' + str(init_dist - self.get_ultra_sensor()) + '   initial: ' + str(init_dist) + 'current: ' + str(self.get_ultra_sensor()))
-        while (self.get_ultra_sensor() - init_dist <= move_dist):
-            print('total: ' + str((self.get_ultra_sensor() - init_dist)) + '   initial: ' + str(init_dist) + 'current: ' + str(self.get_ultra_sensor()))
-            bp.set_motor_power(self.rightmotor, power)
-            bp.set_motor_power(self.leftmotor, power + deviation)
-        return
+    def move_forward_check(self,distanceCm,speed=100,power=100):
+        distance = distanceCm * 360 / (np.pi * 5.6)
+        BP = self.BP
+        try:
+            BP.offset_motor_encoder(BP.PORT_A, BP.get_motor_encoder(BP.PORT_A)) # reset encoder A
+            BP.offset_motor_encoder(BP.PORT_D, BP.get_motor_encoder(BP.PORT_D)) # reset encoder D
+            BP.set_motor_limits(BP.PORT_A, power, speed)    # float motor D
+            BP.set_motor_limits(BP.PORT_D, power, speed)          # optionally set a power limit (in percent) and a speed limit (in Degrees Per Second)
+            while True:
+                BP.set_motor_position(BP.PORT_D, distance+10)    # set motor A's target position to the current position of motor D
+                BP.set_motor_position(BP.PORT_A, distance+10)
+                time.sleep(0.02)
+                if BP.get_motor_encoder(BP.PORT_D) >= distance or BP.get_motor_encoder(BP.PORT_A) >= distance:
+                    break
+                #print("A:  " + str(distance+10) + "   " + str(BP.get_motor_encoder(BP.PORT_A)))
+                #print("D:  " + str(distance+10) + "   " + str(BP.get_motor_encoder(BP.PORT_D)))
+        except KeyboardInterrupt: # except the program gets interrupted by Ctrl+C on the keyboard.
+            BP.reset_all()
+        return 
     def turn90_robot(self):
         self.rotate_power_degrees_IMU(10,90,1.9) #-0.6
-        return
+        return 
 
     #Create a function to search for victim
     
@@ -37,6 +47,8 @@ class Robot(BrickPiInterface):
         th_heading = 0
         opposite = {0:180,180:0,90:270,270:90}
         currenttile = 0
+        currenttile_x = 0
+        currenttile_y = 0
         data = {}
         known_area = {}
         immediate_area = {0:None,90:None,180:None,270:None}
@@ -78,13 +90,20 @@ class Robot(BrickPiInterface):
                     if immediate_area[i] == "walled":
                         pass
                     elif immediate_area[i] == 'unexplored':
-                        self.move_forward_check()
+                        self.move_forward_check(42)
                         currenttile += 1
+                        """if th_heading = 0:
+                        
+                        elif
+
+                        elif
+
+                        elif"""
                         navigate = True
                     else:
                         currenttile = immediate_area[i]
                         immediate_area = known_area[currenttile]
-                        self.move_forward_check()
+                        self.move_forward_check(42)
                         navigate = True
                     if navigate == False:
                         self.turn90_robot()
