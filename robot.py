@@ -85,14 +85,11 @@ class Robot(BrickPiInterface):
                         else: 
                             immediate_area[direction] = 'unexplored'
                         if known_tile:
-                            immediate_area[direction] = known_tile                        
-                    elif immediate_area[direction] == 'completely_explored':
-                        openings -= 1 
-                        # fix this area
-
-                        broken
+                            immediate_area[direction] = known_tile
                     else:
-                        pass
+                        location = immediate_area[direction]
+                        if known_area[location] == 'completely_explored':
+                            openings -= 1
                     openings += 1
                 else:
                     immediate_area[direction] = 'walled'
@@ -113,14 +110,14 @@ class Robot(BrickPiInterface):
                     elif immediate_area[direction] == 'unexplored':
                         self.move_forward_check(42)
                         currenttile += 1
-                        """if th_heading == 0 or th_heading == 180:
+                        if th_heading == 0 or th_heading == 180:
                             currenttile +=
                         elif
 
                         elif
 
                         elif
-                        navigate = True"""
+                        navigate = True
                     else:
                         currenttile = immediate_area[i]
                         immediate_area = known_area[currenttile]
