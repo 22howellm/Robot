@@ -104,11 +104,19 @@ class Robot(BrickPiInterface):
                 known_area[currenttile] = ('partly_explored')
             area_location[currenttile] = (str(currenttile_x) + "," + str(currenttile_y))
             print(str(area_location + " " + immediate_area + ' ' + openings))
+            movement = False
+            navigate = False
             for direction in immediate_area:
                 if navigate == False:
                     if immediate_area[direction] == "walled":
                         pass
                     elif immediate_area[direction] == 'unexplored':
+                        if th_heading != direction:
+                            while th_heading != direction:
+                                self.turn90_robot()
+                                th_heading += 90
+                                if th_heading >= 360:
+                                    th_heading = 0
                         previoustile = currenttile
                         self.move_forward_check(42)
                         number_of_tiles = len(known_area)
@@ -120,18 +128,27 @@ class Robot(BrickPiInterface):
                         immediate_area = {0:None,90:None,180:None,270:None}
                         immediate_area[opposite[th_heading]] = previoustile
                         navigate = True
-                    else:
-                        previoustile = currenttile
-                        currenttile = immediate_area[i]
-                        immediate_area = known_area[currenttile]
-                        immediate_area[opposite[th_heading]] = previoustile
-                        self.move_forward_check(42)
-                        navigate = True
+                        movement = True
+            #Explores unexplored area before areas which lead to an unexplored area
+            if movement == False:
+                for direction in immediate_area:
                     if navigate == False:
-                        self.turn90_robot()
-                        th_heading += 90
-                        if th_heading >= 360:
-                            th_heading = 0
+                        if (known_area[immediate_area[i]] == 'partly_explored'):
+                            if th_heading != direction:
+                                while th_heading != direction:
+                                    self.turn90_robot()
+                                    th_heading += 90
+                                    if th_heading >= 360:
+                                        th_heading = 0
+                            previoustile = currenttile
+                            currenttile = immediate_area[i]
+                            immediate_area = known_area[currenttile]
+                            immediate_area[opposite[th_heading]] = previoustile
+                            self.move_forward_check(42)
+                            navigate = True
+            else:
+                #return to start code here ________
+                pass
         return
 # Only execute if this is the main file, good for testing code
 if __name__ == '__main__':
