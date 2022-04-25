@@ -52,12 +52,14 @@ class Robot(BrickPiInterface):
         currenttile_x = 0
         currenttile_y = 0
         data = {}
-        known_area = {}
-        known_area_information = {}
-        area_location = {}
+        known_area = {} #tiles and what their status is completely_explored or unexplored
+        partly_explored_distance = {} #distance from the closest unexplored tile
+        known_area_information = {}  #immediate area
+        area_location = {} #coordiantes of area's already been too
         immediate_area = {0:None,90:None,180:None,270:None}
         while self.CurrentRoutine == "automated search":
             print("GOT HERE")
+            unexplored_openings = 0
             openings = 0
             if th_heading != 0:
                 while th_heading != 0:
@@ -65,6 +67,7 @@ class Robot(BrickPiInterface):
                     th_heading += 90
                     if th_heading >= 360:
                         th_heading = 0
+            distance_from_unexplored = None
             for direction in immediate_area:
                 print('working2')
                 distance = self.get_ultra_sensor()
@@ -76,16 +79,23 @@ class Robot(BrickPiInterface):
                             temp_tile = (str(currenttile_x + direction_support_x[direction]) + "," + str(currenttile_y))
                             for i in known_area:
                                 if known_area[i] == temp_tile:
-                                    known_tile = temp_tile
+                                    known_tile = temp_tile                                                      
                         elif direction == 90 or direction == 270:
                             temp_tile = (str(currenttile_x) + "," + str(currenttile_y + direction_support_y[direction]))
                             for i in known_area[i]:
                                 if known_area[i] == temp_tile:
                                     known_tile = temp_tile
-                        else: 
+                        else:
+                            print('discovered new area')
                             immediate_area[direction] = 'unexplored'
+                            unexplored_openings += 1
                         if known_tile:
+                            print('tile known')
                             immediate_area[direction] = known_tile
+                            if known_area[known_tile] == 'partly_explored': #if the area is partly unexplored it see how far away it is from the unexplored area, if its closer than a previous direction the current tile's distance from an unexplored tile is updated
+                                        other_tile_distance = partly_explored_distance[known_tile] + 1
+                                        if distance_from_unexplored > other_tile_distance:
+                                            distance_from_unexplored = other_tile_distance 
                     else:
                         location = immediate_area[direction]
                         if known_area[location] == 'completely_explored':
@@ -100,8 +110,14 @@ class Robot(BrickPiInterface):
                     th_heading = 0
             if openings == 1:
                 known_area[currenttile] = ('completely_explored')
+                if partly_explored_distance[currenttile]: #if the area the robot is in is considered completely explored it removes itself from the distance to unexplored
+                    partly_explored_distance.pop(currenttile)
             else:
                 known_area[currenttile] = ('partly_explored')
+                if unexplored_openings > 1:
+                    partly_explored_distance[currenttile] = 1
+                else:
+                    partly_explored_distance[currenttile] = distance_from_unexplored
             area_location[currenttile] = (str(currenttile_x) + "," + str(currenttile_y))
             print(str(area_location + " " + immediate_area + ' ' + openings))
             movement = False
@@ -117,12 +133,14 @@ class Robot(BrickPiInterface):
                                 th_heading += 90
                                 if th_heading >= 360:
                                     th_heading = 0
+                        print('going to unkown location')
                         previoustile = currenttile
+                        known_area_information[previoustile] = immediate_area
                         self.move_forward_check(42)
                         number_of_tiles = len(known_area)
                         currenttile = number_of_tiles + 1
                         if th_heading == 0 or th_heading == 180:
-                            currenttile_x += direction_support_x[th_heading]
+                            currenttile_x += direction_support_x[th_heading] #changes the coordinates of the robot to the new tile
                         elif th_heading == 90 or th_heading == 270:
                             currenttile_y += direction_support_y[th_heading]
                         immediate_area = {0:None,90:None,180:None,270:None}
@@ -130,23 +148,39 @@ class Robot(BrickPiInterface):
                         navigate = True
                         movement = True
             #Explores unexplored area before areas which lead to an unexplored area
+            is_partial_explore_area = False
+            closest_to_unexplored_number = None
+            closest_to_unexplored = None
             if movement == False:
                 for direction in immediate_area:
-                    if navigate == False:
-                        if (known_area[immediate_area[i]] == 'partly_explored'):
-                            if th_heading != direction:
-                                while th_heading != direction:
-                                    self.turn90_robot()
-                                    th_heading += 90
-                                    if th_heading >= 360:
-                                        th_heading = 0
-                            previoustile = currenttile
-                            currenttile = immediate_area[i]
-                            immediate_area = known_area[currenttile]
-                            immediate_area[opposite[th_heading]] = previoustile
-                            self.move_forward_check(42)
-                            navigate = True
-            else:
+                    if (known_area[immediate_area[direction]] == 'partly_explored'):
+                        is_partial_explore_area = True
+                        viewed_tile == known_area[immediate_area[direction]]
+                        i = partly_explored_distance[viewed_tile]
+                        if closest_to_unexplored_number != None or closest_to_unexplored_number > i: #it becomes the closest if it is the first or if another smaller one apears
+                            closest_to_unexplored_number = i
+                            closest_to_unexplored = direction
+                if navigate == False and is_partial_explore_area == True:
+                    if th_heading != closest_to_unexplored:
+                        while th_heading != closest_to_unexplored:
+                            self.turn90_robot()
+                            th_heading += 90
+                            if th_heading >= 360:
+                                th_heading = 0
+                    previoustile = currenttile
+                    known_area_information[previoustile] = immediate_area
+                    currenttile = immediate_area[th_heading]
+                    immediate_area[opposite[th_heading]] = previoustile
+                    immediate_area = known_area_information[currenttile]
+                    if th_heading == 0 or th_heading == 180:
+                        currenttile_x += direction_support_x[th_heading] #changes the coordinates of the robot to the new tile
+                    elif th_heading == 90 or th_heading == 270:
+                        currenttile_y += direction_support_y[th_heading]
+                    print('going to known location')
+                    self.move_forward_check(42)
+                    navigate = True
+            if navigate == False:
+                print('add return to start code')
                 #return to start code here ________
                 pass
         return
