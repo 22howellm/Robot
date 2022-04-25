@@ -45,7 +45,7 @@ class Robot(BrickPiInterface):
                 break
         return
     def turn90_robot(self):
-        self.rotate_power_degrees_IMU(10,90,-0.6) #1.9
+        self.rotate_power_degrees_IMU(10,90,1.9) #-0.6
         return 
     #Create a function to search for victim
     
@@ -66,6 +66,13 @@ class Robot(BrickPiInterface):
         area_location = {} #coordiantes of area's already been too
         immediate_area = {0:None,90:None,180:None,270:None}
         while self.CurrentRoutine == "automated search":
+            all_area_discovered = True #considered true untill proven otherwise
+            for j in partly_explored_distance:
+                if partly_explored_distance[j] == 1:
+                    all_area_discovered = False
+            if all_area_discovered == True:
+                for j in known_area:
+                    known_area[j] = 'completely_explored'
             print("GOT HERE")
             unexplored_openings = 0
             openings = 0
@@ -76,50 +83,104 @@ class Robot(BrickPiInterface):
                     if th_heading >= 360:
                         th_heading = 0
             distance_from_unexplored = None
+            already_been_location = True #true until proven otherwise
             for direction in immediate_area:
-                print('working2')
-                print(direction)
-                distance = self.get_ultra_sensor()
-                print(distance)
-                if distance > 27:
-                    #if it detects a something between and 42 cm in front of it its assumes it is a wall
-                    if immediate_area[direction] == None:
+                if immediate_area[direction] == None:
+                    already_been_location = False
+            if already_been_location == False: #only scans the area if the robot has not already been here
+                for direction in immediate_area:
+                    print('working2')
+                    print(direction)
+                    distance = self.get_ultra_sensor()
+                    print(distance)
+                    if distance > 27:
+                        #if it detects a something between and 42 cm in front of it its assumes it is a wall
+                        if immediate_area[direction] == None:
+                            print('thinking')
+                            known_tile = None
+                            if direction == 0 or direction == 180:
+                                temp_tile = (str(currenttile_x + direction_support_x[direction]) + "," + str(currenttile_y))
+                                for i in known_area:
+                                    if area_location[i] == temp_tile:
+                                        known_tile = i                                                   
+                            elif direction == 90 or direction == 270:
+                                temp_tile = (str(currenttile_x) + "," + str(currenttile_y + direction_support_y[direction]))
+                                for i in known_area:
+                                    if area_location[i] == temp_tile:
+                                        known_tile = i
+                            if known_tile != None:
+                                print('tile known')
+                                print(known_area)
+                                print(known_tile)
+                                immediate_area[direction] = known_tile
+                                if known_area[known_tile] == 'partly_explored': #if the area is partly unexplored it see how far away it is from the unexplored area, if its closer than a previous direction the current tile's distance from an unexplored tile is updated
+                                    other_tile_distance = partly_explored_distance[known_tile] + 1
+                                    if distance_from_unexplored == None:
+                                        distance_from_unexplored = other_tile_distance
+                                    if distance_from_unexplored > other_tile_distance:
+                                        distance_from_unexplored = other_tile_distance 
+                            else:
+                                print('discovered new area')
+                                immediate_area[direction] = 'unexplored'
+                                unexplored_openings += 1
+                        else:
+                            location = immediate_area[direction]
+                            if known_area[location] == 'completely_explored':
+                                openings -= 1
+                        openings += 1
+                    else:
+                        print('wall')
+                        immediate_area[direction] = 'walled'
+                        #search for image, search if there is a wall so it only helps a victim if it is near.
+                    self.turn90_robot()
+                    th_heading += 90
+                    if th_heading >= 360:
+                        th_heading = 0
+            else:
+                print(immediate_area)
+                for direction in immediate_area:
+                    known_tile_2 = immediate_area[direction]
+                    known_tile = None
+                    if immediate_area[direction] == "walled":
+                        openings -= 1                        
+                    elif immediate_area[direction] == "unexplored":
+                        unexplored_openings += 1
                         print('thinking')
-                        known_tile = None
                         if direction == 0 or direction == 180:
                             temp_tile = (str(currenttile_x + direction_support_x[direction]) + "," + str(currenttile_y))
                             for i in known_area:
                                 if area_location[i] == temp_tile:
-                                    known_tile = known_area[i]                                                     
+                                    known_tile = i                                                     
                         elif direction == 90 or direction == 270:
                             temp_tile = (str(currenttile_x) + "," + str(currenttile_y + direction_support_y[direction]))
                             for i in known_area:
                                 if area_location[i] == temp_tile:
-                                    known_tile = known_area[i]
+                                    known_tile = i
                         if known_tile != None:
-                            print('tile known')
-                            immediate_area[direction] = known_tile
-                            if known_area[known_tile] == 'partly_explored': #if the area is partly unexplored it see how far away it is from the unexplored area, if its closer than a previous direction the current tile's distance from an unexplored tile is updated
-                                        other_tile_distance = partly_explored_distance[known_tile] + 1
-                                        if distance_from_unexplored > other_tile_distance:
-                                            distance_from_unexplored = other_tile_distance 
-                        else:
-                            print('discovered new area')
-                            immediate_area[direction] = 'unexplored'
-                            unexplored_openings += 1
+                                print('tile known')
+                                print(known_area)
+                                print(known_tile)
+                                immediate_area[direction] = known_tile
+                                if known_area[known_tile] == 'completely_explored':
+                                    openings -= 1
+                                elif known_area[known_tile] == 'partly_explored': #if the area is partly unexplored it see how far away it is from the unexplored area, if its closer than a previous direction the current tile's distance from an unexplored tile is updated
+                                    other_tile_distance = partly_explored_distance[known_tile] + 1
+                                    if distance_from_unexplored == None:
+                                        distance_from_unexplored = other_tile_distance
+                                    if distance_from_unexplored > other_tile_distance:
+                                        distance_from_unexplored = other_tile_distance 
                     else:
-                        location = immediate_area[direction]
-                        if known_area[location] == 'completely_explored':
+                        if known_area[immediate_area[direction]] == 'partly_explored': #if the area is partly unexplored it see how far away it is from the unexplored area, if its closer than a previous direction the current tile's distance from an unexplored tile is updated
+                            other_tile_distance = partly_explored_distance[known_tile_2] + 1
+                            if distance_from_unexplored == None:
+                                distance_from_unexplored = other_tile_distance
+                            elif distance_from_unexplored > other_tile_distance:
+                                distance_from_unexplored = other_tile_distance
+                        elif known_area[known_tile_2] == 'completely_explored':
                             openings -= 1
                     openings += 1
-                else:
-                    immediate_area[direction] = 'walled'
-                    #search for image, search if there is a wall so it only helps a victim if it is near.
-                self.turn90_robot()
-                th_heading += 90
-                if th_heading >= 360:
-                    th_heading = 0
-            if openings == 1:
+            print(str(already_been_location))
+            if openings <= 1:
                 known_area[currenttile] = ('completely_explored')
                 if currenttile in partly_explored_distance.keys(): #if the area the robot is in is considered completely explored it removes itself from the distance to unexplored
                     partly_explored_distance.pop(currenttile)
@@ -160,20 +221,27 @@ class Robot(BrickPiInterface):
                         movement = True
             #Explores unexplored area before areas which lead to an unexplored area
             is_partial_explore_area = False
-            closest_to_unexplored_number = None
-            closest_to_unexplored = None
+            closest_to_unexplored_number = None #distance away from unexplored
+            closest_to_unexplored = None #direction towards the unexplored
             if movement == False:
+                print(str(closest_to_unexplored))
                 for direction in immediate_area:
-                    if (known_area[immediate_area[direction]] == 'partly_explored'):
-                        is_partial_explore_area = True
-                        viewed_tile = known_area[immediate_area[direction]]
-                        i = partly_explored_distance[viewed_tile]
-                        if closest_to_unexplored_number != None or closest_to_unexplored_number > i: #it becomes the closest if it is the first or if another smaller one apears
-                            closest_to_unexplored_number = i
-                            closest_to_unexplored = direction
+                    if immediate_area[direction] != "walled":
+                        if (known_area[immediate_area[direction]] == 'partly_explored'):
+                            is_partial_explore_area = True
+                            viewed_tile = immediate_area[direction]
+                            i = partly_explored_distance[viewed_tile]
+                            if closest_to_unexplored_number == None: #it becomes the closest if it is the first or if another smaller one apears
+                                closest_to_unexplored_number = i
+                                closest_to_unexplored = direction
+                            if (closest_to_unexplored_number != None) and closest_to_unexplored_number > i:
+                                closest_to_unexplored_number = i
+                                closest_to_unexplored = direction
                 if navigate == False and is_partial_explore_area == True:
                     if th_heading != closest_to_unexplored:
                         while th_heading != closest_to_unexplored:
+                            print(str(closest_to_unexplored))
+                            print('death spiral if more than four times')
                             self.turn90_robot()
                             th_heading += 90
                             if th_heading >= 360:
