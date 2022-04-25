@@ -60,6 +60,9 @@ def login():
 # Load the ROBOT
 @app.route('/robotload', methods=['GET','POST'])
 def robotload():
+    if GLOBALS.ROBOT:
+        GLOBALS.ROBOT.stop_all()
+        GLOBALS.ROBOT.CurrentRoutine = "stop"
     sensordict = None
     if not GLOBALS.CAMERA:
         log("LOADING CAMERA")
@@ -153,9 +156,6 @@ def turn90():
     data = {}
     if GLOBALS.ROBOT:
         GLOBALS.ROBOT.rotate_power_degrees_IMU(10,90,-0.6)
-        th_heading += 90
-        if th_heading >= 360:
-            th_heading = 0
     return jsonify(data)
 
 @app.route('/moveforward', methods=['GET','POST'])
