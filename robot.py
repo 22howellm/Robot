@@ -119,7 +119,7 @@ class Robot(BrickPiInterface):
                 else:
                     partly_explored_distance[currenttile] = distance_from_unexplored
             area_location[currenttile] = (str(currenttile_x) + "," + str(currenttile_y))
-            print(str(area_location + " " + immediate_area + ' ' + openings))
+            print(str(area_location) + " " + str(immediate_area) + ' ' + str(openings))
             movement = False
             navigate = False
             for direction in immediate_area:
@@ -155,7 +155,7 @@ class Robot(BrickPiInterface):
                 for direction in immediate_area:
                     if (known_area[immediate_area[direction]] == 'partly_explored'):
                         is_partial_explore_area = True
-                        viewed_tile == known_area[immediate_area[direction]]
+                        viewed_tile = known_area[immediate_area[direction]]
                         i = partly_explored_distance[viewed_tile]
                         if closest_to_unexplored_number != None or closest_to_unexplored_number > i: #it becomes the closest if it is the first or if another smaller one apears
                             closest_to_unexplored_number = i
