@@ -16,7 +16,8 @@ class Robot(BrickPiInterface):
         
         
     #Create a function to move time and power which will stop if colour is detected or wall has been found
-    def move_forward_check(self,distanceCm,speed=100,power=100):
+    def move_forward_check(self,distanceCm,th_heading,speed=100,power=100):
+        starttime = time.time()
         distance = distanceCm * 360 / (np.pi * 5.6)
         BP = self.BP
         BP.offset_motor_encoder(BP.PORT_A, BP.get_motor_encoder(BP.PORT_A)) # reset encoder A
@@ -29,6 +30,8 @@ class Robot(BrickPiInterface):
             time.sleep(0.02)
             if BP.get_motor_encoder(BP.PORT_D) >= distance or BP.get_motor_encoder(BP.PORT_A) >= distance:
                 break
+        timefinnished = time.time()
+        mapforward(starttime,timefinnished,th_heading)
         return 
     def turn90_robot_2(self,angle=90,speed=100,power=100):
         BP = self.BP
