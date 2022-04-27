@@ -170,6 +170,8 @@ class Robot(BrickPiInterface):
                                     if distance_from_unexplored > other_tile_distance:
                                         distance_from_unexplored = other_tile_distance 
                     else:
+                        print(str(known_area[immediate_area[direction]]))
+                        partly_explored_distance[known_tile_2]
                         if known_area[immediate_area[direction]] == 'partly_explored': #if the area is partly unexplored it see how far away it is from the unexplored area, if its closer than a previous direction the current tile's distance from an unexplored tile is updated
                             other_tile_distance = partly_explored_distance[known_tile_2] + 1
                             if distance_from_unexplored == None:
