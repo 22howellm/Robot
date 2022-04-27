@@ -255,7 +255,7 @@ def mission():
 #Automatic search code ------------------------------------------------------------------------------------------------------------------------
 
 #automatic mode when turned on will automatically search the area
-@app.route('/automatic_mode')
+@app.route('/automatic_mode', methods=['GET','POST'])
 def automatic_mode():
     data = []
     if request.method == 'POST':

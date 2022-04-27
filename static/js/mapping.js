@@ -28,10 +28,11 @@ function drawmap() {
    }
 }
 //function is called fter the forward button has been pressed`
-function mapforward()
+function mapforward(start,finish,heading)
 {
-   turtle.lookTo(results.heading);
-   turtle.forward(results.elapsedtime*20);
+   elapsedtime = start-finish;
+   turtle.lookTo(heading);
+   turtle.forward(elapsedtime*20);
 }
 
 load_map();
