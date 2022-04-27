@@ -623,3 +623,132 @@ INFO:werkzeug: * Detected change in '/home/pi/Desktop/Robot/robot.py', reloading
 INFO:werkzeug: * Restarting with stat
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 759-383-341
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 759-383-341
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:02:16] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:FLASK APP: LOADING THE ROBOT
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:02:18] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:FLASK APP: READING CAMERA
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:02:18] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:02:19] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:FLASK APP: READING CAMERA
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:02:19] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:02:20] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:FLASK APP: READING CAMERA
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:02:20] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:FLASK APP: LOADING THE SOUND
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:02:22] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:02:45] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:02:46] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:02:46] "[35m[1mPOST /automatic_mode HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:02:46] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:02:47] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:02:47] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:02:50] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:02:50] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:02:50] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:02:52] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:02:52] "[37mPOST /turnright HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:02:52] "[37mPOST /turnright HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:02:52] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:02:52] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:02:52] "[37mPOST /turnright HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:02:53] "[37mPOST /turnright HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:02:53] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:02:53] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:02:53] "[37mPOST /turnleft HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:02:53] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:02:53] "[37mPOST /turnright HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:02:54] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:02:54] "[37mPOST /turnleft HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:02:56] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:02:56] "[37mPOST /turnright HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:02:56] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:03:22] "[35m[1mPOST /automatic_mode HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/Robot/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 759-383-341
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:03:48] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:03:48] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:03:48] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:FLASK APP: LOADING THE ROBOT
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:03:52] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:FLASK APP: READING CAMERA
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:03:52] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:03:53] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:FLASK APP: READING CAMERA
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:03:53] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:FLASK APP: LOADING THE SOUND
+INFO:flask_app:IMU: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:03:56] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:03:56] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:03:56] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:03:57] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:03:57] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:04:00] "[37mPOST /reconfig_IMU HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:04:17] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:FLASK APP: READING CAMERA
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:04:27] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:05:54] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:05:55] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:05:55] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:05:55] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:05:55] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:05:55] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:05:56] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:05:56] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:05:56] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:05:56] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:05:56] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:05:56] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:05:59] "[37mPOST /turnleftslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:05:59] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:06:01] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:06:01] "[37mPOST /moveforwardslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:06:02] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:06:02] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:06:19] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:06:20] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:FLASK APP: READING CAMERA
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:06:21] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:06:34] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:06:35] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:06:36] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:06:37] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:06:37] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:06:38] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:06:42] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:06:42] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:06:43] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:06:43] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:06:43] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:06:43] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:06:43] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:06:43] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:06:43] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.137.1 - - [27/Apr/2022 15:06:43] "[37mPOST /stop HTTP/1.1[0m" 200 -

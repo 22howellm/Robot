@@ -16,7 +16,7 @@ class Robot(BrickPiInterface):
         
         
     #Create a function to move time and power which will stop if colour is detected or wall has been found
-    def move_forward_check(self,distanceCm,th_heading,speed=100,power=100):
+    def move_forward_check(self,distanceCm,speed=100,power=100):
         starttime = time.time()
         distance = distanceCm * 360 / (np.pi * 5.6)
         BP = self.BP
@@ -86,6 +86,7 @@ class Robot(BrickPiInterface):
             distance_from_unexplored = None
             already_been_location = True #true until proven otherwise
             danger = False
+            print(str(self.get_colour_sensor))
             if self.get_colour_sensor() != 'white':
                 danger = True
             if danger == False:
