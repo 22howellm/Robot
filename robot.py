@@ -16,8 +16,7 @@ class Robot(BrickPiInterface):
         
         
     #Create a function to move time and power which will stop if colour is detected or wall has been found
-    def move_forward_check(self,distanceCm,th_heading,speed=100,power=100):
-        starttime = time.time()
+    def move_forward_check(self,distanceCm,speed=100,power=100):
         distance = distanceCm * 360 / (np.pi * 5.6)
         BP = self.BP
         BP.offset_motor_encoder(BP.PORT_A, BP.get_motor_encoder(BP.PORT_A)) # reset encoder A
@@ -30,9 +29,8 @@ class Robot(BrickPiInterface):
             time.sleep(0.02)
             if BP.get_motor_encoder(BP.PORT_D) >= distance or BP.get_motor_encoder(BP.PORT_A) >= distance:
                 break
-        timefinnished = time.time()
-        mapforward(starttime,timefinnished,th_heading)
-        return 
+        return
+
     def turn90_robot_2(self,angle=90,speed=100,power=100):
         BP = self.BP
         degrees = angle*2-2
@@ -174,7 +172,7 @@ class Robot(BrickPiInterface):
                                         distance_from_unexplored = other_tile_distance 
                     else:
                         print(str(known_area[immediate_area[direction]]))
-                        partly_explored_distance[known_tile_2]
+                        print(str(partly_explored_distance[known_tile_2]))
                         if known_area[immediate_area[direction]] == 'partly_explored': #if the area is partly unexplored it see how far away it is from the unexplored area, if its closer than a previous direction the current tile's distance from an unexplored tile is updated
                             other_tile_distance = partly_explored_distance[known_tile_2] + 1
                             if distance_from_unexplored == None:
