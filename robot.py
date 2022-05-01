@@ -67,6 +67,7 @@ class Robot(BrickPiInterface):
         known_area_information = {}  #immediate area's of different tiles
         area_location = {} #coordiantes of area's already been too
         distance_from_start = {} #how far each tile is from the start
+        distance_from_start[currenttile] = 0
         immediate_area = {0:None,90:None,180:None,270:None}
         while self.CurrentRoutine == "automated search":
             all_area_discovered = True #considered true untill proven otherwise
@@ -89,7 +90,7 @@ class Robot(BrickPiInterface):
             already_been_location = True #true until proven otherwise
             danger = False
             colour = self.get_colour_sensor()
-            distance_from_start[currenttile] = 0
+            print(str(distance_from_start))
             if colour != 'White':
                 print('danger')
                 danger = True
