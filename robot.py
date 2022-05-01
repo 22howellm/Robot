@@ -89,8 +89,9 @@ class Robot(BrickPiInterface):
             distance_from_unexplored = None
             already_been_location = True #true until proven otherwise
             danger = False
-            print(str(self.get_colour_sensor))
-            if self.get_colour_sensor() != 'white':
+            colour = self.get_colour_sensor()
+            if colour != 'White':
+                print('danger')
                 danger = True
             if fully_explored == False:
                 if danger == False:
@@ -159,12 +160,12 @@ class Robot(BrickPiInterface):
                                 if direction == 0 or direction == 180:
                                     temp_tile = (str(currenttile_x + direction_support_x[direction]) + "," + str(currenttile_y))
                                     for i in known_area:
-                                        if area_location[i] == temp_tile:
+                                        if (i in area_location) and area_location[i] == temp_tile:
                                             known_tile = i                                                     
                                 elif direction == 90 or direction == 270:
                                     temp_tile = (str(currenttile_x) + "," + str(currenttile_y + direction_support_y[direction]))
                                     for i in known_area:
-                                        if area_location[i] == temp_tile:
+                                        if (i in area_location) and area_location[i] == temp_tile:
                                             known_tile = i
                                 if known_tile != None:
                                         print('tile known')
@@ -275,10 +276,15 @@ class Robot(BrickPiInterface):
                 else: #if it is in a dangerous area it quickly determines the way out
                     newdirection = None
                     known_area[currenttile] = 'danger'
+                    print(str(known_area))
+                    print(str(known_area_information))
+                    print(str(immediate_area))
+                    print(str(currenttile))
+                    area_location[currenttile] = (str(currenttile_x) + "," + str(currenttile_y))
                     for i in immediate_area:
                         if immediate_area[i] != None and newdirection == None:
                             newdirection = i
-                    while th_heading != i:
+                    while th_heading != newdirection:
                         self.turn90_robot()
                         th_heading += 90
                         if th_heading >= 360:
@@ -287,6 +293,7 @@ class Robot(BrickPiInterface):
                     known_area_information[previoustile] = immediate_area
                     currenttile = immediate_area[th_heading]
                     immediate_area[opposite[th_heading]] = previoustile
+                    print(str(currenttile))
                     immediate_area = known_area_information[currenttile]
                     if th_heading == 0 or th_heading == 180:
                         currenttile_x += direction_support_x[th_heading] #changes the coordinates of the robot to the new tile
