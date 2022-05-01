@@ -321,6 +321,7 @@ class Robot(BrickPiInterface):
                             else:
                                 if closest_to_start_number == None or closest_to_start_number > distance_from_start[immediate_area[direction]]:
                                     closest_to_start_number = distance_from_start[immediate_area[direction]]
+                                    closest_to_start = direction
                         if th_heading != closest_to_start:
                             while th_heading != closest_to_start:
                                 print(str(closest_to_start))
