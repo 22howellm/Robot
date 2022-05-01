@@ -182,9 +182,9 @@ class Robot(BrickPiInterface):
                                             if distance_from_unexplored > other_tile_distance:
                                                 distance_from_unexplored = other_tile_distance 
                             else:
-                                print(str(known_area[immediate_area[direction]]))
-                                print(partly_explored_distance[known_tile_2])
                                 if known_area[immediate_area[direction]] == 'partly_explored': #if the area is partly unexplored it see how far away it is from the unexplored area, if its closer than a previous direction the current tile's distance from an unexplored tile is updated
+                                    print(str(known_area[immediate_area[direction]]))
+                                    print(partly_explored_distance[known_tile_2])
                                     other_tile_distance = partly_explored_distance[known_tile_2] + 1
                                     if distance_from_unexplored == None:
                                         distance_from_unexplored = other_tile_distance
@@ -306,9 +306,43 @@ class Robot(BrickPiInterface):
                     print('going to known location and escaping danger')
                     self.move_forward_check(42)
                     navigate = True
-            else:
-
-                pass
+            else: #returns to the start code.
+                is_partial_explore_area = False
+                closest_to_start_number = None #distance away from start
+                closest_to_start = None #direction towards the start
+                if fully_explored == True:
+                    if currenttile != 0:
+                        print(str(closest_to_start))
+                        for direction in immediate_area:
+                            if immediate_area[direction] == "walled":
+                                pass
+                            elif known_area[immediate_area[direction]] == 'danger':
+                                pass
+                            else:
+                                if closest_to_start_number == None or closest_to_start_number > distance_from_start[immediate_area[direction]]:
+                                    closest_to_start_number = distance_from_start[immediate_area[direction]]
+                        if th_heading != closest_to_start:
+                            while th_heading != closest_to_start:
+                                print(str(closest_to_start))
+                                print('death spiral if more than four times')
+                                self.turn90_robot()
+                                th_heading += 90
+                                if th_heading >= 360:
+                                    th_heading = 0
+                        previoustile = currenttile
+                        known_area_information[previoustile] = immediate_area
+                        currenttile = immediate_area[th_heading]
+                        immediate_area[opposite[th_heading]] = previoustile
+                        immediate_area = known_area_information[currenttile]
+                        if th_heading == 0 or th_heading == 180:
+                            currenttile_x += direction_support_x[th_heading] #changes the coordinates of the robot to the new tile
+                        elif th_heading == 90 or th_heading == 270:
+                            currenttile_y += direction_support_y[th_heading]
+                        print('going to known location')
+                        self.move_forward_check(42)
+                    else:
+                        print('finish the code')
+                        pass
         return
 # Only execute if this is the main file, good for testing code
 if __name__ == '__main__':
