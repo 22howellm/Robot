@@ -58,7 +58,6 @@ class Robot(BrickPiInterface):
         opposite = {0:180,180:0,90:270,270:90}
         direction_support_x = {0:1,180:-1}
         direction_support_y = {270:-1,90:1}
-        Current_distance_from_start = 0
         currenttile = 0
         currenttile_x = 0
         currenttile_y = 0
@@ -90,6 +89,7 @@ class Robot(BrickPiInterface):
             already_been_location = True #true until proven otherwise
             danger = False
             colour = self.get_colour_sensor()
+            distance_from_start[currenttile] = 0
             if colour != 'White':
                 print('danger')
                 danger = True
@@ -224,6 +224,7 @@ class Robot(BrickPiInterface):
                                 self.move_forward_check(42)
                                 number_of_tiles = len(known_area)
                                 currenttile = number_of_tiles + 1
+                                distance_from_start[currenttile] = distance_from_start[previoustile] + 1
                                 if th_heading == 0 or th_heading == 180:
                                     currenttile_x += direction_support_x[th_heading] #changes the coordinates of the robot to the new tile
                                 elif th_heading == 90 or th_heading == 270:
@@ -241,6 +242,8 @@ class Robot(BrickPiInterface):
                         for direction in immediate_area:
                             if immediate_area[direction] != "walled":
                                 if (known_area[immediate_area[direction]] == 'partly_explored'):
+                                    if distance_from_start[immediate_area[direction]] + 1 < distance_from_start[currenttile]:
+                                        distance_from_start[currenttile] = distance_from_start[immediate_area[direction]] + 1
                                     is_partial_explore_area = True
                                     viewed_tile = immediate_area[direction]
                                     i = partly_explored_distance[viewed_tile]
