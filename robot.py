@@ -5,6 +5,7 @@ import global_vars as GLOBALS
 from numpy import append
 import numpy as np
 import logging
+import cv2
 
 class Robot(BrickPiInterface):
     
