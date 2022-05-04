@@ -5,6 +5,7 @@ import global_vars as GLOBALS
 from numpy import append
 import numpy as np
 import logging
+import cv2
 
 class Robot(BrickPiInterface):
     
@@ -49,7 +50,32 @@ class Robot(BrickPiInterface):
         self.rotate_power_degrees_IMU(10,90,1.9) #-0.6
         return 
     #Create a function to search for victim
-    
+    def search_victim(self):
+        cap = picamera.PiCamera()
+        cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
+        cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
+        while True:
+            _, frame = cap.read()
+            hsv_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
+            height,width, _ = frame.shape
+            cx = int(width / 2)
+            cy = int(height / 2)
+            pixel_center = hsv_frame[cy, cx]
+            hue_value = pixel_center[0]
+            colour = None
+            if hue_value < 22 and hue_value > 5:
+                colour = 'orange'
+            elif hue_value < 33:
+                colour = 'Yellow'
+            elif hue_value < 78:
+                colour = 'green'
+            else:
+                colour = 'nothing'
+            cv2.putText(frame, colour, (10,50), 0, 1, (255,0,0), 2)
+            cv2.circle(frame, (cx,cy), 5, (255,0,0), 3)
+            cv2.imshow('Frame',frame)
+            key = cv2.waitKey(1)
+        return(colour)
     #Create a routine that will effective search the maze and keep track of where the robot has been.
     def automatic_search(self):
         self.CurrentRoutine = "automated search"
@@ -356,6 +382,7 @@ if __name__ == '__main__':
     limit = start + 10
     input("Press Enter to test")
     while True:
-        ROBOT.automatic_search()
+        colour = ROBOT.search_victim()
+        print(colour)
     sensordict = ROBOT.get_all_sensors()
     ROBOT.safe_exit()
