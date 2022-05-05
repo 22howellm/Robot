@@ -105,4 +105,4 @@ class CameraInterface(object):
         return "no colour"
 if __name__ == '__main__':
     while True:
-        CameraInterface.get_camera_colour
+        CameraInterface.get_camera_colour()
