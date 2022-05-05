@@ -70,16 +70,39 @@ class CameraInterface(object):
             return "camera is not running yet"
         img = cv2.imdecode(numpy.fromstring(self.frame, dtype=numpy.uint8), 1)
         # set red range
-        lowcolor = (50,50,150)
-        highcolor = (128,128,255)
+        redlowcolor = (50,50,150)
+        redhighcolor = (128,128,255)
+
+        green_low_color = (0,255,0)
+        green_high_color = (0,255,100)
+
+        yellow_low_color = (0,200,255)
+        yellow_high_color = (0,255,255)
 
         # threshold
-        thresh = cv2.inRange(img, lowcolor, highcolor)
+        redthresh = cv2.inRange(img, redlowcolor, redhighcolor)
+        greenthresh = cv2.inRange(img, green_low_color, green_high_color)
+        yellowthresh = cv2.inRange(img, yellow_low_color, yellow_high_color)
 
-        cv2.imwrite("threshold.jpg", thresh)
+        cv2.imwrite("threshold.jpg", redthresh)
 
-        count = numpy.sum(numpy.nonzero(thresh))
-        self.log("RED PIXELS: " + str(count))
-        if count > 300: #more than 300 pixels are between the low and high color
-            return "red"
+        red_count = numpy.sum(numpy.nonzero(redthresh))
+        green_count = numpy.sum(numpy.nonzero(greenthresh))
+        yellow_count = numpy.sum(numpy.nonzero(yellowthresh))
+
+        self.log("RED PIXELS: " + str(red_count))
+        colour = None
+        count = 0
+        if green_count > yellow_count:
+            colour = 'green'
+            count = green_count
+        else:
+            colour = 'yellow'
+            count = yellow_count
+        if count > 1000: #more than 300 pixels are between the low and high color
+            print(str(colour))
+            return str(colour)
         return "no colour"
+if __name__ == '__main__':
+    while True:
+        CameraInterface.get_camera_colour
