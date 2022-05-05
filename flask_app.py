@@ -261,7 +261,10 @@ def automatic_mode():
     if request.method == 'POST':
         if GLOBALS.ROBOT:
             while True:
-                GLOBALS.ROBOT.automatic_search()
+                if GLOBALS.ROBOT.CurrentRoutine != "stop":
+                    GLOBALS.ROBOT.automatic_search()
+                else:
+                    break
             return jsonify(data)
         else:
             print("Robot not here")
