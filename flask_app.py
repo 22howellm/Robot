@@ -258,12 +258,12 @@ def mission():
 @app.route('/automatic_mode', methods=['GET','POST'])
 def automatic_mode():
     data = []
+    GLOBALS.ROBOT.CurrentRoutine == 'Automatic_mode'
     if request.method == 'POST':
         if GLOBALS.ROBOT:
             while True:
-                if GLOBALS.ROBOT.CurrentRoutine != "stop":
-                    GLOBALS.ROBOT.automatic_search()
-                else:
+                GLOBALS.ROBOT.automatic_search()
+                if GLOBALS.ROBOT.CurrentRoutine == "stop":
                     break
             return jsonify(data)
         else:

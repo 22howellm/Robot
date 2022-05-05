@@ -99,6 +99,7 @@ class CameraInterface(object):
         else:
             colour = 'yellow'
             count = yellow_count
+        print('amount of pixels: ' + str(count))
         if count > 300: #more than 300 pixels are between the low and high color
             print(str(colour))
             return str(colour)
