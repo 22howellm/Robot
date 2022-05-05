@@ -6,7 +6,7 @@ import threading
 import picamera
 import picamera.array
 import cv2
-import numpy
+import numpy as np
 import logging
 
 class CameraInterface(object):
@@ -68,16 +68,16 @@ class CameraInterface(object):
     def get_camera_colour(self):
         if not self.frame: #hasnt read a frame from camera
             return "camera is not running yet"
-        img = cv2.imdecode(numpy.fromstring(self.frame, dtype=numpy.uint8), 1)
+        img = cv2.imdecode(np.fromstring(self.frame, dtype=np.uint8), 1)
         # set red range
         redlowcolor = (50,50,150)
         redhighcolor = (128,128,255)
 
-        green_low_color = (0,255,0)
-        green_high_color = (0,255,100)
+        green_low_color = (0,100,0)
+        green_high_color = (90,255,150)
 
-        yellow_low_color = (0,200,255)
-        yellow_high_color = (0,255,255)
+        yellow_low_color = (0,100,104)
+        yellow_high_color = (150,255,255)
 
         # threshold
         redthresh = cv2.inRange(img, redlowcolor, redhighcolor)
@@ -85,10 +85,12 @@ class CameraInterface(object):
         yellowthresh = cv2.inRange(img, yellow_low_color, yellow_high_color)
 
         cv2.imwrite("threshold.jpg", redthresh)
+        cv2.imwrite("threshold.jpg", greenthresh)
+        cv2.imwrite("threshold.jpg", yellowthresh)
 
-        red_count = numpy.sum(numpy.nonzero(redthresh))
-        green_count = numpy.sum(numpy.nonzero(greenthresh))
-        yellow_count = numpy.sum(numpy.nonzero(yellowthresh))
+        red_count = np.sum(np.nonzero(redthresh))
+        green_count = np.sum(np.nonzero(greenthresh))
+        yellow_count = np.sum(np.nonzero(yellowthresh))
 
         self.log("RED PIXELS: " + str(red_count))
         colour = None
@@ -100,9 +102,12 @@ class CameraInterface(object):
             colour = 'yellow'
             count = yellow_count
         print('amount of pixels: ' + str(count))
-        if count > 300: #more than 300 pixels are between the low and high color
+        if colour == 'green' and count > 1000000: #more than 300 pixels are between the low and high color
             print(str(colour))
             return str(colour)
+        else:
+            if count > 7000000:
+                return('yellow')
         return "no colour"
 if __name__ == '__main__':
     camera = CameraInterface()
