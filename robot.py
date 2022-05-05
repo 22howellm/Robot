@@ -3,6 +3,7 @@
 from interfaces.brickpiinterface import *
 import global_vars as GLOBALS
 from numpy import append
+import interfaces.camerainterface as CAMERA
 import numpy as np
 import logging
 import cv2
@@ -32,50 +33,25 @@ class Robot(BrickPiInterface):
             if BP.get_motor_encoder(BP.PORT_D) >= distance or BP.get_motor_encoder(BP.PORT_A) >= distance:
                 break
         return 
-    def turn90_robot_2(self,angle=90,speed=100,power=100):
-        BP = self.BP
-        degrees = angle*2-2
-        BP.offset_motor_encoder(BP.PORT_A, BP.get_motor_encoder(BP.PORT_A)) # reset encoder A
-        BP.offset_motor_encoder(BP.PORT_D, BP.get_motor_encoder(BP.PORT_D)) # reset encoder D
-        BP.set_motor_limits(BP.PORT_A, -1*power, speed)    # float motor D
-        BP.set_motor_limits(BP.PORT_D, power, speed)          # optionally set a power limit (in percent) and a speed limit (in Degrees Per Second)
-        while True:
-            BP.set_motor_position(BP.PORT_D, degrees+5)    # set motor A's target position to the current position of motor D
-            BP.set_motor_position(BP.PORT_A, -1*degrees-5)
-            time.sleep(0.02)
-            if BP.get_motor_encoder(BP.PORT_D) >= degrees or BP.get_motor_encoder(BP.PORT_A) <= -1*degrees:
-                break
+    def medic_package(self):
+        data = {}
+        self.ROBOT.spin_medium_motor(-555)
+        self.ROBOT.spin_medium_motor(-555)
         return
+
     def turn90_robot(self):
         self.rotate_power_degrees_IMU(10,90,1.9) #-0.6
         return 
+    
     #Create a function to search for victim
     def search_victim(self):
-        cap = picamera.PiCamera()
-        cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
-        cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
-        while True:
-            _, frame = cap.read()
-            hsv_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
-            height,width, _ = frame.shape
-            cx = int(width / 2)
-            cy = int(height / 2)
-            pixel_center = hsv_frame[cy, cx]
-            hue_value = pixel_center[0]
-            colour = None
-            if hue_value < 22 and hue_value > 5:
-                colour = 'orange'
-            elif hue_value < 33:
-                colour = 'Yellow'
-            elif hue_value < 78:
-                colour = 'green'
-            else:
-                colour = 'nothing'
-            cv2.putText(frame, colour, (10,50), 0, 1, (255,0,0), 2)
-            cv2.circle(frame, (cx,cy), 5, (255,0,0), 3)
-            cv2.imshow('Frame',frame)
-            key = cv2.waitKey(1)
-        return(colour)
+        colour = CAMERA.get_camera_colour()
+        if colour == 'green':
+            return('unharmed')
+        elif colour == 'yellow':
+            return ('harmed')
+        else:
+            return('Nothing')
     #Create a routine that will effective search the maze and keep track of where the robot has been.
     def automatic_search(self):
         self.CurrentRoutine = "automated search"
@@ -169,6 +145,13 @@ class Robot(BrickPiInterface):
                             else:
                                 print('wall')
                                 immediate_area[direction] = 'walled'
+                                detected = self.search_victim()
+                                print(str(detected))
+                                if detected == 'harmed':
+                                    self.medic_package()
+                                    print('put in medic notes, and where')
+                                elif detected == 'unharmed':
+                                    print('put in medic notes in location')
                                 #search for image, search if there is a wall so it only helps a victim if it is near.
                             self.turn90_robot()
                             th_heading += 90
