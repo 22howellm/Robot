@@ -1,9 +1,9 @@
 #This is where your main robot code resides. It extendeds from the BrickPi Interface File
 #It includes all the code inside brickpiinterface. The CurrentCommand and CurrentRoutine are important because they can keep track of robot functions and commands. Remember Flask is using Threading (e.g. more than once process which can confuse the robot)
 from interfaces.brickpiinterface import *
+from interfaces.camerainterface import *
 import global_vars as GLOBALS
 from numpy import append
-import interfaces.camerainterface as CAMERA
 import numpy as np
 import logging
 import cv2
@@ -45,13 +45,17 @@ class Robot(BrickPiInterface):
     
     #Create a function to search for victim
     def search_victim(self):
-        colour = CAMERA.get_camera_colour()
+        colour = GLOBALS.CAMERA.get_camera_colour()
         if colour == 'green':
             return('unharmed')
         elif colour == 'yellow':
             return ('harmed')
         else:
             return('Nothing')
+
+
+
+
     #Create a routine that will effective search the maze and keep track of where the robot has been.
     def automatic_search(self):
         self.CurrentRoutine = "automated search"
@@ -361,6 +365,8 @@ if __name__ == '__main__':
     bp = ROBOT.BP
     ROBOT.CurrentRoutine = "stop"
     ROBOT.configure_sensors() #This takes 4 seconds
+    GLOBALS.CAMERA = CameraInterface()
+    GLOBALS.CAMERA.start()
     start = time.time()
     limit = start + 10
     input("Press Enter to test")
