@@ -97,7 +97,7 @@ class Robot(BrickPiInterface):
             danger = False
             colour = self.get_colour_sensor()
             print(str(distance_from_start))
-            if colour != 'White':
+            if colour != 'White' and fully_explored == False: #this can stop an error later in the code
                 print('danger')
                 danger = True
             if fully_explored == False:
