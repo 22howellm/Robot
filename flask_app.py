@@ -246,7 +246,8 @@ def mission():
         location = request.form.get('location')
         starttime = datetime.now()
         log("FLASK_APP: mission: " + str(location) + " " + str(notes) + " " + str(starttime))
-        GLOBALS.DATABASE.ModifyQuery("INSERT INTO missions (location, notes, userid) VALUES (?,?,?)",(location,notes,userid))
+        if notes == 'start':
+            GLOBALS.DATABASE.ModifyQuery("INSERT INTO MissionTBL (location, userid, Start_Time) VALUES (?,?,?)",(location,userid,starttime))
         #put start in
         #Get the current mission id and save it into session ['missionid']
         # Get mission history and send to the page

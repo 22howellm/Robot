@@ -900,3 +900,30 @@ INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:51:42] "[37mPOST /stop HTTP/1.1[
 INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:51:42] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
 INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:52:07] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
 INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:52:07] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/Robot/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 759-383-341
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 11:07:54] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 11:07:56] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 11:07:56] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 11:07:56] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 11:07:57] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 11:07:57] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 11:07:57] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/Robot/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 759-383-341
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/Robot/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 759-383-341
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/Robot/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 759-383-341
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/Robot/flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 759-383-341
