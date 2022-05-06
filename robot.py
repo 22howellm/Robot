@@ -35,8 +35,8 @@ class Robot(BrickPiInterface):
         return 
     def medic_package(self):
         data = {}
-        self.ROBOT.spin_medium_motor(-555)
-        self.ROBOT.spin_medium_motor(-555)
+        self.spin_medium_motor(-555)
+        self.spin_medium_motor(-555)
         return
 
     def turn90_robot(self):
@@ -97,7 +97,7 @@ class Robot(BrickPiInterface):
             danger = False
             colour = self.get_colour_sensor()
             print(str(distance_from_start))
-            if colour != 'White' and fully_explored == False: #this can stop an error later in the code
+            if colour != 'White': #this can stop an error later in the code
                 print('danger')
                 danger = True
             if fully_explored == False:
@@ -143,7 +143,7 @@ class Robot(BrickPiInterface):
                                         unexplored_openings += 1
                                 else:
                                     location = immediate_area[direction]
-                                    if known_area[location] == 'completely_explored':
+                                    if known_area[location] == 'completely_explored' or known_area[location] == 'danger':
                                         openings -= 1
                                 openings += 1
                             else:

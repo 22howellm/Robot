@@ -77,7 +77,7 @@ class CameraInterface(object):
         green_high_color = (90,255,150)
 
         yellow_low_color = (0,100,104)
-        yellow_high_color = (150,255,255)
+        yellow_high_color = (100,255,255)
 
         # threshold
         redthresh = cv2.inRange(img, redlowcolor, redhighcolor)
