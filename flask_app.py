@@ -248,6 +248,10 @@ def mission():
         log("FLASK_APP: mission: " + str(location) + " " + str(notes) + " " + str(starttime))
         if notes == 'start':
             GLOBALS.DATABASE.ModifyQuery("INSERT INTO MissionTBL (location, userid, Start_Time) VALUES (?,?,?)",(location,userid,starttime))
+        elif notes == 'end':
+            #GLOBALS.DATABASE.ViewQuery("SELECT Mission_Concluded FROM MissionTBL ")
+            #if
+            pass 
         #put start in
         #Get the current mission id and save it into session ['missionid']
         # Get mission history and send to the page
