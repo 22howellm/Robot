@@ -327,7 +327,24 @@ class Robot(BrickPiInterface):
                     if currenttile != 0:
                         print(str(closest_to_start))
                         for direction in immediate_area:
-                            if immediate_area[direction] == "walled":
+                            if immediate_area[direction] == "unexplored":
+                                known_tile = None
+                                if direction == 0 or direction == 180:
+                                    temp_tile = (str(currenttile_x + direction_support_x[direction]) + "," + str(currenttile_y))
+                                    for i in known_area:
+                                        if area_location[i] == temp_tile:
+                                            known_tile = i                                                   
+                                elif direction == 90 or direction == 270:
+                                    temp_tile = (str(currenttile_x) + "," + str(currenttile_y + direction_support_y[direction]))
+                                    for i in known_area:
+                                        if area_location[i] == temp_tile:
+                                            known_tile = i
+                                if known_tile != None:
+                                    print('tile known')
+                                    print(known_area)
+                                    print(known_tile)
+                                    immediate_area[direction] = known_tile
+                            elif immediate_area[direction] == "walled":
                                 pass
                             elif known_area[immediate_area[direction]] == 'danger':
                                 pass

@@ -277,3 +277,626 @@ INFO:flask_app:IMU GYRO: 'int' object is not iterable
 INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
 INFO:flask_app:IMU GYRO: 'int' object is not iterable
 INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 759-383-341
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:21:21] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:21:21] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:FLASK APP: LOADING THE ROBOT
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:21:25] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:FLASK APP: READING CAMERA
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:21:25] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:21:27] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:FLASK APP: READING CAMERA
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:21:27] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:21:27] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:FLASK APP: READING CAMERA
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:21:28] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:FLASK APP: LOADING THE SOUND
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:21:29] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:21:30] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:21:32] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:flask_app:IMU: 'int' object is not iterable
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:21:32] "[37mPOST /movebackwardsslow HTTP/1.1[0m" 200 -
+INFO:root:RED PIXELS: 0
+INFO:root:RED PIXELS: 0
+INFO:root:RED PIXELS: 9935
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:root:RED PIXELS: 0
+INFO:root:RED PIXELS: 18069
+INFO:root:RED PIXELS: 0
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:root:RED PIXELS: 0
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:23:48] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:23:49] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:23:49] "[35m[1mPOST /automatic_mode HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:23:49] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:23:49] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:23:49] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:23:49] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:23:49] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:23:49] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:23:50] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:23:50] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:23:50] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:23:50] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:23:50] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:23:51] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:23:57] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:root:RED PIXELS: 0
+INFO:root:RED PIXELS: 0
+INFO:root:RED PIXELS: 2901
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:root:RED PIXELS: 0
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:root:RED PIXELS: 0
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:root:RED PIXELS: 0
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:root:RED PIXELS: 0
+INFO:root:RED PIXELS: 0
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:root:RED PIXELS: 0
+INFO:root:RED PIXELS: 1011
+INFO:root:RED PIXELS: 18459
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:32] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:32] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:34] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:34] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:34] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:34] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:34] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:35] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:35] "[37mPOST /automatic_mode HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:35] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:36] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:36] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:36] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:36] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:36] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:37] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:37] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:37] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:37] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:38] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:38] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:38] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:40] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:40] "[37mPOST /moveforwardslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:41] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:41] "[37mPOST /moveforwardslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:44] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:44] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:45] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:45] "[37mPOST /moveforwardslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:46] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:46] "[37mPOST /movebackwardsslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:46] "[37mPOST /turnleftslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:46] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:48] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:48] "[37mPOST /movebackwardsslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:49] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:49] "[37mPOST /moveforwardslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:49] "[37mPOST /turnleftslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:49] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:49] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:49] "[37mPOST /turnleftslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:54] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:56] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:56] "[37mPOST /moveforward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:57] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:57] "[37mPOST /turnright HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:58] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:58] "[37mPOST /moveforward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:59] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:28:59] "[37mPOST /turnleft HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:00] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:00] "[37mPOST /moveforward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:00] "[37mPOST /turnleft HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:01] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:02] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:02] "[37mPOST /turnleft HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:02] "[37mPOST /turnleft HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:02] "[37mPOST /moveforward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:02] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:02] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:02] "[37mPOST /turnright HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:05] "[37mPOST /moveforward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:05] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:06] "[37mPOST /turnright HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:06] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:06] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:08] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:08] "[37mPOST /movebackwardsslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:08] "[37mPOST /turnleftslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:08] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:09] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:09] "[37mPOST /movebackwardsslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:12] "[37mPOST /movebackwards HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:17] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:17] "[37mPOST /movebackwards HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:20] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:20] "[37mPOST /moveforwardslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:20] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:20] "[37mPOST /moveforwardslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:23] "[37mPOST /moveforwardslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:23] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:24] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:24] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:24] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:26] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:26] "[37mPOST /moveforwardslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:26] "[37mPOST /moveforwardslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:27] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:27] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:28] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:31] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:31] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:35] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:41] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:41] "[37mPOST /moveforwardslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:42] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:42] "[37mPOST /moveforwardslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:48] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:48] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:51] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:51] "[37mPOST /turnleftslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:53] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:53] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:56] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:56] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:58] "[37mPOST /moveforwardslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:58] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:59] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:59] "[37mPOST /turnleftslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:29:59] "[37mPOST /turnleftslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:30:02] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:30:02] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:30:07] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:30:07] "[37mPOST /moveforwardslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:30:09] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:30:09] "[37mPOST /turnleftslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:30:12] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:30:12] "[37mPOST /moveforwardslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:30:18] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:30:18] "[37mPOST /turnleftslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:30:18] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:30:18] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:root:RED PIXELS: 324
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:root:RED PIXELS: 373
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:root:RED PIXELS: 0
+INFO:root:RED PIXELS: 0
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:root:RED PIXELS: 11770
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:31:29] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:31:29] "[37mPOST /automatic_mode HTTP/1.1[0m" 200 -
+INFO:root:RED PIXELS: 0
+INFO:root:RED PIXELS: 0
+INFO:root:RED PIXELS: 24808
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:root:RED PIXELS: 0
+INFO:root:RED PIXELS: 13516
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:root:RED PIXELS: 0
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:root:RED PIXELS: 2035
+INFO:root:RED PIXELS: 0
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:root:RED PIXELS: 705
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:root:RED PIXELS: 0
+INFO:root:RED PIXELS: 0
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:root:RED PIXELS: 0
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:34:02] "[35m[1mPOST /automatic_mode HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/Robot/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 759-383-341
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:37:26] "[35m[1mPOST /automatic_mode HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:37:28] "[35m[1mPOST /automatic_mode HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:37:30] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:FLASK APP: LOADING THE ROBOT
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:37:32] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:FLASK APP: READING CAMERA
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:37:32] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:37:34] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:FLASK APP: READING CAMERA
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:37:34] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:37:34] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:FLASK APP: READING CAMERA
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:37:34] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:FLASK APP: LOADING THE SOUND
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:37:36] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:root:RED PIXELS: 0
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:root:RED PIXELS: 0
+INFO:root:RED PIXELS: 2349
+INFO:root:RED PIXELS: 0
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:root:RED PIXELS: 1984
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:39:24] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:39:24] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:39:24] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:39:24] "[35m[1mPOST /automatic_mode HTTP/1.1[0m" 500 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:39:24] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:39:24] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:root:RED PIXELS: 1542
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:root:RED PIXELS: 165
+INFO:root:RED PIXELS: 6823
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:root:RED PIXELS: 0
+INFO:root:RED PIXELS: 10503
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:root:RED PIXELS: 0
+                                                                                                                                                                                       INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 759-383-341
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:43:50] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:LOADING CAMERA
+INFO:root:CAMERA INTERFACE: Started Camera Thread
+INFO:flask_app:FLASK APP: LOADING THE ROBOT
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:44:01] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:FLASK APP: READING CAMERA
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:44:02] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:44:02] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:FLASK APP: READING CAMERA
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:44:02] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:44:03] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:FLASK APP: READING CAMERA
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:44:03] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:44:04] "[37mGET /dashboard HTTP/1.1[0m" 200 -
+INFO:flask_app:FLASK APP: READING CAMERA
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:44:04] "[37mGET /videofeed HTTP/1.1[0m" 200 -
+INFO:flask_app:BRICKPIINTERFACE: Starting thermal sensor thread
+INFO:flask_app:FLASK APP: LOADING THE SOUND
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:44:06] "[37mPOST /robotload HTTP/1.1[0m" 200 -
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:root:RED PIXELS: 0
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:root:RED PIXELS: 0
+INFO:root:RED PIXELS: 0
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:root:RED PIXELS: 0
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:root:RED PIXELS: 1857
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:flask_app:IMU GYRO: 'int' object is not iterable
+INFO:root:RED PIXELS: 0
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:root:RED PIXELS: 2793
+INFO:flask_app:IMU GYRO: [Errno 5] Input/output error
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:45:52] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:45:53] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:45:53] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:45:57] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:45:57] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:45:58] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:45:58] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:45:58] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:45:58] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:45:58] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:45:58] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:45:59] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:45:59] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:45:59] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:45:59] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:46:00] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:46:01] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:46:03] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:46:03] "[37mPOST /moveforwardslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:46:03] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:46:03] "[37mPOST /moveforwardslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:46:04] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:46:04] "[37mPOST /moveforwardslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:46:05] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:46:05] "[37mPOST /movebackwardsslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:46:06] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:46:07] "[37mPOST /moveforward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:46:07] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:46:07] "[37mPOST /automatic_mode HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:46:07] "[37mPOST /moveforward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:46:07] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:46:07] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:46:07] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:46:07] "[37mPOST /moveforward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:46:07] "[37mPOST /moveforward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:46:07] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:46:07] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:46:07] "[37mPOST /moveforward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:46:08] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:46:08] "[37mPOST /moveforward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:46:11] "[37mPOST /moveforward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:46:11] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:46:13] "[37mPOST /moveforward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:46:13] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:46:17] "[37mPOST /reconfig_IMU HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:46:47] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:46:47] "[37mPOST /turnleftslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:46:48] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:46:48] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:46:51] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:46:52] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:46:56] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:46:56] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:46:59] "[37mPOST /shoot HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:02] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:02] "[37mPOST /movebackwardsslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:07] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:07] "[37mPOST /moveforwardslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:08] "[37mPOST /turnleftslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:08] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:08] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:09] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:09] "[37mPOST /moveforwardslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:10] "[37mPOST /turnleft HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:10] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:10] "[37mPOST /moveforward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:10] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:11] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:11] "[37mPOST /turnright HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:11] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:11] "[37mPOST /turnright HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:12] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:13] "[37mPOST /moveforward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:13] "[37mPOST /moveforward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:13] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:14] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:14] "[37mPOST /turnright HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:14] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:14] "[37mPOST /moveforward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:16] "[37mPOST /moveforward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:16] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:16] "[37mPOST /turnleft HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:16] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:16] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:16] "[37mPOST /movebackwards HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:17] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:17] "[37mPOST /movebackwards HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:18] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:18] "[37mPOST /turnleft HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:18] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:18] "[37mPOST /turnleft HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:19] "[37mPOST /turnleft HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:19] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:19] "[37mPOST /turnright HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:19] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:20] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:34] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:34] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:38] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:38] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:46] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:46] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:47] "[37mPOST /turnleftslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:47] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:47] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:47] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:52] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:52] "[37mPOST /moveforwardslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:54] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:54] "[37mPOST /moveforward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:55] "[37mPOST /turnleft HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:55] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:55] "[37mPOST /moveforward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:55] "[37mPOST /turnleft HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:55] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:55] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:55] "[37mPOST /moveforward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:56] "[37mPOST /turnleft HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:56] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:57] "[37mPOST /moveforward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:57] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:57] "[37mPOST /turnleft HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:57] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:58] "[37mPOST /turnright HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:58] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:58] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:58] "[37mPOST /turnleft HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:58] "[37mPOST /moveforward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:47:59] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:00] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:00] "[37mPOST /moveforward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:00] "[37mPOST /moveforward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:01] "[37mPOST /turnright HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:01] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:02] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:02] "[37mPOST /moveforward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:09] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:09] "[37mPOST /turnleft HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:09] "[37mPOST /moveforward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:09] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:10] "[37mPOST /moveforward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:10] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:10] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:10] "[37mPOST /moveforward HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:10] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:10] "[37mPOST /turnright HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:11] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:11] "[37mPOST /turnright HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:12] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:21] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:21] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:25] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:25] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:28] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:28] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:31] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:31] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:32] "[37mPOST /turnleftslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:32] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:36] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:36] "[37mPOST /moveforwardslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:39] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:39] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:42] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:42] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:46] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:46] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:49] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:49] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:52] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:52] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:56] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:48:56] "[37mPOST /moveforwardslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:49:04] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:49:05] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:49:08] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:49:08] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:49:11] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:49:11] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:49:14] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:49:14] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:49:20] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:49:20] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:49:21] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:49:21] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:49:25] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:49:25] "[37mPOST /moveforwardslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:49:34] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:49:34] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:49:37] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:49:37] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:49:41] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:49:41] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:49:44] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:49:44] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:49:47] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:49:47] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:49:53] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:49:53] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:49:57] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:49:57] "[37mPOST /moveforwardslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:50:04] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:50:04] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:50:08] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:50:08] "[37mPOST /moveforwardslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:50:16] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:50:16] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:50:17] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:50:22] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:flask_app:IMU: [Errno 5] Input/output error
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:50:22] "[37mPOST /moveforwardslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:50:22] "[37mPOST /moveforwardslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:50:25] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:50:25] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:50:30] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:50:30] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:50:35] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:50:35] "[37mPOST /moveforwardslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:50:41] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:50:41] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:50:44] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:50:44] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:50:47] "[37mPOST /shoot HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:50:50] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:50:50] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:50:54] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:50:54] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:50:55] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:50:55] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:50:58] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:50:58] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:51:03] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:51:03] "[37mPOST /moveforwardslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:51:07] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:51:07] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:51:08] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:51:08] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:51:08] "[37mPOST /moveforwardslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:51:09] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:51:13] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:51:13] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:51:17] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:51:17] "[37mPOST /moveforwardslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:51:26] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:51:26] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:51:30] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:51:30] "[37mPOST /moveforwardslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:51:42] "[37mPOST /stop HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:51:42] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:52:07] "[37mPOST /turnrightslow HTTP/1.1[0m" 200 -
+INFO:werkzeug:10.10.72.75 - - [06/May/2022 10:52:07] "[37mPOST /stop HTTP/1.1[0m" 200 -
