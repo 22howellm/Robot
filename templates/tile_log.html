@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block content %}
+{% if data %}
+    <form action='/tile_log' method="Post"</form>
+    <h1>Select a mission</h1>
+    <table style="width:100%" class="table">
+        <tr>
+            <th></th>
+            <th>Mission_id</th>
+            <th>Name</th>
+            <th>start time</th>
+            <th>end time</th>
+            <th>Location</th>
+            <th>Concluded</th>
+        </tr>
+        {% for mission in data %}
+      <tr>
+        <td><input type="checkbox" id="vehicle1" name="selectedmission" value={{mission['MissionID']}}></td>
+        <td>{{mission['MissionID']}}</td>
+        <td>{{mission['Name']}}</td>
+        <td>{{mission['Start_time']}}</td>
+        <td>{{mission['End_Time']}}</td>
+        <td>{{mission['Location']}}</td>
+        <td>{{mission['Mission_Concluded']}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    <p>{{message}}</p>
+    <input type="submit" value="View tile logs">
+    </form>
+{% endif %}
+{% endblock %}

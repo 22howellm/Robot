@@ -473,6 +473,7 @@ def action_log():
             return render_template('action_log.html',message = 'Please select a mission',data=results)
     return render_template('action_log.html',message = '',data=results)
 
+
 @app.route('/action_log_extended', methods=['GET','POST'])
 def action_log_extended():
     data = {}
@@ -482,6 +483,31 @@ def action_log_extended():
         return redirect('/action_log')
     return render_template('action_log_extended.html',data=results)
 
+@app.route('/tile_log', methods=['GET','POST'])
+def tile_log():
+    data = {}
+    message = ''
+    results = GLOBALS.DATABASE.ViewQuery('SELECT MissionTBL.MissionID, UserTBL.name, MissionTBL.Start_time, MissionTBL.End_time,MissionTBL.Location,MissionTBL.Mission_Concluded FROM MissionTBL INNER JOIN UserTBL ON MissionTBL.Userid = UserTBL.Userid')
+    if request.method == 'POST':
+        mission = request.form.getlist("selectedmission")
+        if len(mission) > 1:
+            return render_template('tile_log.html',message = 'You can only select on mission',data=results)
+        elif len(mission) == 1:
+            selected_mission = mission[0]
+            session['selected_mission'] = selected_mission
+            return redirect('/tile_log_extended')
+        else:
+            return render_template('tile_log.html',message = 'Please select a mission',data=results)
+    return render_template('tile_log.html',message = '',data=results)
+
+@app.route('/tile_log_extended', methods=['GET','POST'])
+def tile_log_extended():
+    data = {}
+    MissionID = int(session['selected_mission'])
+    results = GLOBALS.DATABASE.ViewQuery('SELECT * FROM TileTBL WHERE MissionID = ?', (MissionID,))
+    if request.method == 'POST':
+        return redirect('/tile_log')
+    return render_template('tile_log_extended.html',data=results)
 #Automatic search code ------------------------------------------------------------------------------------------------------------------------
 
 #automatic mode when turned on will automatically search the area

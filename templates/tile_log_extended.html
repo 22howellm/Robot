@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    <form action='/tile_log_extended' method="Post"</form>
+    <h1>Tile mapping log Mission: {{session['selected_mission']}}</h1>
+    <table style="width:100%" class="table">
+        <tr>
+            <th>Joining Id</th>
+            <th>Tile Maze id</th>
+            <th>Tile coordinates</th>
+            <th>Area information</th>
+            <th>Danger zone</th>
+            <th>Distance from start</th>
+        </tr>
+      {% if data %}
+        {% for mission in data %}
+      <tr>
+        <td>{{mission['JoiningID']}}</td>
+        <td>{{mission['TileID']}}</td>
+        <td>{{mission['Tile_coordinates']}}</td>
+        <td>{{mission['Tile_area_information']}}</td>
+        <td>{{mission['Danger_zone']}}</td>
+        <td>{{mission['Distance_from_start']}}</td>
+      </tr>
+      {% endfor %}
+      {% endif %}
+    </table>
+    <p>{{message}}</p>
+    <input type="submit" value="Go Back">
+    </form>
+{% endblock %}
