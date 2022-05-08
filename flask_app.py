@@ -9,19 +9,6 @@ import global_vars as GLOBALS #load global variables
 import logging, time 
 from datetime import *
 
-def Check_Mission_status():
-        most_recent = GLOBALS.DATABASE.ViewQuery("SELECT Mission_Concluded FROM MissionTBL ORDER BY MissionID DESC LIMIT 1")
-        if most_recent == False: #if there is no mission recorded in the database
-            return(False)
-        else:
-            most_recent = most_recent[0]
-        if most_recent['Mission_Concluded'] == 'True':
-            return(False)
-        else:
-            return(True)
-
-session['Mission_Active'] = Check_Mission_status()
-
 def session_init_time():
     session['time_init'] == time.time()
     return
@@ -39,6 +26,24 @@ app.config.from_object(__name__) #Set app configuration using above SETTINGS
 logging.basicConfig(filename='logs/flask.log', level=logging.INFO)
 GLOBALS.DATABASE = databaseinterface.DatabaseInterface('databases/RobotDatabase.db', app.logger)
 
+#Checks if there is a mission active or not
+def Check_Mission_status():
+        most_recent = GLOBALS.DATABASE.ViewQuery("SELECT Mission_Concluded FROM MissionTBL ORDER BY MissionID DESC LIMIT 1")
+        if most_recent == False: #if there is no mission recorded in the database
+            return(False)
+        else:
+            most_recent = most_recent[0]
+        if most_recent['Mission_Concluded'] == 'True':
+            return(False)
+        else:
+            return(True)
+
+def Update_Current_MissionID(): #updates the current missionId in the session
+    session['Current_MissionID'] = None
+    if session['Mission_Active'] == True:
+        missionid = GLOBALS.DATABASE.ViewQuery("SELECT MissionID FROM MissionTBL where Mission_Concluded = 'False'")
+        session['Current_MissionID'] = missionid[0]['MissionID']
+
 #Log messages
 def log(message):
     app.logger.info(message)
@@ -47,6 +52,8 @@ def log(message):
 #create a login page
 @app.route('/', methods=['GET','POST'])
 def login():
+    session['Mission_Active'] = Check_Mission_status()
+    Update_Current_MissionID()
     if 'userid' in session:
         return redirect('/dashboard')
     message = ""
@@ -112,10 +119,13 @@ def robotload():
         session.clear()
         return redirect('/')
 """
+def Insert_Action_Database(missionid,action,starttime,endtime,start_heading,final_heading):
+    GLOBALS.DATABASE.ModifyQuery('INSERT INTO ActionTBL (Missionid, Action_Type, Action_Start_Time, Action_End_Time,Start_Heading,End_Heading) VALUES (?,?,?,?,?,?)',(missionid,action,starttime,endtime,start_heading,final_heading))
 # Dashboard
 @app.route('/dashboard', methods=['GET','POST'])
 def robotdashboard():
     #passwordsecure()
+    Update_Current_MissionID()
     enabled = int(GLOBALS.ROBOT != None)
     return render_template('dashboard.html', robot_enabled = enabled )
 
@@ -149,8 +159,17 @@ def sensors():
 def lob():
     data = {}
     if GLOBALS.ROBOT:
+        starttime = datetime.now()
+        endtime = None
+        start_heading = GLOBALS.ROBOT.get_compass_IMU()
         GLOBALS.ROBOT.spin_medium_motor(555)
         GLOBALS.ROBOT.spin_medium_motor(555)
+        endtime = datetime.now()
+        final_heading = start_heading = GLOBALS.ROBOT.get_compass_IMU()
+        Mission_status = Check_Mission_status()
+        if Mission_status == True:
+            missionid = session['Current_MissionID']
+            Insert_Action_Database(missionid,'lob',starttime,endtime,start_heading,final_heading) #added a function to make the code neater
     return jsonify(data)
 
 @app.route('/shoot', methods=['GET','POST'])
@@ -249,9 +268,8 @@ def sensorview():
 @app.route('/mission', methods=['GET','POST'])
 def mission():
     data = {}
-    #passwordsecure()
     Mission_Active = False #until proven otherwise
-    Mission_Active = Check_Mission_status()#code defined near the start
+    Mission_Active = Check_Mission_status()#code defined near the start which checks if there is an active mission
     userid = int(session['userid'])
     missionid = None
     name = GLOBALS.DATABASE.ViewQuery("SELECT Name FROM UserTBL WHERE Userid = ?", (userid,))
