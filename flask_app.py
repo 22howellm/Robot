@@ -19,7 +19,9 @@ def Check_Mission_status():
             return(False)
         else:
             return(True)
-            
+
+session['Mission_Active'] = Check_Mission_status()
+
 def session_init_time():
     session['time_init'] == time.time()
     return
@@ -249,7 +251,7 @@ def mission():
     data = {}
     #passwordsecure()
     Mission_Active = False #until proven otherwise
-    Mission_Active = Check_Mission_status()
+    Mission_Active = Check_Mission_status()#code defined near the start
     userid = int(session['userid'])
     missionid = None
     name = GLOBALS.DATABASE.ViewQuery("SELECT Name FROM UserTBL WHERE Userid = ?", (userid,))
