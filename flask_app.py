@@ -9,6 +9,17 @@ import global_vars as GLOBALS #load global variables
 import logging, time 
 from datetime import *
 
+def Check_Mission_status():
+        most_recent = GLOBALS.DATABASE.ViewQuery("SELECT Mission_Concluded FROM MissionTBL ORDER BY MissionID DESC LIMIT 1")
+        if most_recent == False: #if there is no mission recorded in the database
+            return(False)
+        else:
+            most_recent = most_recent[0]
+        if most_recent['Mission_Concluded'] == 'True':
+            return(False)
+        else:
+            return(True)
+            
 def session_init_time():
     session['time_init'] == time.time()
     return
@@ -238,16 +249,6 @@ def mission():
     data = {}
     #passwordsecure()
     Mission_Active = False #until proven otherwise
-    def Check_Mission_status():
-        most_recent = GLOBALS.DATABASE.ViewQuery("SELECT Mission_Concluded FROM MissionTBL ORDER BY MissionID DESC LIMIT 1")
-        if most_recent == False: #if there is no mission recorded in the database
-            return(False)
-        else:
-            most_recent = most_recent[0]
-        if most_recent['Mission_Concluded'] == 'True':
-            return(False)
-        else:
-            return(True)
     Mission_Active = Check_Mission_status()
     userid = int(session['userid'])
     missionid = None
