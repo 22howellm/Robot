@@ -927,3 +927,1817 @@ INFO:werkzeug: * Detected change in '/home/pi/Desktop/Robot/flask_app.py', reloa
 INFO:werkzeug: * Restarting with stat
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 759-383-341
+INFO:werkzeug: * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.112:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:54:30] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:54:31] "GET /static/css/custom.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:54:31] "GET /static/js/custom.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:54:31] "GET /static/css/theme.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:54:31] "GET /static/js/new_ajax_helper.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:54:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:54:33] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:54:33] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:54:33] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:54:33] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:54:33] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:54:34] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:54:34] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:54:34] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:54:34] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:54:34] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:54:34] "GET /static/js/dashboard.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:54:34] "GET /static/js/mapping.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:54:34] "GET /static/js/keybind.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:54:35] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:54:35] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:54:35] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:54:35] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:54:35] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:55:15] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:55:15] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:55:15] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:55:15] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:55:15] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:55:16] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:55:16] "GET /static/css/theme.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:55:16] "GET /static/css/custom.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:55:16] "GET /static/js/new_ajax_helper.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:55:16] "GET /static/js/custom.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:55:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:55:17] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:55:17] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:55:17] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:55:17] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:55:17] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:55:17] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:55:17] "[36mGET /static/js/mapping.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:55:17] "[36mGET /static/js/keybind.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:55:19] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:55:19] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:55:19] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:55:19] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:55:19] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:55:36] "[35m[1mPOST /mission HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:55:36] "GET /mission?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:55:36] "GET /mission?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:55:36] "GET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:55:36] "[36mGET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:55:52] "[35m[1mPOST /mission HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:55:52] "[36mGET /mission?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:55:52] "[36mGET /mission?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:55:52] "[36mGET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:55:52] "[36mGET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:55:55] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:55:55] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:55:55] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:55:55] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:55:55] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+ERROR:flask_app:DATABASE ERROR: no such table: users
+ERROR:flask_app:SELECT * FROM users WHERE email = ?
+INFO:flask_app:False
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:56:14] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:56:14] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:56:14] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:56:14] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:56:14] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+ERROR:flask_app:DATABASE ERROR: no such table: users
+ERROR:flask_app:SELECT * FROM users WHERE email = ?
+INFO:flask_app:False
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:56:25] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:56:25] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:56:25] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:56:25] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:56:25] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+ERROR:flask_app:DATABASE ERROR: no such table: users
+ERROR:flask_app:SELECT * FROM users WHERE email = ?
+INFO:flask_app:False
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:56:36] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:56:36] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:56:36] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:56:36] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:56:36] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+ERROR:flask_app:DATABASE ERROR: no such table: users
+ERROR:flask_app:SELECT * FROM users WHERE email = ?
+INFO:flask_app:False
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:57:35] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:57:35] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:57:35] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:57:35] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:57:35] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+ERROR:flask_app:DATABASE ERROR: no such table: users
+ERROR:flask_app:SELECT * FROM users WHERE email = ?
+INFO:flask_app:False
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:57:38] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:57:38] "GET /static/css/theme.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:57:38] "GET /static/css/custom.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:57:38] "GET /static/js/new_ajax_helper.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:57:38] "GET /static/js/custom.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.137.1 - - [08/May/2022 10:57:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug: * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.112:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:00:59] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:00:59] "GET /static/css/theme.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:00:59] "GET /static/css/custom.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:00:59] "GET /static/js/custom.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:00:59] "GET /static/js/new_ajax_helper.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:01:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:flask_app:[{'Userid': 1, 'Name': 'admin', 'Email': 'admin@admin', 'Password': 'BulletsUntilItsFixed', 'Permission': 'admin', 'Last_Acessed': None}]
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:01:10] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:01:10] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:01:10] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:01:10] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:01:10] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:flask_app:[{'Userid': 1, 'Name': 'admin', 'Email': 'admin@admin', 'Password': 'Bullets', 'Permission': 'admin', 'Last_Acessed': None}]
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:01:49] "[32mPOST / HTTP/1.1[0m" 302 -
+ERROR:flask_app:DATABASE ERROR: no such table: users
+ERROR:flask_app:SELECT * FROM users WHERE userid = ?
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:01:49] "[35m[1mGET /dashboard HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:01:49] "GET /dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:01:49] "GET /dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:01:49] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:01:49] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug: * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.112:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:03:52] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:03:52] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:03:52] "GET /static/js/keybind.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:03:52] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:03:52] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:03:52] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:03:52] "GET /static/js/dashboard.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:03:52] "GET /static/js/mapping.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:03:53] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:03:53] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:03:53] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:03:53] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:03:53] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:03:53] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:03:53] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:03:53] "[36mGET /static/js/mapping.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:03:53] "[36mGET /static/js/keybind.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:03:54] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:03:54] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:03:54] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:03:54] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:03:54] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:03:54] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:03:54] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:03:54] "[36mGET /static/js/mapping.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:03:54] "[36mGET /static/js/keybind.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:03:56] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:03:56] "GET /static/css/theme.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:03:56] "GET /static/js/new_ajax_helper.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:03:56] "GET /static/css/custom.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:03:56] "GET /static/js/dashboard.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:03:56] "GET /static/js/custom.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:03:56] "GET /static/js/mapping.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:03:56] "GET /static/js/keybind.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:03:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:03:57] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:03:57] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:03:57] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:03:57] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:03:57] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission: brisbane start 2022-05-08 11:04:08.723142
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:04:08] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:04:08] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:04:08] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:04:08] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:04:08] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:04:59] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:04:59] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:04:59] "[36mGET /static/js/keybind.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:04:59] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:04:59] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:04:59] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:04:59] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:04:59] "[36mGET /static/js/mapping.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:05:00] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:05:00] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:05:00] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:05:00] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:05:00] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission: brisbane start 2022-05-08 11:05:03.858751
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:05:03] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:05:03] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:05:03] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:05:03] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:05:03] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:06:54] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:06:54] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:06:54] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:06:54] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:06:54] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 11:06:57.501157
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:06:57] "[35m[1mPOST /mission HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:06:57] "GET /mission?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:06:57] "GET /mission?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:06:57] "GET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:06:57] "[36mGET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 11:07:11.930494
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:07:11] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:07:12] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:07:12] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:07:12] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:07:12] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 11:07:15.306910
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:07:15] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:07:15] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:07:15] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:07:15] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:07:15] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 11:12:16.395534
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:12:16] "[35m[1mPOST /mission HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:12:16] "[36mGET /mission?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:12:16] "[36mGET /mission?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:12:16] "[36mGET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:12:16] "[36mGET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 11:13:07.436068
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:13:07] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:13:07] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:13:07] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:13:07] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:13:07] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 11:13:47.217993
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:13:47] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:13:47] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:13:47] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:13:47] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:13:47] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:14:08] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:14:08] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:14:08] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:14:08] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:14:08] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.112:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:20:49] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:20:49] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:20:49] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:20:49] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:20:49] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 11:20:52.632513
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:20:52] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:20:52] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:20:52] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:20:52] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:20:52] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 11:22:53.674153
+ERROR:flask_app:DATABASE ERROR: database is locked
+ERROR:flask_app:INSERT INTO MissionTBL (location, userid, Start_Time, Mission_Concluded) VALUES (?,?,?,?)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:22:59] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:22:59] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:22:59] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:22:59] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:22:59] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 11:23:02.359367
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:23:05] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:23:05] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:23:05] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:23:05] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:23:05] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 11:23:07.314123
+ERROR:flask_app:DATABASE ERROR: database is locked
+ERROR:flask_app:INSERT INTO MissionTBL (location, userid, Start_Time, Mission_Concluded) VALUES (?,?,?,?)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:23:07] "POST /mission HTTP/1.1" 200 -
+ERROR:flask_app:DATABASE ERROR: database is locked
+ERROR:flask_app:INSERT INTO MissionTBL (location, userid, Start_Time, Mission_Concluded) VALUES (?,?,?,?)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:23:12] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:23:12] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:23:12] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:23:12] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:23:12] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 11:23:33.628148
+ERROR:flask_app:DATABASE ERROR: database is locked
+ERROR:flask_app:INSERT INTO MissionTBL (location, userid, Start_Time, Mission_Concluded) VALUES (?,?,?,?)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:23:39] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:23:39] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:23:39] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:23:39] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:23:39] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 11:23:44.278023
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:23:44] "[35m[1mPOST /mission HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:23:44] "[36mGET /mission?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:23:44] "[36mGET /mission?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:23:44] "[36mGET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:23:44] "[36mGET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 11:26:23.102273
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:23] "[35m[1mPOST /mission HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:23] "[36mGET /mission?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:23] "[36mGET /mission?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:23] "[36mGET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:23] "[36mGET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:31] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:31] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:31] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:31] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:31] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:31] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:31] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:31] "[36mGET /static/js/mapping.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:31] "[36mGET /static/js/keybind.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:32] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:32] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:32] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:32] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:32] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 11:26:34.136957
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:34] "[35m[1mPOST /mission HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:34] "[36mGET /mission?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:34] "[36mGET /mission?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:34] "[36mGET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:34] "[36mGET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:56] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:56] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:56] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:56] "[36mGET /static/js/keybind.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:56] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:56] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:56] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:56] "[36mGET /static/js/mapping.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:56] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:57] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:58] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:58] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:58] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:58] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 11:26:59.729113
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:59] "[35m[1mPOST /mission HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:59] "[36mGET /mission?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:59] "[36mGET /mission?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:59] "[36mGET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:26:59] "[36mGET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 11:27:17.692052
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:17] "[35m[1mPOST /mission HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:17] "[36mGET /mission?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:17] "[36mGET /mission?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:17] "[36mGET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:17] "[36mGET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:19] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:19] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:19] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:19] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:19] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:19] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:19] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:19] "[36mGET /static/js/mapping.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:19] "[36mGET /static/js/keybind.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:21] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:21] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:21] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:21] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:21] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 11:27:23.360989
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:23] "[35m[1mPOST /mission HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:23] "[36mGET /mission?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:23] "[36mGET /mission?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:23] "[36mGET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:23] "[36mGET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.112:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:31] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:31] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:31] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:31] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:31] "[36mGET /static/js/mapping.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:31] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:31] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:31] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:31] "[36mGET /static/js/keybind.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:32] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:32] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:32] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:32] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:32] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 11:27:33.889922
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:33] "[35m[1mPOST /mission HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:33] "[36mGET /mission?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:33] "[36mGET /mission?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:34] "[36mGET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:34] "[36mGET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 11:27:57.872622
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:57] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:58] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:58] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:58] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:27:58] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 11:28:00.072609
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:28:00] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:28:00] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:28:00] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:28:00] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:28:00] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 11:28:17.057835
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:28:17] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:28:17] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:28:17] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:28:17] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:28:17] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:28:25] "GET /sensorview HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:28:25] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:28:25] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:28:25] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:28:25] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:28:25] "GET /static/js/sensor.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:28:26] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:28:26] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:28:26] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:28:26] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:28:26] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:28:27] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:28:27] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:28:27] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:28:27] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:28:27] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:28:27] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:28:27] "[36mGET /static/js/mapping.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:28:27] "[36mGET /static/js/keybind.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:28:28] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:28:28] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:28:28] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:28:28] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:28:28] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:32:50] "[35m[1mGET /mission HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:32:50] "GET /mission?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:32:50] "GET /mission?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:32:50] "GET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:32:50] "GET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:32:51] "[35m[1mGET /mission HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:32:51] "[36mGET /mission?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:32:51] "[36mGET /mission?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:32:51] "[36mGET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:32:51] "[36mGET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:32:56] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:32:56] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:32:56] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:32:56] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:32:56] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:32:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:33:13] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:33:13] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:33:13] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:33:13] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:33:13] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:33:26] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:33:26] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:33:26] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:33:26] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:33:26] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:33:43] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:33:43] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:33:43] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:33:43] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:33:43] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:33:49] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:33:49] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:33:49] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:33:49] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:33:49] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:33:50] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:33:50] "GET /static/css/theme.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:33:50] "GET /static/css/custom.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:33:50] "GET /static/js/new_ajax_helper.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:33:50] "GET /static/js/custom.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:33:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:34:06] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:34:07] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:34:07] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:34:07] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:34:07] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug: * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.112:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.112:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:53:26] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:53:26] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:53:26] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:53:26] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:53:26] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:flask_app:FLASK_APP: mission: brisbane end 2022-05-08 11:53:30.729358
+ERROR:flask_app:DATABASE ERROR: near "Values": syntax error
+ERROR:flask_app:UPDATE UserTBL SET Mission_Concluded = "True", End_time = ? WHERE MissionID = ? Values(?,?)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:53:30] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:53:30] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:53:30] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:53:30] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:53:30] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:flask_app:FLASK_APP: mission: brisbane end 2022-05-08 11:53:57.422712
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:53:57] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:53:57] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:53:57] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:53:57] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:53:57] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 11:54:01.283781
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:54:01] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:54:01] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:54:01] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:54:01] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:54:01] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:flask_app:FLASK_APP: mission:  end 2022-05-08 11:54:12.784121
+ERROR:flask_app:DATABASE ERROR: near "Values": syntax error
+ERROR:flask_app:UPDATE UserTBL SET Mission_Concluded = "True", End_time = ? WHERE MissionID = ? Values(?,?)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:54:12] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:54:12] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:54:12] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:54:12] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:54:12] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 11:54:47.165205
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:54:47] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:54:47] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:54:47] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:54:47] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:54:47] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:flask_app:FLASK_APP: mission:  end 2022-05-08 11:54:48.943257
+ERROR:flask_app:DATABASE ERROR: near "Values": syntax error
+ERROR:flask_app:UPDATE UserTBL SET Mission_Concluded = "True", End_Time = ? WHERE MissionID = ? Values(?,?)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:54:48] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:54:48] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:54:48] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:54:48] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:54:48] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug: * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.112:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 11:55:41.130830
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:55:41] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:55:41] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:55:41] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:55:41] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:55:41] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:flask_app:FLASK_APP: mission:  end 2022-05-08 11:55:43.368092
+ERROR:flask_app:DATABASE ERROR: near "WHERE": syntax error
+ERROR:flask_app:UPDATE UserTBL SET Mission_Concluded = "True", End_Time = ?, WHERE MissionID = ? Values(?,?)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:55:43] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:55:43] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:55:43] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:55:43] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:55:43] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:flask_app:FLASK_APP: mission: brisbane start 2022-05-08 11:56:18.022128
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:56:18] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:56:18] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:56:18] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:56:18] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:56:18] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:flask_app:FLASK_APP: mission:  end 2022-05-08 11:56:19.847726
+ERROR:flask_app:DATABASE ERROR: near "WHERE": syntax error
+ERROR:flask_app:UPDATE UserTBL SET Mission_Concluded = "True", End_Time = ?, WHERE MissionID = ? Values(?,?)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:56:19] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:56:19] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:56:19] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:56:19] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:56:19] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:58:39] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:58:39] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:58:39] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:58:39] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:58:39] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 11:58:41.214929
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:58:41] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:58:41] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:58:41] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:58:41] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:58:41] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:flask_app:FLASK_APP: mission:  end 2022-05-08 11:58:43.046449
+ERROR:flask_app:DATABASE ERROR: near "Values": syntax error
+ERROR:flask_app:UPDATE UserTBL SET Mission_Concluded = "True" WHERE MissionID = ? Values(?)
+ERROR:flask_app:DATABASE ERROR: near "Values": syntax error
+ERROR:flask_app:UPDATE UserTBL SET End_time = ? WHERE MissionID = ? Values(?,?)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:58:43] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:58:43] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:58:43] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:58:43] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:58:43] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 11:59:20.561089
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:59:20] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:59:20] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:59:20] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:59:20] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:59:20] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:flask_app:FLASK_APP: mission:  end 2022-05-08 11:59:22.445722
+ERROR:flask_app:DATABASE ERROR: near "Values": syntax error
+ERROR:flask_app:UPDATE UserTBL SET Mission_Concluded = "True" WHERE MissionID = ? Values(?)
+ERROR:flask_app:DATABASE ERROR: near "Values": syntax error
+ERROR:flask_app:UPDATE UserTBL SET End_Time = ? WHERE MissionID = ? Values(?,?)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:59:22] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:59:22] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:59:22] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:59:22] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 11:59:22] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:flask_app:FLASK_APP: mission: brisbane start 2022-05-08 12:01:48.305594
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:01:48] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:01:48] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:01:48] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:01:48] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:01:48] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:flask_app:FLASK_APP: mission:  end 2022-05-08 12:01:51.322372
+ERROR:flask_app:DATABASE ERROR: near "Values": syntax error
+ERROR:flask_app:UPDATE MissionTBL SET Mission_Concluded = ?, End_Time = ? WHERE MissionID = ? Values(?,?,?)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:01:51] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:01:51] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:01:51] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:01:51] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:01:51] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:flask_app:FLASK_APP: mission:  end 2022-05-08 12:03:25.154397
+ERROR:flask_app:DATABASE ERROR: near "Values": syntax error
+ERROR:flask_app:UPDATE MissionTBL SET Mission_Concluded = ?, End_Time = ? WHERE MissionID = ? Values(?,?,?)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:03:25] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:03:25] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:03:25] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:03:25] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:03:25] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug: * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.112:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:flask_app:FLASK_APP: mission:  end 2022-05-08 12:05:49.071170
+ERROR:flask_app:DATABASE ERROR: near "Values": syntax error
+ERROR:flask_app:UPDATE MissionTBL SET Mission_Concluded = ?, End_Time = ? WHERE MissionID = ? Values(?,?,?)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:05:49] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:05:49] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:05:49] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:05:49] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:05:49] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:flask_app:FLASK_APP: mission:  end 2022-05-08 12:05:51.597386
+ERROR:flask_app:DATABASE ERROR: near "Values": syntax error
+ERROR:flask_app:UPDATE MissionTBL SET Mission_Concluded = ?, End_Time = ? WHERE MissionID = ? Values(?,?,?)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:05:51] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:05:51] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:05:51] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:05:51] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:05:51] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:flask_app:FLASK_APP: mission:  end 2022-05-08 12:06:04.273237
+ERROR:flask_app:DATABASE ERROR: near "Values": syntax error
+ERROR:flask_app:UPDATE MissionTBL SET Mission_Concluded = ?, End_Time = ? WHERE MissionID = ? Values(?,?,?)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:06:04] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:06:04] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:06:04] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:06:04] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:06:04] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug: * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.112:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:flask_app:FLASK_APP: mission:  end 2022-05-08 12:06:37.040190
+ERROR:flask_app:DATABASE ERROR: near "Values": syntax error
+ERROR:flask_app:UPDATE MissionTBL SET Mission_Concluded = ? WHERE MissionID = ? Values(?,?,?)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:06:37] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:06:37] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:06:37] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:06:37] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:06:37] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:flask_app:FLASK_APP: mission:  end 2022-05-08 12:06:40.193169
+ERROR:flask_app:DATABASE ERROR: near "Values": syntax error
+ERROR:flask_app:UPDATE MissionTBL SET Mission_Concluded = ? WHERE MissionID = ? Values(?,?,?)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:06:40] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:06:40] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:06:40] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:06:40] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:06:40] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug: * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.112:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:flask_app:FLASK_APP: mission:  end 2022-05-08 12:07:29.828058
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:UPDATE MissionTBL SET Mission_Concluded = ? WHERE MissionID = ? VALUES (?,?,?)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:07:29] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:07:29] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:07:29] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:07:29] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:07:29] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:flask_app:FLASK_APP: mission:  end 2022-05-08 12:07:32.347145
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:UPDATE MissionTBL SET Mission_Concluded = ? WHERE MissionID = ? VALUES (?,?,?)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:07:32] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:07:32] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:07:32] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:07:32] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:07:32] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug: * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.112:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:flask_app:FLASK_APP: mission:  end 2022-05-08 12:08:59.224808
+ERROR:flask_app:DATABASE ERROR: near "=": syntax error
+ERROR:flask_app:UPDATE MissionTBL SET (Mission_Concluded = ?, End_Time = ?) WHERE MissionID = ? VALUES (?,?,?)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:08:59] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:08:59] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:08:59] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:08:59] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:08:59] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:flask_app:FLASK_APP: mission:  end 2022-05-08 12:09:02.565978
+ERROR:flask_app:DATABASE ERROR: near "=": syntax error
+ERROR:flask_app:UPDATE MissionTBL SET (Mission_Concluded = ?, End_Time = ?) WHERE MissionID = ? VALUES (?,?,?)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:09:02] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:09:02] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:09:02] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:09:02] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:09:02] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug: * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.112:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:flask_app:FLASK_APP: mission:  end 2022-05-08 12:09:43.342830
+ERROR:flask_app:DATABASE ERROR: near "=": syntax error
+ERROR:flask_app:UPDATE MissionTBL SET (Mission_Concluded = ?, End_Time = ?) WHERE MissionID = ? VALUES (?,?,?)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:09:43] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:09:43] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:09:43] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:09:43] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:09:43] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:flask_app:FLASK_APP: mission:  end 2022-05-08 12:09:46.448566
+ERROR:flask_app:DATABASE ERROR: near "=": syntax error
+ERROR:flask_app:UPDATE MissionTBL SET (Mission_Concluded = ?, End_Time = ?) WHERE MissionID = ? VALUES (?,?,?)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:09:46] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:09:46] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:09:46] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:09:46] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:09:46] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 12:12:10.072788
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:12:10] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:12:10] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:12:10] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:12:10] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:12:10] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:flask_app:FLASK_APP: mission:  end 2022-05-08 12:12:11.977250
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:UPDATE MissionTBL SET Mission_Concluded = ?, End_Time = ? WHERE MissionID = ? VALUES (?,?,?)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:12:11] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:12:12] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:12:12] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:12:12] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:12:12] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 12:12:38.380702
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:12:38] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:12:38] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:12:38] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:12:38] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:12:38] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:flask_app:FLASK_APP: mission:  end 2022-05-08 12:12:41.813769
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:UPDATE MissionTBL SET Mission_Concluded = ?, End_Time = ? WHERE MissionID = ? VALUES (?,?,?)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:12:41] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:12:41] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:12:41] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:12:41] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:12:41] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:flask_app:FLASK_APP: mission:  end 2022-05-08 12:13:45.915558
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:13:45] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:13:46] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:13:46] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:13:46] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:13:46] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:flask_app:FLASK_APP: mission: brisbane start 2022-05-08 12:13:57.172755
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:13:57] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:13:57] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:13:57] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:13:57] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:13:57] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:flask_app:FLASK_APP: mission:  end 2022-05-08 12:14:00.258624
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:14:00] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:14:00] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:14:00] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:14:00] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:14:00] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug: * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.112:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:17:04] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:17:04] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:17:04] "[36mGET /static/js/keybind.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:17:04] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:17:04] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:17:04] "[36mGET /static/js/mapping.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:17:04] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:17:04] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:17:05] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:17:05] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:17:05] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:17:05] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:17:05] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:17:06] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:17:06] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:17:06] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:17:06] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:17:06] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:flask_app:FLASK_APP: mission:   2022-05-08 12:17:22.881526
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:17:22] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:17:22] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:17:22] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:17:22] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:17:22] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.112:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:flask_app:FLASK_APP: mission:   2022-05-08 12:18:18.950271
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:18:18] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:18:19] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:18:19] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:18:19] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:18:19] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:flask_app:FLASK_APP: mission:   2022-05-08 12:18:21.194024
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:18:21] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:18:21] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:18:21] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:18:21] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:18:21] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:18:22] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:18:22] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:18:22] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:18:22] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:18:22] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:18:22] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:18:22] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:18:22] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:18:22] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:18:22] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:18:22] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:18:22] "[36mGET /static/js/mapping.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:18:22] "[36mGET /static/js/keybind.js HTTP/1.1[0m" 304 -
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:18:23] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:18:23] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:18:23] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:18:23] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:18:23] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:19:04] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:19:04] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:19:04] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:19:04] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:19:04] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:19:04] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:19:04] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:19:04] "[36mGET /static/js/mapping.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:19:04] "[36mGET /static/js/keybind.js HTTP/1.1[0m" 304 -
+INFO:flask_app:LOADING CAMERA
+INFO:flask_app:FLASK APP: CAMERA NOT WORKING
+INFO:flask_app:FLASK APP: LOADING THE ROBOT
+INFO:flask_app:FLASK APP: LOADING THE SOUND
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:19:05] "[35m[1mPOST /robotload HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:19:06] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:19:06] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:19:06] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:19:06] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:19:06] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:19:06] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:19:06] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:19:06] "[36mGET /static/js/mapping.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:19:06] "[36mGET /static/js/keybind.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:19:08] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:19:08] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:19:08] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:19:08] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:19:08] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:19:08] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:19:08] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:19:08] "[36mGET /static/js/keybind.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:19:08] "[36mGET /static/js/mapping.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:19:09] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:19:09] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:19:09] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:19:09] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:19:09] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:19:09] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:19:09] "[36mGET /static/js/mapping.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:19:09] "[36mGET /static/js/keybind.js HTTP/1.1[0m" 304 -
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:19:09] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:19:09] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:19:09] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:19:09] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:19:09] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:20:06] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:20:06] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:20:06] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:20:06] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:20:06] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:20:08] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:20:08] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:20:08] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:20:08] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:20:08] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:20:08] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:20:08] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:20:08] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:20:08] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:20:08] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug: * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.112:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (,?)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:21:02] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:21:02] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:21:02] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:21:02] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:21:02] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (,?)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:21:04] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:21:04] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:21:04] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:21:04] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:21:04] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug: * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.112:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?,)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:21:18] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:21:18] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:21:18] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:21:18] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:21:18] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:SELECT Name FROM UserTBL WHERE Userid = ? VALUES (?,)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:21:19] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:21:19] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:21:19] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:21:19] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:21:19] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:22:18] "[35m[1mGET /mission HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:22:18] "[36mGET /mission?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:22:18] "[36mGET /mission?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:22:18] "[36mGET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:22:18] "[36mGET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:22:19] "[35m[1mGET /mission HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:22:19] "[36mGET /mission?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:22:19] "[36mGET /mission?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:22:19] "[36mGET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:22:19] "[36mGET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.112:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:22:41] "[35m[1mGET /mission HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:22:41] "[36mGET /mission?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:22:41] "[36mGET /mission?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:22:41] "[36mGET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:22:41] "[36mGET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug: * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.112:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:24:13] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:24:13] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:24:13] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:24:13] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:24:13] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:26:09] "[35m[1mGET /mission HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:26:09] "[36mGET /mission?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:26:09] "[36mGET /mission?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:26:09] "[36mGET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:26:09] "[36mGET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:26:10] "[35m[1mGET /mission HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:26:10] "[36mGET /mission?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:26:10] "[36mGET /mission?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:26:10] "[36mGET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:26:10] "[36mGET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:26:28] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:26:28] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:26:28] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:26:28] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:26:28] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:30:25] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:30:25] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:30:25] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:30:25] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:30:25] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:30:45] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:30:45] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:30:45] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:30:45] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:30:45] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:30:56] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:30:56] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:30:56] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:30:56] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:30:56] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:31:13] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:31:13] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:31:13] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:31:13] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:31:13] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:31:26] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:31:26] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:31:26] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:31:26] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:31:26] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:31:40] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:31:40] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:31:40] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:31:40] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:31:40] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.112:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:37:56] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:37:56] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:37:56] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:37:56] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:37:56] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission: brisbane start 2022-05-08 12:37:59.609992
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:37:59] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:37:59] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:37:59] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:37:59] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:37:59] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission: brisbane end 2022-05-08 12:38:03.062330
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:38:03] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:38:03] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:38:03] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:38:03] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:38:03] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:flask_app:FLASK_APP: mission:  end 2022-05-08 12:39:32.518357
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:39:32] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:39:32] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:39:32] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:39:32] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:39:32] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:flask_app:FLASK_APP: mission:  end 2022-05-08 12:41:05.163874
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:41:05] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:41:05] "GET /static/css/theme.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:41:05] "GET /static/css/custom.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:41:05] "GET /static/js/new_ajax_helper.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:41:05] "GET /static/js/custom.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:41:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:flask_app:FLASK_APP: mission:  end 2022-05-08 12:41:06.917220
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:41:06] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:41:06] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:41:06] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:41:06] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:41:06] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 12:41:16.946230
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:41:16] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:41:16] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:41:16] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:41:16] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:41:16] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  end 2022-05-08 12:41:18.573826
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:41:18] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:41:18] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:41:18] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:41:18] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:41:18] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:flask_app:FLASK_APP: mission:  end 2022-05-08 12:47:55.277663
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:47:55] "[35m[1mPOST /mission HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:47:55] "[36mGET /mission?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:47:55] "[36mGET /mission?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:47:55] "[36mGET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:47:55] "[36mGET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  end 2022-05-08 12:48:24.173627
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:48:24] "[35m[1mPOST /mission HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:48:24] "[36mGET /mission?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:48:24] "[36mGET /mission?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:48:24] "[36mGET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:48:24] "[36mGET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  end 2022-05-08 12:48:43.441461
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:48:43] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:48:43] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:48:43] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:48:43] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:48:43] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  end 2022-05-08 12:48:52.460880
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:48:52] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:48:52] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:48:52] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:48:52] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:48:52] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission: brisbane start 2022-05-08 12:48:56.219154
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:48:56] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:48:56] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:48:56] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:48:56] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:48:56] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission: brisbane start 2022-05-08 12:48:59.825091
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:48:59] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:48:59] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:48:59] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:48:59] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:48:59] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:flask_app:FLASK_APP: mission:  end 2022-05-08 12:49:58.406464
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:49:58] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:49:58] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:49:58] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:49:58] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:49:58] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  end 2022-05-08 12:50:01.232959
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:50:01] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:50:01] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:50:01] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:50:01] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:50:01] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 12:50:19.210114
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:50:19] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:50:19] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:50:19] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:50:19] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:50:19] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 12:50:22.709246
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:50:22] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:50:22] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:50:22] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:50:22] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:50:22] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 12:51:31.667998
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:51:31] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:51:31] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:51:31] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:51:31] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:51:31] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 12:58:11.620341
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:58:11] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:58:11] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:58:11] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:58:11] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:58:11] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 12:58:16.056740
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:58:16] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:58:16] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:58:16] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:58:16] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:58:16] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  end 2022-05-08 12:58:25.792676
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:58:25] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:58:25] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:58:25] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:58:25] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 12:58:25] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  end 2022-05-08 13:00:19.065133
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:00:19] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:00:19] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:00:19] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:00:19] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:00:19] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 13:00:23.003335
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:00:23] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:00:23] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:00:23] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:00:23] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:00:23] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 13:00:37.749315
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:00:37] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:00:37] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:00:37] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:00:37] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:00:37] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 13:00:48.858156
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:00:48] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:00:48] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:00:48] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:00:48] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:00:48] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  end 2022-05-08 13:02:59.650116
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:02:59] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:02:59] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:02:59] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:02:59] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:02:59] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  end 2022-05-08 13:03:02.118210
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:03:02] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:03:02] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:03:02] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:03:02] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:03:02] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 13:03:07.560040
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:03:07] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:03:07] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:03:07] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:03:07] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:03:07] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 13:03:10.051793
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:03:10] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:03:10] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:03:10] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:03:10] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:03:10] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 13:03:49.946742
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:03:49] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:03:49] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:03:49] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:03:49] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:03:49] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 13:04:40.086905
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:04:40] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:04:40] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:04:40] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:04:40] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:04:40] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 13:04:44.890832
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:04:44] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:04:44] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:04:44] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:04:44] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:04:44] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 13:04:50.370421
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:04:50] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:04:50] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:04:50] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:04:50] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:04:50] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 13:05:06.021947
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:05:06] "POST /mission HTTP/1.1" 200 -
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 13:05:06.024939
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:05:06] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:05:06] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:05:06] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:05:06] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:05:06] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  end 2022-05-08 13:05:08.112949
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:05:08] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:05:08] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:05:08] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:05:08] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:05:08] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.112:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:flask_app:FLASK_APP: mission:  end 2022-05-08 13:07:27.600555
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:07:27] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:07:27] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:07:27] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:07:27] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:07:27] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  start 2022-05-08 13:07:30.283880
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:07:30] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:07:30] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:07:30] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:07:30] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:07:30] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:flask_app:FLASK_APP: mission:  end 2022-05-08 13:07:32.283260
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:07:32] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:07:32] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:07:32] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:07:32] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:07:32] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.112:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:17:29] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:17:29] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:17:29] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:17:29] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:17:29] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:17:41] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:17:41] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:17:41] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:17:41] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:17:41] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:19:11] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:19:11] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:19:11] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:19:11] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:19:11] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:19:20] "[35m[1mPOST /mission HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:19:20] "[36mGET /mission?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:19:20] "[36mGET /mission?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:19:20] "[36mGET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:19:20] "[36mGET /mission?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+ERROR:flask_app:DATABASE ERROR: database is locked
+ERROR:flask_app:INSERT INTO MissionTBL (location, userid, Start_Time, Mission_Concluded) VALUES (?,?,?,?)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:20:21] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:20:21] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:20:21] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:20:21] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:20:21] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+ERROR:flask_app:DATABASE ERROR: database is locked
+ERROR:flask_app:INSERT INTO MissionTBL (location, userid, Start_Time, Mission_Concluded) VALUES (?,?,?,?)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:20:33] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:20:33] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:20:33] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:20:33] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:20:33] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.112:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:20:49] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:20:49] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:20:50] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:20:50] "[36mGET /static/js/keybind.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:20:50] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:20:50] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:20:50] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:20:50] "[36mGET /static/js/mapping.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:20:50] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:20:51] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:20:51] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:20:51] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:20:51] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:20:51] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+ERROR:flask_app:DATABASE ERROR: database is locked
+ERROR:flask_app:INSERT INTO MissionTBL (location, userid, Start_Time, Mission_Concluded) VALUES (?,?,?,?)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:20:53] "POST /mission HTTP/1.1" 200 -
+ERROR:flask_app:DATABASE ERROR: database is locked
+ERROR:flask_app:INSERT INTO MissionTBL (location, userid, Start_Time, Mission_Concluded) VALUES (?,?,?,?)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:20:59] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:20:59] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:20:59] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:20:59] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:20:59] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+ERROR:flask_app:DATABASE ERROR: database is locked
+ERROR:flask_app:INSERT INTO MissionTBL (location, userid, Start_Time, Mission_Concluded) VALUES (?,?,?,?)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:21:10] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:21:10] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:21:10] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:21:10] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:21:10] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+ERROR:flask_app:DATABASE ERROR: database is locked
+ERROR:flask_app:INSERT INTO MissionTBL (location, userid, Start_Time, Mission_Concluded) VALUES (?,?,?,?)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:21:58] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:21:58] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:21:58] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:21:58] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:21:58] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:22:52] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:22:52] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:22:52] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:22:52] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:22:52] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:22:53] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:22:53] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:22:53] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:22:53] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:22:53] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:22:54] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:22:54] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:22:54] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:22:54] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:22:54] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:22:56] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:22:56] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:22:56] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:22:56] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:22:56] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:23:21] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:23:21] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:23:21] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:23:21] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:23:21] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:23:29] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:23:29] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:23:29] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:23:29] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:23:29] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.112:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:25:20] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:25:20] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:25:20] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:25:20] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:25:20] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+ERROR:flask_app:DATABASE ERROR: near "VALUES": syntax error
+ERROR:flask_app:INSERT INTO MedicallogTBL (MissionID, Time_Published, Note, Importance VALUES (?,?,?,?)
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:25:32] "POST /mission HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:25:32] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:25:32] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:25:32] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.112 - - [08/May/2022 13:25:32] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\matth\\Desktop\\Code\\Robot\\flask_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 506-702-558

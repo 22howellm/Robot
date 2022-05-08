@@ -2,15 +2,31 @@
 {% block content %}
     <div class="page-header" id="banner">
         <div class="row">
-            <h1>mission</h1>
+            <h1>Mission</h1>
+            <br><br>
+            {%if data['Mission_Active'] == True%}
+            <h2 style="color:red">Mission Status: Active</h2>
+            {%elif data['Mission_Active'] == False%}
+            <h2 style="color:grey">Mission Status: Inactive</h2>
+            {%endif%}
+            <br><br>
             <form action="/mission" method="POST">
-                <label>Medic on Duty:</label><br>
-                <input type="text" id="medic" name="Medic" value="{{session['userid']}}"><br>
-                <label>location:</label><br>
-                <input type="text" id="notes" name="location" value=""><br><br>
-                <input type="submit" value="Start">
+                <h6>Medic on Duty: {{data['name']}}</h6><br>
+                {%if data['Mission_Active'] == False%}
+                <label>Location:</label><br>
+                <input type="text" id="location" name="location" value=""><br><br>
+                <h6>Submit 'start' in notes to start a mission</h6>
+                {%elif data['Mission_Active'] == True%}
+                <label>Importance: </label><br>
+                <input type='text' id="importance" name="importance" value=""><br><br>
+                <h6>Submit 'end' in notes to finish the mission</h6>
+                {%endif%}
                 <label>Notes:</label><br>
                 <input type="text" id="notes" name="notes" value=""><br><br>
+                {%if message%}
+                <h4>{{message}}</h4>
+                {% endif %}
+                <input type="submit" value="Submit">
               </form>               
         </div>
     </div>

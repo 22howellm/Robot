@@ -34,26 +34,23 @@ def log(message):
 #create a login page
 @app.route('/', methods=['GET','POST'])
 def login():
-    if not 'loggingattempt' in session:
-        session['loggingattempt'] = 0
     if 'userid' in session:
         return redirect('/dashboard')
     message = ""
     if request.method == "POST":
         email = request.form.get("email")
-        userdetails = GLOBALS.DATABASE.ViewQuery("SELECT * FROM users WHERE email = ?", (email,))
+        userdetails = GLOBALS.DATABASE.ViewQuery("SELECT * FROM UserTBL WHERE Email = ?", (email,))
         log(userdetails)
         if userdetails:
             user = userdetails[0] #get first row in results
-            if (user['password'] == request.form.get("password") and session['loggingattempt'] < 100):
-                session['password'] = user['password']
-                session['userid'] = user['userid']
-                session['permission'] = user['permission']
-                session['name'] = user['name']
+            if (user['Password'] == request.form.get("password")):
+                session['password'] = user['Password']
+                session['userid'] = user['Userid']
+                session['permission'] = user['Permission']
+                session['name'] = user['Name']
                 return redirect('/dashboard')
             else:
                 message = "Login Unsuccessful"
-                session['loggingattempt'] += 1
         else:
             message = "Login Unsuccessful"
     return render_template('login.html', data = message)    
@@ -89,7 +86,7 @@ def robotload():
     return jsonify(sensordict)
 # ---------------------------------------------------------------------------------------
 #My functions
-def passwordsecure():
+"""def passwordsecure():
     if not 'userid' in session:
         return redirect('/')
     userdetails = GLOBALS.DATABASE.ViewQuery("SELECT * FROM users WHERE userid = ?", (session['userid'],))
@@ -101,11 +98,11 @@ def passwordsecure():
     if password2 != password:
         session.clear()
         return redirect('/')
-
+"""
 # Dashboard
 @app.route('/dashboard', methods=['GET','POST'])
 def robotdashboard():
-    passwordsecure()
+    #passwordsecure()
     enabled = int(GLOBALS.ROBOT != None)
     return render_template('dashboard.html', robot_enabled = enabled )
 
@@ -227,7 +224,7 @@ def stop():
 #sensor view
 @app.route('/sensorview', methods=['GET','POST'])
 def sensorview():
-    passwordsecure()
+    #passwordsecure()
     data = None
     if GLOBALS.ROBOT:
         data = GLOBALS.ROBOT.get_all_sensors()
@@ -238,24 +235,63 @@ def sensorview():
 #mission view page allows the medic manager to create a mission and save data around that mission
 @app.route('/mission', methods=['GET','POST'])
 def mission():
-    data = None
-    passwordsecure()
+    data = {}
+    #passwordsecure()
+    Mission_Active = False #until proven otherwise
+    def Check_Mission_status():
+        most_recent = GLOBALS.DATABASE.ViewQuery("SELECT Mission_Concluded FROM MissionTBL ORDER BY MissionID DESC LIMIT 1")
+        if most_recent == False: #if there is no mission recorded in the database
+            return(False)
+        else:
+            most_recent = most_recent[0]
+        if most_recent['Mission_Concluded'] == 'True':
+            return(False)
+        else:
+            return(True)
+    Mission_Active = Check_Mission_status()
+    userid = int(session['userid'])
+    missionid = None
+    name = GLOBALS.DATABASE.ViewQuery("SELECT Name FROM UserTBL WHERE Userid = ?", (userid,))
+    name = name[0]['Name']
+    data['name'] = name
+    data['Mission_Active'] = Mission_Active
     if request.method =="POST":
-        userid = session['userid']
+        Mission_Active = Check_Mission_status()
+        data['Mission_Active'] = Mission_Active
         notes = request.form.get('notes')
-        location = request.form.get('location')
+        if Mission_Active == True:
+            importance = request.form.get('importance')
         starttime = datetime.now()
-        log("FLASK_APP: mission: " + str(location) + " " + str(notes) + " " + str(starttime))
         if notes == 'start':
-            GLOBALS.DATABASE.ModifyQuery("INSERT INTO MissionTBL (location, userid, Start_Time) VALUES (?,?,?)",(location,userid,starttime))
+            location = request.form.get('location')
+            if Mission_Active == False:
+                GLOBALS.DATABASE.ModifyQuery("INSERT INTO MissionTBL (location, userid, Start_Time, Mission_Concluded) VALUES (?,?,?,?)",(location,userid,starttime,'False'))
+                Mission_Active = Check_Mission_status()
+                data['Mission_Active'] = Mission_Active
+                return render_template('mission.html', message = 'mission started',data=data)
+            else:
+                return render_template('mission.html', message = 'mission already underway',data=data)
         elif notes == 'end':
-            #GLOBALS.DATABASE.ViewQuery("SELECT Mission_Concluded FROM MissionTBL ")
-            #if
-            pass 
-        #put start in
-        #Get the current mission id and save it into session ['missionid']
-        # Get mission history and send to the page
-    return render_template("mission.html")
+            if Mission_Active == False:
+                return render_template('mission.html', message = 'No current mission',data=data)
+            else:
+                missionid = GLOBALS.DATABASE.ViewQuery("SELECT MissionID FROM MissionTBL where Mission_Concluded = 'False'")
+                missionid = missionid[0]['MissionID']
+                endtime = datetime.now()
+                GLOBALS.DATABASE.ModifyQuery('UPDATE MissionTBL SET Mission_Concluded = ?, End_Time = ? WHERE MissionID = ?', ('True',endtime,missionid))
+                Mission_Active = Check_Mission_status()
+                data['Mission_Active'] = Mission_Active
+                return render_template('mission.html', message = 'Mission completed', data=data)
+        else:
+            if Mission_Active == False:
+                return render_template('mission.html', message = 'No current mission',data=data)
+            else:
+                missionid = GLOBALS.DATABASE.ViewQuery("SELECT MissionID FROM MissionTBL where Mission_Concluded = 'False'")
+                missionid = missionid[0]['MissionID']
+                time = datetime.now()
+                GLOBALS.DATABASE.ModifyQuery('INSERT INTO MedicallogTBL (MissionID, Time_Published, Note, Importance) VALUES (?,?,?,?)', (missionid,time,notes,importance))
+                return render_template("mission.html", message = 'Notes Submitted', data=data)
+    return render_template("mission.html", data=data)
 
 #Automatic search code ------------------------------------------------------------------------------------------------------------------------
 
