@@ -171,7 +171,7 @@ def lob():
         if Mission_status == True:
             Update_Current_MissionID()
             missionid = session['Current_MissionID']
-            action = 'lob'
+            action = 'Delivered package'
             GLOBALS.DATABASE.ModifyQuery('INSERT INTO ActionTBL (Missionid, Action_Type, Action_Start_Time, Action_End_Time, Start_Heading, End_Heading) VALUES (?,?,?,?,?,?)',(missionid,action,starttime,endtime,start_heading,final_heading))
     return jsonify(data)
 
@@ -179,15 +179,38 @@ def lob():
 def shoot():
     data = {}
     if GLOBALS.ROBOT:
+        starttime = datetime.now()
+        endtime = None
+        start_heading = GLOBALS.ROBOT.get_compass_IMU()
         GLOBALS.ROBOT.spin_medium_motor(-555)
         GLOBALS.ROBOT.spin_medium_motor(-555)
+        endtime = datetime.now()
+        final_heading = start_heading = GLOBALS.ROBOT.get_compass_IMU()
+        Mission_status = Check_Mission_status()
+        if Mission_status == True:
+            Update_Current_MissionID()
+            missionid = session['Current_MissionID']
+            action = 'Delivered package directly'
+            GLOBALS.DATABASE.ModifyQuery('INSERT INTO ActionTBL (Missionid, Action_Type, Action_Start_Time, Action_End_Time, Start_Heading, End_Heading) VALUES (?,?,?,?,?,?)',(missionid,action,starttime,endtime,start_heading,final_heading))
     return jsonify(data)
 
 @app.route('/turn90', methods=['GET','POST'])
 def turn90():
     data = {}
     if GLOBALS.ROBOT:
+        starttime = datetime.now()
+        endtime = None
+        start_heading = GLOBALS.ROBOT.get_compass_IMU()
         GLOBALS.ROBOT.rotate_power_degrees_IMU(10,90,-0.6)
+        endtime = datetime.now()
+        final_heading = start_heading = GLOBALS.ROBOT.get_compass_IMU()
+        Mission_status = Check_Mission_status()
+        if Mission_status == True:
+            Update_Current_MissionID()
+            missionid = session['Current_MissionID']
+            action = 'Turn 90'
+            print('got here')
+            GLOBALS.DATABASE.ModifyQuery('INSERT INTO ActionTBL (Missionid, Action_Type, Action_Start_Time, Action_End_Time, Start_Heading, End_Heading) VALUES (?,?,?,?,?,?)',(missionid,action,starttime,endtime,start_heading,final_heading))
     return jsonify(data)
 
 @app.route('/moveforward', methods=['GET','POST'])
@@ -195,6 +218,7 @@ def moveforward():
     data = {}
     if GLOBALS.ROBOT:
         GLOBALS.ROBOT.move_power(50,1.1)
+        print('stuff')
     return jsonify(data)
 
 @app.route('/movebackwards', methods=['GET','POST'])
