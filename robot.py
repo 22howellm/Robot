@@ -443,17 +443,20 @@ class Robot(BrickPiInterface):
                         print('going to known location')
                         self.move_forward_check(42)
                     else: #when it reaches the end after exploring everywhere it ends the code
-                        self.CurrentRoutine = "complete"
+                        self.CurrentRoutine = "stop"
         if self.Check_Mission_status() == True:
+            print('got here')
             for i in known_area:
-                TileID = i
-                Tile_coordinates = area_location[i]
-                Tile_area_information = known_area_information[i]
+                TileID = int(i)
+                Tile_coordinates = str(area_location[i])
+                Tile_area_information = str(known_area_information[i])
                 Danger_zone = 'False' #stored as text in database
                 if known_area[i] == 'danger':
                     Danger_zone = 'True'
-                Distance_from_start_database = distance_from_start[i]
-                GLOBALS.DATABASE.ModifyQuery('INSERT INTO TileTBL (TileID,MissionID,Tile_coordinates,Tile_area_information,Danger_zone,Distance_from_start) VALUES (?,?,?,?,?,?)',(TileID,self.Current_MissionID,Tile_coordinates,Tile_area_information,Danger_zone,Distance_from_start_database))
+                Distance_from_start_database = int(distance_from_start[i])
+                missionid = int(self.Current_MissionID)
+                print(str(TileID) + " " + str(Tile_coordinates) + ' ' + str(Tile_area_information) + ' ' + str(Danger_zone) + ' ' + str(Distance_from_start_database) + ' ' + str(missionid))
+                GLOBALS.DATABASE.ModifyQuery('INSERT INTO TileTBL (TileID, MissionID, Tile_coordinates, Tile_area_information, Danger_zone, Distance_from_start) VALUES (?,?,?,?,?,?)', (TileID,missionid,Tile_coordinates,Tile_area_information,Danger_zone,Distance_from_start_database))
 
         return
 # Only execute if this is the main file, good for testing code
