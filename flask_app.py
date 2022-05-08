@@ -33,16 +33,21 @@ def Check_Mission_status():
             return(False)
         else:
             most_recent = most_recent[0]
+            print(str(most_recent))
         if most_recent['Mission_Concluded'] == 'True':
             return(False)
         else:
             return(True)
 
 def Update_Current_MissionID(): #updates the current missionId in the session
-    session['Current_MissionID'] = None
+    session['Mission_Active'] = Check_Mission_status()
+    print(session['Mission_Active'])
     if session['Mission_Active'] == True:
         missionid = GLOBALS.DATABASE.ViewQuery("SELECT MissionID FROM MissionTBL where Mission_Concluded = 'False'")
         session['Current_MissionID'] = missionid[0]['MissionID']
+        print(session['Current_MissionID'])
+    else:
+        session['Current_MissionID'] = None
 
 #Log messages
 def log(message):
@@ -119,8 +124,7 @@ def robotload():
         session.clear()
         return redirect('/')
 """
-def Insert_Action_Database(missionid,action,starttime,endtime,start_heading,final_heading):
-    GLOBALS.DATABASE.ModifyQuery('INSERT INTO ActionTBL (Missionid, Action_Type, Action_Start_Time, Action_End_Time,Start_Heading,End_Heading) VALUES (?,?,?,?,?,?)',(missionid,action,starttime,endtime,start_heading,final_heading))
+
 # Dashboard
 @app.route('/dashboard', methods=['GET','POST'])
 def robotdashboard():
@@ -168,8 +172,11 @@ def lob():
         final_heading = start_heading = GLOBALS.ROBOT.get_compass_IMU()
         Mission_status = Check_Mission_status()
         if Mission_status == True:
+            Update_Current_MissionID()
             missionid = session['Current_MissionID']
-            Insert_Action_Database(missionid,'lob',starttime,endtime,start_heading,final_heading) #added a function to make the code neater
+            action = 'lob'
+            print(str(missionid) + str(action) + str(starttime) + str(endtime) + str(start_heading) + str(final_heading))
+            GLOBALS.DATABASE.ModifyQuery('INSERT INTO ActionTBL (Missionid, Action_Type, Action_Start_Time, Action_End_Time, Start_Heading, End_Heading) VALUES (?,?,?,?,?,?)',(missionid,action,starttime,endtime,start_heading,final_heading))
     return jsonify(data)
 
 @app.route('/shoot', methods=['GET','POST'])
