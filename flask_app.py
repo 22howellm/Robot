@@ -209,7 +209,6 @@ def turn90():
             Update_Current_MissionID()
             missionid = session['Current_MissionID']
             action = 'Turn 90'
-            print('got here')
             GLOBALS.DATABASE.ModifyQuery('INSERT INTO ActionTBL (Missionid, Action_Type, Action_Start_Time, Action_End_Time, Start_Heading, End_Heading) VALUES (?,?,?,?,?,?)',(missionid,action,starttime,endtime,start_heading,final_heading))
     return jsonify(data)
 
@@ -217,59 +216,147 @@ def turn90():
 def moveforward():
     data = {}
     if GLOBALS.ROBOT:
+        starttime = datetime.now()
+        endtime = None
+        start_heading = GLOBALS.ROBOT.get_compass_IMU()
         GLOBALS.ROBOT.move_power(50,1.1)
-        print('stuff')
+        endtime = datetime.now()
+        final_heading = start_heading = GLOBALS.ROBOT.get_compass_IMU()
+        Mission_status = Check_Mission_status()
+        if Mission_status == True:
+            Update_Current_MissionID()
+            missionid = session['Current_MissionID']
+            action = 'Forward Fast'
+            GLOBALS.DATABASE.ModifyQuery('INSERT INTO ActionTBL (Missionid, Action_Type, Action_Start_Time, Action_End_Time, Start_Heading, End_Heading) VALUES (?,?,?,?,?,?)',(missionid,action,starttime,endtime,start_heading,final_heading))
     return jsonify(data)
 
 @app.route('/movebackwards', methods=['GET','POST'])
 def movebackwards():
     data = {}
     if GLOBALS.ROBOT:
+        starttime = datetime.now()
+        endtime = None
+        start_heading = GLOBALS.ROBOT.get_compass_IMU()
         GLOBALS.ROBOT.move_power(-50,1.1)
+        endtime = datetime.now()
+        final_heading = start_heading = GLOBALS.ROBOT.get_compass_IMU()
+        Mission_status = Check_Mission_status()
+        if Mission_status == True:
+            Update_Current_MissionID()
+            missionid = session['Current_MissionID']
+            action = 'Backwards Fast'
+            GLOBALS.DATABASE.ModifyQuery('INSERT INTO ActionTBL (Missionid, Action_Type, Action_Start_Time, Action_End_Time, Start_Heading, End_Heading) VALUES (?,?,?,?,?,?)',(missionid,action,starttime,endtime,start_heading,final_heading))
     return jsonify(data)
 
 @app.route('/moveforwardslow', methods=['GET','POST'])
 def moveforwardslow():
     data = {}
     if GLOBALS.ROBOT:
-        data['elapsedtime'] = GLOBALS.ROBOT.move_power(20,1.9)
         data['heading'] = GLOBALS.ROBOT.get_compass_IMU()
+        starttime = datetime.now()
+        endtime = None
+        start_heading = GLOBALS.ROBOT.get_compass_IMU()
+        data['elapsedtime'] = GLOBALS.ROBOT.move_power(20,1.9)
+        endtime = datetime.now()
+        final_heading = start_heading = GLOBALS.ROBOT.get_compass_IMU()
+        Mission_status = Check_Mission_status()
+        if Mission_status == True:
+            Update_Current_MissionID()
+            missionid = session['Current_MissionID']
+            action = 'Forward Slow'
+            GLOBALS.DATABASE.ModifyQuery('INSERT INTO ActionTBL (Missionid, Action_Type, Action_Start_Time, Action_End_Time, Start_Heading, End_Heading) VALUES (?,?,?,?,?,?)',(missionid,action,starttime,endtime,start_heading,final_heading))
     return jsonify(data)
 
 @app.route('/movebackwardsslow', methods=['GET','POST'])
 def movebackwardsslow():
     data = {}
     if GLOBALS.ROBOT:
-        data['elapsedtime'] = GLOBALS.ROBOT.move_power(-20,-1.9)
         data['heading'] = GLOBALS.ROBOT.get_compass_IMU()
+        starttime = datetime.now()
+        endtime = None
+        start_heading = GLOBALS.ROBOT.get_compass_IMU()
+        data['elapsedtime'] = GLOBALS.ROBOT.move_power(-20,-1.9)
+        endtime = datetime.now()
+        final_heading = start_heading = GLOBALS.ROBOT.get_compass_IMU()
+        Mission_status = Check_Mission_status()
+        if Mission_status == True:
+            Update_Current_MissionID()
+            missionid = session['Current_MissionID']
+            action = 'Backwards slow'
+            GLOBALS.DATABASE.ModifyQuery('INSERT INTO ActionTBL (Missionid, Action_Type, Action_Start_Time, Action_End_Time, Start_Heading, End_Heading) VALUES (?,?,?,?,?,?)',(missionid,action,starttime,endtime,start_heading,final_heading))
     return jsonify(data)
 
 @app.route('/turnleft', methods=['GET','POST'])
 def turnleft():
     data = {}
     if GLOBALS.ROBOT:
+        starttime = datetime.now()
+        endtime = None
+        start_heading = GLOBALS.ROBOT.get_compass_IMU()
         GLOBALS.ROBOT.rotate_power(-25)
+        endtime = datetime.now()
+        final_heading = start_heading = GLOBALS.ROBOT.get_compass_IMU()
+        Mission_status = Check_Mission_status()
+        if Mission_status == True:
+            Update_Current_MissionID()
+            missionid = session['Current_MissionID']
+            action = 'Fast Left'
+            GLOBALS.DATABASE.ModifyQuery('INSERT INTO ActionTBL (Missionid, Action_Type, Action_Start_Time, Action_End_Time, Start_Heading, End_Heading) VALUES (?,?,?,?,?,?)',(missionid,action,starttime,endtime,start_heading,final_heading))
     return jsonify(data)
 
 @app.route('/turnright', methods=['GET','POST'])
 def turnright():
     data = {}
     if GLOBALS.ROBOT:
+        starttime = datetime.now()
+        endtime = None
+        start_heading = GLOBALS.ROBOT.get_compass_IMU()
         GLOBALS.ROBOT.rotate_power(25)
+        endtime = datetime.now()
+        final_heading = start_heading = GLOBALS.ROBOT.get_compass_IMU()
+        Mission_status = Check_Mission_status()
+        if Mission_status == True:
+            Update_Current_MissionID()
+            missionid = session['Current_MissionID']
+            action = 'Fast Right'
+            GLOBALS.DATABASE.ModifyQuery('INSERT INTO ActionTBL (Missionid, Action_Type, Action_Start_Time, Action_End_Time, Start_Heading, End_Heading) VALUES (?,?,?,?,?,?)',(missionid,action,starttime,endtime,start_heading,final_heading))
     return jsonify(data)
 
 @app.route('/turnleftslow', methods=['GET','POST'])
 def turnleftslow():
     data = {}
     if GLOBALS.ROBOT:
+        starttime = datetime.now()
+        endtime = None
+        start_heading = GLOBALS.ROBOT.get_compass_IMU()
         GLOBALS.ROBOT.rotate_power(-10)
+        endtime = datetime.now()
+        final_heading = start_heading = GLOBALS.ROBOT.get_compass_IMU()
+        Mission_status = Check_Mission_status()
+        if Mission_status == True:
+            Update_Current_MissionID()
+            missionid = session['Current_MissionID']
+            action = 'Slow Left'
+            GLOBALS.DATABASE.ModifyQuery('INSERT INTO ActionTBL (Missionid, Action_Type, Action_Start_Time, Action_End_Time, Start_Heading, End_Heading) VALUES (?,?,?,?,?,?)',(missionid,action,starttime,endtime,start_heading,final_heading))
+
     return jsonify(data)
 
 @app.route('/turnrightslow', methods=['GET','POST'])
 def turnrightslow():
     data = {}
     if GLOBALS.ROBOT:
+        starttime = datetime.now()
+        endtime = None
+        start_heading = GLOBALS.ROBOT.get_compass_IMU()
         GLOBALS.ROBOT.rotate_power(10)
+        endtime = datetime.now()
+        final_heading = start_heading = GLOBALS.ROBOT.get_compass_IMU()
+        Mission_status = Check_Mission_status()
+        if Mission_status == True:
+            Update_Current_MissionID()
+            missionid = session['Current_MissionID']
+            action = 'Slow Right'
+            GLOBALS.DATABASE.ModifyQuery('INSERT INTO ActionTBL (Missionid, Action_Type, Action_Start_Time, Action_End_Time, Start_Heading, End_Heading) VALUES (?,?,?,?,?,?)',(missionid,action,starttime,endtime,start_heading,final_heading))
     return jsonify(data)
 
 @app.route('/stop', methods=['GET','POST'])
@@ -347,7 +434,6 @@ def mission():
 @app.route('/automatic_mode', methods=['GET','POST'])
 def automatic_mode():
     data = []
-    GLOBALS.ROBOT.CurrentRoutine == 'Automatic_mode'
     if request.method == 'POST':
         if GLOBALS.ROBOT:
             while True:

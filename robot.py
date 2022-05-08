@@ -7,6 +7,9 @@ from numpy import append
 import numpy as np
 import logging
 import cv2
+import time
+import datetime
+
 
 class Robot(BrickPiInterface):
     
@@ -14,12 +17,51 @@ class Robot(BrickPiInterface):
         super().__init__(timelimit, logger)
         self.CurrentCommand = "stop" #use this to stop or start functions
         self.CurrentRoutine = "stop" #use this stop or start routines
+        self.Mission_active = None
+        self.Current_MissionID = None
+        most_recent = GLOBALS.DATABASE.ViewQuery("SELECT Mission_Concluded FROM MissionTBL ORDER BY MissionID DESC LIMIT 1")
+        if most_recent == False: #if there is no mission recorded in the database
+            self.Mission_Active = False
+        else:
+            most_recent = most_recent[0]
+        if most_recent['Mission_Concluded'] == 'True':
+            self.Mission_Active = False
+        else:
+            self.Mission_Active = True
+        if self.Mission_Active == True:
+            self.missionid = GLOBALS.DATABASE.ViewQuery("SELECT MissionID FROM MissionTBL where Mission_Concluded = 'False'")
+            self.Current_MissionID = self.missionid[0]['MissionID']
+        else:
+            Current_MissionID = None
         return
         
-        
+
+    def Check_Mission_status(self):
+            most_recent = GLOBALS.DATABASE.ViewQuery("SELECT Mission_Concluded FROM MissionTBL ORDER BY MissionID DESC LIMIT 1")
+            if most_recent == False: #if there is no mission recorded in the database
+                return(False)
+            else:
+                most_recent = most_recent[0]
+            if most_recent['Mission_Concluded'] == 'True':
+                return(False)
+            else:
+                return(True)
+
+    def Update_Current_MissionID(self): #updates the current missionId in the session
+        Mission_Active = self.Check_Mission_status()
+        if Mission_Active == True:
+            missionid = GLOBALS.DATABASE.ViewQuery("SELECT MissionID FROM MissionTBL where Mission_Concluded = 'False'")
+            self.Current_MissionID = missionid[0]['MissionID']
+        else:
+            self.Current_MissionID = None
+
+
+    
     #Create a function to move time and power which will stop if colour is detected or wall has been found
     def move_forward_check(self,distanceCm,speed=100,power=100):
-        starttime = time.time()
+        starttime = datetime.datetime.now()
+        endtime = None
+        start_heading = GLOBALS.ROBOT.get_compass_IMU()
         distance = distanceCm * 360 / (np.pi * 5.6)
         BP = self.BP
         BP.offset_motor_encoder(BP.PORT_A, BP.get_motor_encoder(BP.PORT_A)) # reset encoder A
@@ -31,16 +73,45 @@ class Robot(BrickPiInterface):
             BP.set_motor_position(BP.PORT_A, distance+10)
             time.sleep(0.02)
             if BP.get_motor_encoder(BP.PORT_D) >= distance or BP.get_motor_encoder(BP.PORT_A) >= distance:
+                endtime = datetime.datetime.now()
+                final_heading = start_heading = GLOBALS.ROBOT.get_compass_IMU()
+                Mission_status = self.Check_Mission_status()
+                if Mission_status == True:
+                    self.Update_Current_MissionID()
+                    missionid = self.Current_MissionID
+                    action = 'Forward Automatic'
+                    GLOBALS.DATABASE.ModifyQuery('INSERT INTO ActionTBL (Missionid, Action_Type, Action_Start_Time, Action_End_Time, Start_Heading, End_Heading) VALUES (?,?,?,?,?,?)',(missionid,action,starttime,endtime,start_heading,final_heading))
                 break
         return 
     def medic_package(self):
-        data = {}
+        starttime = datetime.datetime.now()
+        endtime = None
+        start_heading = GLOBALS.ROBOT.get_compass_IMU()
         self.spin_medium_motor(-555)
         self.spin_medium_motor(-555)
+        endtime = datetime.datetime.now()
+        final_heading = start_heading = GLOBALS.ROBOT.get_compass_IMU()
+        Mission_status = self.Check_Mission_status()
+        if Mission_status == True:
+            self.Update_Current_MissionID()
+            missionid = self.Current_MissionID
+            action = 'Delivered package Automatic'
+            GLOBALS.DATABASE.ModifyQuery('INSERT INTO ActionTBL (Missionid, Action_Type, Action_Start_Time, Action_End_Time, Start_Heading, End_Heading) VALUES (?,?,?,?,?,?)',(missionid,action,starttime,endtime,start_heading,final_heading))
         return
 
     def turn90_robot(self):
+        starttime = datetime.datetime.now()
+        endtime = None
+        start_heading = GLOBALS.ROBOT.get_compass_IMU()
         self.rotate_power_degrees_IMU(10,90,1.9) #-0.6
+        endtime = datetime.datetime.now()
+        final_heading = start_heading = GLOBALS.ROBOT.get_compass_IMU()
+        Mission_status = self.Check_Mission_status()
+        if Mission_status == True:
+            self.Update_Current_MissionID()
+            missionid = self.Current_MissionID
+            action = 'Turn 90 Automatic'
+            GLOBALS.DATABASE.ModifyQuery('INSERT INTO ActionTBL (Missionid, Action_Type, Action_Start_Time, Action_End_Time, Start_Heading, End_Heading) VALUES (?,?,?,?,?,?)',(missionid,action,starttime,endtime,start_heading,final_heading))
         return 
     
     #Create a function to search for victim
@@ -97,9 +168,9 @@ class Robot(BrickPiInterface):
             danger = False
             colour = self.get_colour_sensor()
             print(str(distance_from_start))
-            if colour != 'White': #this can stop an error later in the code
+            """if colour != 'White': 
                 print('danger')
-                danger = True
+                danger = True"""
             if fully_explored == False:
                 if danger == False:
                     for direction in immediate_area:
@@ -371,9 +442,19 @@ class Robot(BrickPiInterface):
                             currenttile_y += direction_support_y[th_heading]
                         print('going to known location')
                         self.move_forward_check(42)
-                    else:
-                        print('finish the code')
-                        pass
+                    else: #when it reaches the end after exploring everywhere it ends the code
+                        self.CurrentRoutine = "complete"
+        if self.Check_Mission_status() == True:
+            for i in known_area:
+                TileID = i
+                Tile_coordinates = area_location[i]
+                Tile_area_information = known_area_information[i]
+                Danger_zone = 'False' #stored as text in database
+                if known_area[i] == 'danger':
+                    Danger_zone = 'True'
+                Distance_from_start_database = distance_from_start[i]
+                GLOBALS.DATABASE.ModifyQuery('INSERT INTO TileTBL (TileID,MissionID,Tile_coordinates,Tile_area_information,Danger_zone,Distance_from_start) VALUES (?,?,?,?,?,?)',(TileID,self.Current_MissionID,Tile_coordinates,Tile_area_information,Danger_zone,Distance_from_start_database))
+
         return
 # Only execute if this is the main file, good for testing code
 if __name__ == '__main__':
