@@ -397,7 +397,7 @@ def mission():
         if Mission_Active == True:
             importance = request.form.get('importance')
         starttime = datetime.now()
-        if notes == 'start':
+        if notes == 'start': 
             location = request.form.get('location')
             if Mission_Active == False:
                 GLOBALS.DATABASE.ModifyQuery("INSERT INTO MissionTBL (location, userid, Start_Time, Mission_Concluded) VALUES (?,?,?,?)",(location,userid,starttime,'False'))

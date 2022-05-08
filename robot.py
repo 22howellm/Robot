@@ -224,9 +224,16 @@ class Robot(BrickPiInterface):
                                 print(str(detected))
                                 if detected == 'harmed':
                                     self.medic_package()
-                                    print('put in medic notes, and where')
+                                    time2 = datetime.datetime.now()
+                                    notes = ('Harmed victim found: ' + str(direction) + " in tile: " + str(currenttile))
+                                    missionid = self.Current_MissionID
+                                    GLOBALS.DATABASE.ModifyQuery('INSERT INTO MedicallogTBL (MissionID, Time_Published, Note, Importance) VALUES (?,?,?,?)', (missionid,time2,notes,'Critical'))
                                 elif detected == 'unharmed':
                                     print('put in medic notes in location')
+                                    time2 = datetime.datetime.now()
+                                    notes = ('Unharmed victim found: ' + str(direction) + " in tile: " + str(currenttile))
+                                    missionid = self.Current_MissionID
+                                    GLOBALS.DATABASE.ModifyQuery('INSERT INTO MedicallogTBL (MissionID, Time_Published, Note, Importance) VALUES (?,?,?,?)', (missionid,time2,notes,'Important'))
                                 #search for image, search if there is a wall so it only helps a victim if it is near.
                             self.turn90_robot()
                             th_heading += 90
