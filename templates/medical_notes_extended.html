@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    <form action='/medical_notes_extended' method="Post"</form>
+    <h1>Medical log Mission: {{session['selected_mission']}}</h1>
+    <table style="width:100%" class="table">
+        <tr>
+            <th>Medical log id</th>
+            <th>Time_Published</th>
+            <th>Note</th>
+            <th>Importance</th>
+        </tr>
+      {% if data %}
+        {% for mission in data %}
+      <tr>
+        <td>{{mission['MedicallogId']}}</td>
+        <td>{{mission['Time_Published']}}</td>
+        <td>{{mission['Note']}}</td>
+        <td>{{mission['Importance']}}</td>
+      </tr>
+      {% endfor %}
+      {% endif %}
+    </table>
+    <p>{{message}}</p>
+    <input type="submit" value="Go Back">
+    </form>
+{% endblock %}

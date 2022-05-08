@@ -1,3 +1,5 @@
+from select import select
+from tkinter.tix import Select
 from flask import Flask, render_template, session, request, redirect, flash, url_for, jsonify, Response, logging
 from interfaces import databaseinterface
 try:
@@ -427,6 +429,58 @@ def mission():
                 GLOBALS.DATABASE.ModifyQuery('INSERT INTO MedicallogTBL (MissionID, Time_Published, Note, Importance) VALUES (?,?,?,?)', (missionid,time,notes,importance))
                 return render_template("mission.html", message = 'Notes Submitted', data=data)
     return render_template("mission.html", data=data)
+
+@app.route('/medical_notes', methods=['GET','POST'])
+def medical_notes():
+    data = {}
+    message = ''
+    results = GLOBALS.DATABASE.ViewQuery('SELECT MissionTBL.MissionID, UserTBL.name, MissionTBL.Start_time, MissionTBL.End_time,MissionTBL.Location,MissionTBL.Mission_Concluded FROM MissionTBL INNER JOIN UserTBL ON MissionTBL.Userid = UserTBL.Userid')
+    if request.method == 'POST':
+        mission = request.form.getlist("selectedmission")
+        if len(mission) > 1:
+            return render_template('medical_notes.html',message = 'You can only select on mission',data=results)
+        elif len(mission) == 1:
+            selected_mission = mission[0]
+            session['selected_mission'] = selected_mission
+            return redirect('/medical_notes_extended')
+        else:
+            return render_template('medical_notes.html',message = 'Please select a mission',data=results)
+    return render_template('medical_notes.html',message = '',data=results)
+
+@app.route('/medical_notes_extended', methods=['GET','POST'])
+def medical_notes_extended():
+    data = {}
+    MissionID = int(session['selected_mission'])
+    results = GLOBALS.DATABASE.ViewQuery('SELECT MedicallogID, Time_Published, Note, Importance FROM MedicallogTBL WHERE MissionID = ?', (MissionID,))
+    if request.method == 'POST':
+        return redirect('/medical_notes')
+    return render_template('medical_notes_extended.html',data=results)
+
+@app.route('/action_log', methods=['GET','POST'])
+def action_log():
+    data = {}
+    message = ''
+    results = GLOBALS.DATABASE.ViewQuery('SELECT MissionTBL.MissionID, UserTBL.name, MissionTBL.Start_time, MissionTBL.End_time,MissionTBL.Location,MissionTBL.Mission_Concluded FROM MissionTBL INNER JOIN UserTBL ON MissionTBL.Userid = UserTBL.Userid')
+    if request.method == 'POST':
+        mission = request.form.getlist("selectedmission")
+        if len(mission) > 1:
+            return render_template('action_log.html',message = 'You can only select on mission',data=results)
+        elif len(mission) == 1:
+            selected_mission = mission[0]
+            session['selected_mission'] = selected_mission
+            return redirect('/action_log_extended')
+        else:
+            return render_template('action_log.html',message = 'Please select a mission',data=results)
+    return render_template('action_log.html',message = '',data=results)
+
+@app.route('/action_log_extended', methods=['GET','POST'])
+def action_log_extended():
+    data = {}
+    MissionID = int(session['selected_mission'])
+    results = GLOBALS.DATABASE.ViewQuery('SELECT Actionlogid, Action_type, Action_Start_Time, Action_End_Time, Start_Heading, End_Heading FROM ACTIONTBL WHERE MissionID = ?', (MissionID,))
+    if request.method == 'POST':
+        return redirect('/action_log')
+    return render_template('action_log_extended.html',data=results)
 
 #Automatic search code ------------------------------------------------------------------------------------------------------------------------
 

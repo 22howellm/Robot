@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    <form action='/action_log_extended' method="Post"</form>
+    <h1>Action log Mission: {{session['selected_mission']}}</h1>
+    <table style="width:100%" class="table">
+        <tr>
+            <th>Action log id</th>
+            <th>Action type</th>
+            <th>Start Time</th>
+            <th>Importance</th>
+            <th>Original heading</th>
+            <th>New heading</th>
+        </tr>
+      {% if data %}
+        {% for mission in data %}
+      <tr>
+        <td>{{mission['Actionlogid']}}</td>
+        <td>{{mission['Action_Type']}}</td>
+        <td>{{mission['Action_Start_Time']}}</td>
+        <td>{{mission['Action_End_Time']}}</td>
+        <td>{{mission['Start_Heading']}}</td>
+        <td>{{mission['End_Heading']}}</td>
+      </tr>
+      {% endfor %}
+      {% endif %}
+    </table>
+    <p>{{message}}</p>
+    <input type="submit" value="Go Back">
+    </form>
+{% endblock %}
