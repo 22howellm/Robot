@@ -52,8 +52,8 @@ document.addEventListener('keydown', function(e){
             new_ajax_helper('/shoot');
         }
         else if (key === 'l'){
-            console.log('shoot')
-            new_ajax_helper('/shoot');
+            console.log('lob')
+            new_ajax_helper('/lob');
         }
     
     }

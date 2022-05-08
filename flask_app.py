@@ -33,7 +33,6 @@ def Check_Mission_status():
             return(False)
         else:
             most_recent = most_recent[0]
-            print(str(most_recent))
         if most_recent['Mission_Concluded'] == 'True':
             return(False)
         else:
@@ -41,11 +40,9 @@ def Check_Mission_status():
 
 def Update_Current_MissionID(): #updates the current missionId in the session
     session['Mission_Active'] = Check_Mission_status()
-    print(session['Mission_Active'])
     if session['Mission_Active'] == True:
         missionid = GLOBALS.DATABASE.ViewQuery("SELECT MissionID FROM MissionTBL where Mission_Concluded = 'False'")
         session['Current_MissionID'] = missionid[0]['MissionID']
-        print(session['Current_MissionID'])
     else:
         session['Current_MissionID'] = None
 
@@ -175,7 +172,6 @@ def lob():
             Update_Current_MissionID()
             missionid = session['Current_MissionID']
             action = 'lob'
-            print(str(missionid) + str(action) + str(starttime) + str(endtime) + str(start_heading) + str(final_heading))
             GLOBALS.DATABASE.ModifyQuery('INSERT INTO ActionTBL (Missionid, Action_Type, Action_Start_Time, Action_End_Time, Start_Heading, End_Heading) VALUES (?,?,?,?,?,?)',(missionid,action,starttime,endtime,start_heading,final_heading))
     return jsonify(data)
 
